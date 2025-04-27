@@ -1,0 +1,70 @@
+<section>
+    <div style="background-color: black; height: 100vh; ">
+        <div class="container" style="padding-top: 80px">
+            <div style="background-color: #272a37;">
+                <div style="padding: 25px 0 5px 25px;">
+                    <h4 style="color: #ffffff;">Register For Jannah</h4>
+                </div>
+                <p style="border-bottom: 1px solid rgb(116, 103, 88);"></p>
+                <div style="padding: 25px;">
+                    <form [formGroup]="registrationForm">
+                        <div class="form-group" style="width: 100%;">
+                            <input autocomplete="off" style="width: 20%; margin-right: 5%;" placeholder="First name"
+                                type="text" formControlName="name" required>
+                            <input autocomplete="off" style="width: 20%;" placeholder="Last name" type="text"
+                                formControlName="name" required>
+                        </div>
+                        <div class="form-group" style="width: 100%;">
+                            <input autocomplete="off" style="width: 45%;" placeholder="Email" type="email"
+                                formControlName="email" required>
+                        </div>
+                        <div class="form-group" style="width: 100%;">
+                            <input autocomplete="off" style="width: 45%;" placeholder="Password"
+                                type="{{ passwordFieldType }}" formControlName="password" required>
+                            <span class="password-toggle" (click)="togglePasswordVisibility()">
+                                <i style="color: #7d7f8f; margin-left: -29px;"
+                                    class="bi bi-eye{{ showPassword ? '-slash' : '' }}"></i>
+                            </span>
+                        </div>
+                        <div style="width: 100%;">
+                            <button class="rgstr-btn" (click)="ChangeMethod()">Change method</button>
+                            <button class="rgstr-btn" type="submit" [disabled]="registrationForm.invalid"
+                                (click)="submitForm()">Register</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+
+<!-- Modal -->
+<div class="modal fade" id="success-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Registered Successful</h5>
+                <button type="button" class="btn-close" (click)="closeModal()" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div style="display: flex; justify-content: center;align-items: center; text-align: center;">
+                    <div>
+                        <i style="color: rgb(59, 226, 59);font-size: 80px;" class="bi bi-check-circle-fill"></i>
+                        <h2>Thank You</h2>
+                        <p>your Submission is received and we will contact you soon in Qabar</p>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" (click)="closeModal()">Close</button>
+                <button type="button" class="btn btn-primary" (click)="navigateToLogin()">Go to next</button>
+            </div>
+        </div>
+    </div>
+</div>

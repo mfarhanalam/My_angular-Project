@@ -1,0 +1,172 @@
+.reward-container {
+  background-color: #000;
+  color: #fff;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.back-button {
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.currency {
+  display: flex;
+  gap: 15px;
+}
+
+.currency-item {
+  display: flex;
+  align-items: center;
+  background-color: #333;
+  padding: 5px 10px;
+  border-radius: 15px;
+}
+
+.currency-item i {
+  width: 20px;
+  height: 20px;
+  font-size: 17px;
+  margin-right: 8px;
+  color: #ffd700;
+}
+
+.reward-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #6b23b4;
+  border-radius: 15px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.reward-details {
+  text-align: left;
+}
+
+.reward-details h2 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.reward-details p {
+  margin: 5px 0;
+}
+
+.details-button {
+  background-color: #4b0082;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.reward-image img {
+  width: 100%;
+  // height: 20vh;
+  border-radius: 10px;
+}
+
+.spin-section {
+  text-align: center !important;
+}
+
+
+
+.spin-info {
+  margin: 20px 0;
+}
+
+.spin-button {
+  background-color: #ffd700;
+  color: #000;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  border-bottom: 10px solid #978415;
+  width: 60%;
+  margin: 20px 0;
+}
+
+
+
+.slot-machine {
+  background-color: #000;
+  display: flex;
+  align-items: center !important;
+  justify-content: center !important;
+  // width: 300px;
+  height: 350px;
+  overflow: hidden;
+  text-align: center !important;
+  padding: 20px;
+  margin-bottom: 10px;
+}
+
+.column {
+  flex: 1;
+  margin: 0 5px;
+  position: relative;
+  height: 300px;
+  background-color: #1d1d1d;
+}
+
+.item {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  font-size: 34px;
+  transition: transform 0.1s linear;
+}
+
+.item.center {
+  background-color: yellow;
+}
+
+.result {
+  p {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #fff;
+  }
+}
+
+
+
+
+
+.middle {
+  // border: 2px solid red;
+  // border-radius: 50%;
+  background-color: #ffdddd;
+}
+
+@keyframes spin {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-100%); }
+}
+
+.spinning .cell {
+  animation: spin 0.3s linear infinite;
+}
+
+
+

@@ -1,0 +1,53 @@
+<section>
+  <div style="background-color: black;height: 100vh; ">
+    <div class="container" style="padding-top: 80px">
+      <div style="background-color: #272a37">
+        <div style="padding: 25px 0 5px 25px;">
+          <h4 style="color: aliceblue;">Log in & Enter in Jannah</h4>
+        </div>
+        <p style="border-bottom: 1px solid rgb(116, 103, 88);"></p>
+        <div style="padding: 25px;">
+          <div class="login-container">
+            <form [formGroup]="loginForm" (ngSubmit)="submitForm()">
+              <div class="form-group" style="width: 100%;">
+                <input autocomplete="off" style="width: 45%;" placeholder="Email" type="email" formControlName="email"
+                  required>
+              </div>
+              <div class="form-group" style="width: 100%;">
+                <input autocomplete="off" style="width: 45%;" placeholder="Password" type="{{ passwordFieldType }}"
+                  formControlName="password" required>
+                <span class="password-toggle" (click)="togglePasswordVisibility()">
+                  <i style="color: #7d7f8f; margin-left: -29px;"
+                    class="bi bi-eye{{ showPassword ? '-slash' : '' }}"></i>
+                </span>
+              </div>
+
+              <button class="logIn-btn" type="submit" [disabled]="loginForm.invalid">Login</button>
+            </form>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

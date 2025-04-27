@@ -1,0 +1,34 @@
+.form-group {
+    margin-bottom: 15px;
+}
+input{
+    padding: 15px;
+    border: 1px solid #272a37;
+    border-radius: 15px;
+    font-size: medium;
+    color: #ffffff;
+    font-weight: 500;
+    background: #323644;
+}
+
+input::placeholder{
+    color: #656773;
+}
+
+input:focus {
+    outline: none !important;
+
+}
+
+.logIn-btn{
+    padding: 10px;
+    border-radius: 30px;
+    background-color: #555b69;
+    color: #ffffff;
+    border: 1px solid #272a37;
+    width: 20%;
+    margin-right: 5%;
+}
+button:focus{
+    background-color: #1d90f5 !important;
+}

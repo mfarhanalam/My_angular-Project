@@ -1,0 +1,50 @@
+<div class="reward-container">
+  <div class="header">
+    <button class="back-button" (click)="backButton() " >←</button>
+    <div class="currency">
+      <div class="currency-item">
+        <!-- <img src="assets/icons/coin-icon.png" alt="Coins"> -->
+        <i class='fas fa-coins'></i>
+        <span>669</span>
+      </div>
+      <div class="currency-item">
+        <!-- <img src="assets/icons/rupee-icon.png" alt="Rupee"> -->
+        <i class="bi bi-cash"></i>
+        <span>₹5</span>
+      </div>
+    </div>
+  </div>
+  <div class="reward-card">
+    <div class="reward-details">
+      <h2>Lacto Calamine</h2>
+      <p>win a gift card worth ₹5,000</p>
+      <button class="details-button">details</button>
+    </div>
+    <div class="reward-image">
+      <img src="../../assets/image/reward12.png" alt="Lacto Calamine">
+    </div>
+  </div>
+  <div class="spin-section">
+    <main style="border: 2px solid #333;">
+      <div class="slot-machine">
+        <div class="column"  *ngFor="let column of columns">
+          <div class="item " *ngFor="let item of column; let rowIndex = index" [ngClass]="{ 'middle': isMiddleRow(rowIndex) && !spinning }">
+            {{ item.symbol }}
+          </div>
+        </div>
+      </div>
+    </main>
+    <p class="spin-info">spin for <i style="color: #ffd700;" class='fas fa-coins'> 1,000</i> • 10/10 spins left</p>
+    <button class="spin-button" (click)="startSpinning()" [disabled]="spinning">Spin</button>
+    <div class="result">
+      <p>Total Points: {{ totalPoints }}</p>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+

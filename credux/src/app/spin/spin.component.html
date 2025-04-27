@@ -1,0 +1,127 @@
+<h1>Slot Machine</h1>
+<div class="container">
+  <div class="slot">
+    <div class="base-machine">
+      <div class="base-frame">
+        <div class="slots">
+            <ul class="list list1">
+                  <li>$4</li>
+                  <li>$1</li>
+                  <li>$65</li>
+                  <li>$21</li>
+                  <li>$0</li>
+                  <li>$8</li>
+                  <li>$32</li>
+                  <li>$45</li>
+                  <li>$56</li>
+                  <li>$3</li>
+            </ul>
+        </div>
+        <div class="slots">
+           <ul class="list list2">
+                  <li>$4</li>
+                  <li>$1</li>
+                  <li>$65</li>
+                  <li>$21</li>
+                  <li>$0</li>
+                  <li>$8</li>
+                  <li>$32</li>
+                  <li>$45</li>
+                  <li>$56</li>
+                  <li>$3</li>
+            </ul>
+        </div>
+        <div class="slots">
+          <ul class="list list3">
+                  <li>$4</li>
+                  <li>$1</li>
+                  <li>$65</li>
+                  <li>$21</li>
+                  <li>$0</li>
+                  <li>$8</li>
+                  <li>$32</li>
+                  <li>$45</li>
+                  <li>$56</li>
+                  <li>$3</li>
+          </ul>
+        </div>
+        <div class="trapezoid">
+          <div class="edge"></div>
+        </div>
+      </div>
+    </div>
+    <div id="slot-trigger">
+
+      <svg id="trigger" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="35" height="143.6" viewBox="0 0 35 143.6">
+        <defs>
+          <linearGradient id="linear-gradient" x1="6.21" y1="143.63" x2="6.21" y2="67.37" gradientUnits="userSpaceOnUse">
+            <stop offset="0" stop-color="#515151"/>
+            <stop offset="0.21" stop-color="#989898"/>
+            <stop offset="0.51" stop-color="#e3e3e3"/>
+            <stop offset="0.82" stop-color="#949494"/>
+            <stop offset="1" stop-color="#444"/>
+          </linearGradient>
+          <linearGradient id="linear-gradient-2" x1="23.71" y1="127.98" x2="23.71" y2="83.01" xlink:href="#linear-gradient"/>
+          <linearGradient id="linear-gradient-3" x1="20.46" y1="55.66" x2="25.41" y2="55.66" gradientUnits="userSpaceOnUse">
+            <stop offset="0" stop-color="#6b6b6b"/>
+            <stop offset="1" stop-color="#454545"/>
+          </linearGradient>
+          <radialGradient id="radial-gradient" cx="23.05" cy="12.33" fx="31.426365772510508" r="12.04" gradientTransform="translate(1.5 -0.3) scale(0.93 0.93)" gradientUnits="userSpaceOnUse">
+            <stop offset="0" stop-color="#e47f7f"/>
+            <stop offset="0.68" stop-color="#ae292a"/>
+          </radialGradient>
+        </defs>
+        <path id="ring1" d="M0,67.4H7.3a5.1,5.1,0,0,1,5.1,5.1v66.1a5.1,5.1,0,0,1-5.1,5.1H0a0,0,0,0,1,0,0V67.4A0,0,0,0,1,0,67.4Z" fill="url(#linear-gradient)"/>
+        <path id="ring2" d="M12.4,83H29.7A5.3,5.3,0,0,1,35,88.3v34.4a5.3,5.3,0,0,1-5.3,5.3H12.4a0,0,0,0,1,0,0V83A0,0,0,0,1,12.4,83Z" fill="url(#linear-gradient-2)"/>
+        <ellipse id="hole" cx="22.9" cy="88.6" rx="5.9" ry="2.2" fill="#3f3f3f"/>
+        <rect id="stick" x="20.5" y="22.2" width="5" height="66.88" fill="url(#linear-gradient-3)"/>
+        <ellipse id="head" cx="22.9" cy="11.3" rx="11.2" ry="11.3" fill="url(#radial-gradient)"/>
+      </svg>
+
+     </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <div class="spin-section">
+  <main style="border: 2px solid #333;">
+    <div class="slot-machine">
+      <div class="column" *ngFor="let column of columns">
+        <div class="item" *ngFor="let item of column; let rowIndex = index" [ngClass]="{ 'middle': isMiddleRow(rowIndex) && !spinning }">
+          {{ item.symbol }}
+        </div>
+      </div>
+    </div>
+  </main>
+  <p class="spin-info">spin for <i style="color: #ffd700;" class='fas fa-coins'> 1,000</i> • 10/10 spins left</p>
+  <button class="spin-button" (click)="startSpinning()" [disabled]="spinning">Spin</button>
+</div> -->
+
+<!-- Modal -->
+<!-- <div class="modal" *ngIf="showModal">
+  <div class="modal-content">
+    <h2>Total Points: {{ totalPoints }}</h2>
+    <button (click)="reloadPage()">Collect</button>
+  </div>
+</div> -->

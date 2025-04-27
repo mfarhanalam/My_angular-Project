@@ -1,0 +1,744 @@
+body {
+  font-family: Assistant, Helvetica, Arial, sans-serif !important;
+  // webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+.iteamBlock {
+  display: inline-block;
+  width: 64%;
+  padding-right: 20px;
+  border-right: 1px solid #eaeaec;
+  padding-top: 32px;
+}
+
+.addressStrip {
+  margin-bottom: 8px;
+  background-color: #fff6f4;
+  padding: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 4px;
+  border: 1px solid #eaeaec;
+  cursor: pointer;
+
+  & .base-highlight {
+    font-size: 14px;
+    font-weight: 700;
+    padding: 0;
+    margin: 0;
+  }
+
+  & .base-changeBtn {
+    padding: 8px 16px;
+    border: 1px solid #ff3f6c;
+    border-radius: 4px;
+    margin-right: 0;
+    font-size: 12px;
+    font-weight: 700;
+    color: #ff3f6c;
+  }
+}
+
+.headerUndefined {
+  border-radius: 4px;
+  border: 1px solid #eaeaec;
+  padding: 15px 15px 15px 57px;
+  background: #fff;
+  margin-bottom: 12px;
+  position: relative;
+  font-size: 14px;
+  border-left: 4px solid #03a685 !important;
+
+  & .headerIcon {
+    position: absolute;
+    left: 12px;
+    font-size: 35px;
+    top: 12px;
+    height: 36px;
+    width: 29px;
+    transform: rotateY(180deg);
+
+  }
+
+  & .headerMainText {
+    font-weight: 700;
+    margin-bottom: 4px;
+    line-height: 18px;
+    color: #03a685;
+    padding: 0;
+    margin: 0;
+  }
+
+  & .headerInfo {
+    line-height: 19px;
+    color: #7a7b81;
+    padding: 0;
+    margin: 0;
+  }
+}
+
+.messageContainer {
+  display: flex;
+  flex-direction: column;
+
+  & .offers {
+    background: #fff;
+    margin-bottom: 10px;
+    padding: 16px 18px 12px;
+    border: 1px solid #eaeaec;
+    border-radius: 4px;
+    font-size: 13px;
+    position: relative;
+
+    & .discountIcon {
+      position: absolute;
+      width: 18;
+      height: 18;
+      font-size: 13px;
+    }
+
+    & .offerstitle {
+      font-weight: 700;
+      font-size: 14px;
+      margin-left: 30px;
+      margin-bottom: 12px;
+    }
+
+    & .offersMessage {
+      padding-left: 15px;
+      // text-indent: -15px;
+      list-style: none;
+      white-space: normal;
+      margin-bottom: 8px;
+      // color: #d4d5d9;
+      padding-right: 8px;
+    }
+
+    & .offersMore {
+      padding-left: 17px;
+      font-size: 14px;
+      font-weight: 700;
+      text-transform: capitalize;
+      color: #ff3f6c;
+      cursor: pointer;
+      display: inline-block;
+
+      & .arrowIcon {
+        vertical-align: middle;
+        width: 5px;
+        margin-left: 4px;
+        fill: #ff3f6c;
+        font-size: 12px;
+        font-weight: bolder;
+      }
+    }
+  }
+}
+
+.bulkActionStrip {
+  line-height: 15px;
+  display: flex;
+  align-items: center;
+  margin-top: 26px;
+  margin-bottom: 26px;
+  padding: 0 12px 0 10px;
+  font-weight: 700;
+  font-size: 16px;
+  color: #282c3f;
+
+  & .bulkselectionIcon {
+    display: flex;
+    height: 32px;
+    align-items: center;
+    width: 32px;
+    justify-content: center;
+
+    & .activeIcon {
+      accent-color: #ff3f6c;
+      background: #fff;
+      border-radius: 2px;
+    }
+
+  }
+
+  & .bulkmessage {
+    margin-left: 4px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  & .bulkItemSelected {
+    margin-right: 3px;
+    text-transform: uppercase;
+  }
+
+  & .inlineButton {
+    border-top: 0;
+    margin-left: auto;
+  }
+
+  & .bulkButton {
+    width: auto;
+    margin: 0;
+    display: inline-block;
+    width: 40%;
+    text-align: center;
+    margin: 12px 0;
+    font-weight: 700;
+    font-size: 12px;
+    color: #282c3f;
+  }
+
+  & .ButtonRemove {
+    color: #535766;
+    padding: 0 5px 0 15px;
+    height: 32px;
+    font-size: 12px;
+    text-decoration: none;
+    border: none;
+    background: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-family: inherit;
+    line-height: inherit;
+    outline: 0;
+  }
+
+  & .bulkButton:last-child {
+    border-left: 1px solid #d4d5d9;
+  }
+
+  & .ButtonWishlist {
+    padding: 0 15px;
+    color: #535766;
+    height: 32px;
+    font-size: 12px;
+    text-decoration: none;
+    border: none;
+    background: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-family: inherit;
+    line-height: inherit;
+    outline: 0;
+    white-space: nowrap;
+  }
+}
+
+
+.itemMargin {
+  margin-bottom: 0;
+}
+
+.itemBase {
+  position: relative;
+}
+
+.itemContainer-base-item {
+  background: #fff;
+  font-size: 14px;
+  border: 1px solid #eaeaec;
+  border-radius: 4px;
+  position: relative;
+  padding: 12px 12px 0;
+}
+
+.itemLeft {
+  position: absolute;
+}
+
+.selectionIndicator {
+  position: absolute;
+  left: -9px;
+  top: -12px;
+  display: flex;
+  // position: absolute;
+  height: 64px;
+  width: 64px;
+  align-items: center;
+  justify-content: center;
+  // left: 0;
+  // top: 0;
+}
+
+.itemComponentsAnimat {
+  position: absolute;
+  height: 16px;
+  width: 16px;
+  top: 18px;
+  left: 14px;
+}
+
+.activeProduct {
+  accent-color: #ff3f6c;
+  background: #fff;
+  border-radius: 2px
+}
+
+.itemRight {
+  padding-left: 12px;
+  position: relative;
+  min-height: 148px;
+  margin-left: 111px;
+  margin-bottom: 12px;
+}
+
+.itemDetails {
+  min-height: 97px;
+  text-decoration: none;
+  padding-bottom: 0;
+  margin-right: 6px;
+}
+
+.itemBrand {
+  margin-bottom: 4px;
+  width: 80%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  line-height: 16px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.itemContainer-base-itemLink {
+  display: block;
+  text-decoration: none;
+  padding-bottom: 0;
+  margin-right: 6px;
+  width: 80%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  line-height: 16px;
+}
+
+a {
+  color: #282c3f;
+  text-decoration: none;
+  outline: 0;
+  font-size: 13px;
+}
+
+.itemSeller {
+  margin-top: 2px;
+  display: flex;
+  flex-direction: row;
+}
+
+.itemSellerData {
+  font-size: 12px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 62%;
+  display: inline;
+  color: #94969f;
+}
+
+.itemSizeAndQty {
+  padding: 8px 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.sizeAndQty {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: 8px;
+}
+
+.itemSize {
+  display: inline-block;
+  white-space: nowrap;
+  padding: 2px 8px;
+  background: #f5f5f6;
+  color: #282c3f;
+  font-weight: 700;
+  cursor: pointer;
+  margin-right: 12px;
+  border-radius: 2px;
+  line-height: 16px;
+}
+
+.dropDown {
+  font-size: 10px;
+  color: #282c3f;
+  cursor: pointer;
+  margin-left: 5px;
+  position: relative;
+  top: 1px;
+}
+
+.itemQuantity {
+  display: inline-block;
+  white-space: nowrap;
+  padding: 2px 8px;
+  background: #f5f5f6;
+  color: #282c3f;
+  font-weight: 700;
+  cursor: pointer;
+  border-radius: 2px;
+  line-height: 16px;
+}
+
+.lowUnitCount {
+  font-size: 10px;
+  padding: 1px 4px;
+  display: flex;
+  white-space: nowrap;
+  align-items: center;
+  justify-content: center;
+  border-radius: 2px;
+  color: #ff5722;
+  font-weight: 700;
+  border: 1px solid #ff5722;
+}
+
+.itemPrice {
+  display: flex;
+}
+
+.priceBold {
+  font-weight: 700;
+  display: inline-block;
+  color: #282c3f;
+}
+
+.currency {
+  margin-right: 1px;
+  height: 9px;
+}
+
+.discountBlock {
+  display: flex;
+}
+
+.priceStrike {
+  display: inline-block;
+  color: #94969f;
+  padding: 0 8px;
+}
+
+.itemDiscount {
+  color: #f16565;
+}
+
+.returnPeriod {
+  display: inline-flex;
+  font-size: 12px;
+  padding-top: 8px;
+
+  & .returnIcon {
+    padding-top: 2px;
+  }
+
+  & .returnText {
+    margin-left: 6px;
+
+    & .returnDays {
+      font-weight: 700;
+    }
+  }
+}
+
+.closeIcon {
+  position: absolute;
+  top: 13px;
+  right: 13px;
+  width: 14px;
+  height: 14px;
+  cursor: pointer;
+  font-size: 22px;
+}
+
+
+.loginNudge {
+  background: #fff;
+  border: 1px solid #eaeaec;
+  padding: 9px 0 9px 12px;
+  border-radius: 4px;
+  margin-top: 24px;
+  display: flex;
+
+  & .imageBannner {
+    background: none;
+    height: 50px;
+    width: 90px;
+    padding: 0;
+    margin-right: 10px;
+    // width: 140px;
+    // height: 60px;
+    display: inline-block;
+
+    & .imgResponsive {
+      display: block;
+      max-width: 100%;
+      height: auto
+    }
+  }
+
+  & .logiMessage {
+    margin-right: 12px;
+    width: 100%;
+
+    & .nudgeMessage {
+      display: inline-block;
+      font-size: 14px;
+      font-weight: 700;
+      margin-top: 20px;
+    }
+
+    & .loginNow {
+      float: right;
+      color: #ff3f6c;
+      font-size: 12px;
+      margin-top: 22px;
+      font-weight: 700;
+      cursor: pointer;
+    }
+  }
+}
+
+
+// priceBlock
+.priceBlock {
+  vertical-align: top;
+  display: inline-block;
+  padding: 24px 0 0 16px;
+
+  & .couponsHeader {
+    font-size: 12px;
+    font-weight: 700;
+    color: #535766;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+  }
+
+  & .couponsContent {
+    padding-bottom: 12px;
+    position: relative;
+    border-bottom: 1px solid #f5f5f6;
+    padding-left: 36px;
+
+    & .couponIcon {
+      position: absolute;
+      left: 0;
+      top: 4px;
+      font-size: 18px;
+    }
+
+    & .couponsLabel {
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 16px;
+      padding: 7px 0;
+    }
+
+    & .css-15k6cs5 {
+      padding: 4px 16px;
+      font-size: 12px;
+      position: absolute;
+      top: 0px;
+      right: 0px;
+      font-weight: 700;
+      border-radius: 2px;
+      background-color: rgb(255, 255, 255);
+      color: rgb(255, 63, 108);
+      border-color: rgb(255, 63, 108);
+      border-width: 1px;
+      border-style: solid;
+      cursor: pointer;
+
+      & .css-xjhrni {
+        box-sizing: border-box;
+        -webkit-box-align: center;
+        align-items: center;
+        -webkit-box-pack: center;
+        justify-content: center;
+        display: flex;
+      }
+    }
+
+    & .couponMessage {
+      display: inline-block;
+      font-size: 14px;
+      margin-top: 10px;
+
+      & .couponsLogIn {
+        color: #ff3f6c;
+        font-weight: 700;
+        cursor: pointer;
+      }
+    }
+  }
+
+  & .donationStrip {
+    margin: 12px 0 24px;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 12px;
+    color: #535766;
+  }
+
+  & .donationBody {
+    background: #fff;
+    width: 100%;
+    font-size: 14px;
+    border-bottom: 1px solid #f5f5f6;
+    padding-bottom: 24px;
+    margin-bottom: 16px;
+
+    & .donationTitle {
+      display: flex;
+      align-items: center;
+      font-weight: 700;
+
+      & .donationIcon {
+        margin-right: 16px;
+        accent-color: #ff3f6c;
+      }
+    }
+
+    & .donationPill {
+      margin: 20px 0 8px;
+    }
+
+    & .pillView {
+      display: flex;
+      flex-direction: row;
+      font-size: 14px;
+      font-weight: 700;
+
+      & .normalPill {
+        cursor: pointer;
+        border-radius: 40px;
+        margin: 0 8px 12px 0;
+        white-space: nowrap;
+        height: fit-content !important;
+        border: 1px solid #d4d5d9;
+        color: #282c3f;
+
+        & .pillTextStyle {
+          padding: 8px 16px;
+          display: flex;
+          align-items: center;
+          line-height: 1.15;
+        }
+      }
+    }
+
+    & .donationKnowMore {
+      color: #ff3f6c;
+      font-weight: 700;
+      cursor: pointer;
+      width: fit-content;
+    }
+  }
+
+  & .priceBase {
+    margin-bottom: 16px;
+
+    & .priceHeader {
+      font-size: 12px;
+      font-weight: 700;
+      margin: 24px 0 16px;
+      color: #535766;
+    }
+
+    & .priceBreakUp {
+      font-size: 14px;
+
+
+      & .priceDetailRow {
+        margin-bottom: 12px;
+        line-height: 16px;
+      }
+    }
+
+    & .priceDetailValue {
+      float: right;
+    }
+
+    & .priceDetailDiscount {
+      color: #03a685;
+    }
+
+    & .priceDetailAction {
+      font-size: 14px;
+      color: #ff3f6c;
+      cursor: pointer;
+    }
+
+    & .priceInfoText {
+      display: inline-block;
+    }
+
+    & .btnKnow {
+      font-size: 14px;
+      margin-left: 8px;
+      font-weight: 700;
+      border-radius: 2px;
+      border-width: 0px;
+      background-color: transparent;
+      color: rgb(255, 63, 108);
+      padding: 0px;
+      cursor: pointer;
+
+      & .knowM {
+        box-sizing: border-box;
+        -webkit-box-align: center;
+        align-items: center;
+        -webkit-box-pack: center;
+        justify-content: center;
+        display: flex;
+
+      }
+    }
+
+    & .priceValue {
+      float: right;
+    }
+  }
+
+  & .priceCalloutText {
+    color: #686b79;
+    font-size: 12px;
+  }
+
+  & .priceTotal {
+    font-weight: 700;
+    font-size: 15px;
+    padding-top: 16px;
+    border-top: 1px solid #eaeaec;
+    color: #3e4152;
+    line-height: 16px;
+  }
+
+  & .btnPlace {
+    font-size: 14px;
+    padding: 10px 16px;
+    width: 100%;
+    letter-spacing: 1px;
+    font-weight: 700;
+    border-radius: 2px;
+    border-width: 0px;
+    background-color: rgb(255, 63, 108);
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+
+    & .btnDiv {
+      box-sizing: border-box;
+      -webkit-box-align: center;
+      align-items: center;
+      -webkit-box-pack: center;
+      justify-content: center;
+      display: flex;
+    }
+  }
+}

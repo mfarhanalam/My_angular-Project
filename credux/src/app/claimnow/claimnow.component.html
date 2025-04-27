@@ -1,0 +1,59 @@
+<div class="reward-container">
+  <div class="header">
+    <button class="back-button" (click)="backButton()">←</button>
+    <div class="currency">
+      <div class="currency-item">
+        <i class='fas fa-coins'></i>
+        <span>669</span>
+      </div>
+      <div class="currency-item">
+        <i class="bi bi-cash"></i>
+        <span>₹5</span>
+      </div>
+    </div>
+  </div>
+  <div class="title">
+    <h1>win rewards</h1>
+    <h1 style="display: inline-block; margin-right: 8px;">everyday</h1>
+    <span class="date">1 Jun</span>
+  </div>
+  <div class="gift">
+    <div class="reward-image">
+      <img src="../../assets/image/gift.JPG" alt="Reward">
+    </div>
+    <div>
+      <button class="claim-button" (click)="showMessage()">Claim now →</button>
+    </div>
+  </div>
+
+</div>
+<img width="100%" src="../../assets/image/vauchar.png" alt="">
+<div class="vouchers">
+  <div>
+    <p>vouchers</p>
+    <span class="active">active : 5</span>
+  </div>
+  <button class="view-all">view all</button>
+</div>
+
+
+<!-- Modal for the confirmation message -->
+<div class="modal" [ngClass]="{'show': showModal}">
+  <div class="modal-content">
+    <p>Collect Your Gift</p>
+    <button class="collect-button" (click)="collectGift()">Collect</button>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
