@@ -1,0 +1,64 @@
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-1"></div>
+            <div class="col-md-3 mbm d-flex justify-content-center">
+                <div class="footer-info">
+                    <a href=""><img src="../../assets/image/Fi&ds4.png" alt="" class="footer_logo" /></a>
+                    <p>We have much planned for the future, working with great clients and continued software development</p>
+                    <div class="social-icon">
+                        <div class="social-tooltip">
+                          <a href="" ><i class="fab fa-facebook-f"></i></a>
+                          <button class="facebook">Facebook</button>
+                        </div>
+                        <div class="social-tooltip">
+                          <a href=""><i class="fab fa-x-twitter"></i></a>
+                          <button class="twitter">Twitter</button>
+                        </div>
+                        <div class="social-tooltip">
+                          <a href=""><i class="fab fa-linkedin"></i></a>
+                          <button class="linkedin">Linkedln</button>
+                        </div>
+                        <div class="social-tooltip">
+                          <a href=""><i class="fab fa-instagram"></i></a>
+                          <button class="instagram">Instagram</button>
+                        </div>
+                      </div>
+                </div>
+            </div>
+            <div class="col-md-4 mbm d-flex justify-content-center">
+                <div class="quick-links">
+                    <h3>Quick Links</h3>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <ul class="quick__links">
+                                <li (click)="navigateTo('home')" class="bi-chevron-double-right"> Home</li>
+                                <li (click)="navigateTo('about')" class="bi-chevron-double-right"> About</li>
+                                <li (click)="navigateTo('services')" class="bi-chevron-double-right"> Services</li>
+                                <li (click)="navigateTo('team')" class="bi-chevron-double-right"> Team</li>
+                                <li (click)="navigateTo('contact')" class="bi-chevron-double-right"> Contact</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 d-flex justify-content-center">
+                <div>
+                    <h3 style="padding-bottom: 10px;">Contact Us</h3>
+                    <div class="footer-address">
+                      <i class="bi bi-house"></i>&nbsp;
+                      <p>{{addrress}}</p>
+                    </div>
+                    <div class="footer-address">
+                      <i class="bi bi-envelope"></i>&nbsp;
+                      <p>{{mail}}</p>
+                    </div>
+                    <div class="footer-address">
+                      <i class="bi bi-telephone"></i>&nbsp;
+                      <p>{{contact}}</p>
+                    </div>
+                  </div>
+            </div>
+        </div>
+    </div>
+</footer>

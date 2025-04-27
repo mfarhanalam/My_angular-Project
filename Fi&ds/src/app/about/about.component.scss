@@ -1,0 +1,180 @@
+.about {
+    background: #15181E url(../../assets/image/about/background.png) top left/cover no-repeat;
+    width: 100%;
+    height: 50vh;
+    background-size: cover;
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+
+    .imgLeft {
+        position: absolute;
+        bottom: 0;
+        left: 2%;
+    }
+
+    img {
+        height: auto;
+        max-width: 100%;
+    }
+
+    .imgRight {
+        position: absolute;
+        bottom: 0;
+        right: 5%;
+    }
+
+    .t-1 {
+        position: absolute;
+        font-size: 56px;
+        font-weight: 700;
+        color: #fff;
+    }
+}
+
+/* Media query for screens up to 768px width */
+
+@media (max-width: 768px) {
+    .about {
+
+        .imgLeft,
+        .imgRight {
+            display: none;
+        }
+
+        img {
+            display: none;
+        }
+    }
+}
+
+/* Styles for larger screens */
+
+.aboutdiscription {
+    margin-top: 7%;
+    padding: 4%;
+
+    .about-info {
+        h2 {
+            font-size: 40px;
+            font-weight: 500;
+            color: #333333;
+            font-family: "Montserrat";
+            line-height: 39px;
+            text-transform: capitalize;
+        }
+
+        .p-1,
+        .p-2 {
+            margin: 20px 0 25px 0;
+            font-size: 22px;
+            line-height: 29px;
+            padding-right: 35%;
+            font-family: "Catamaran";
+            color: #666666;
+        }
+
+        .p-2 {
+            font-size: 18px;
+        }
+    }
+}
+
+/* Additional styles for specific elements at larger screens */
+
+.aboutdiscriptionImage {
+    margin-top: 10%;
+}
+
+.about-detail {
+    padding: 22px;
+
+    .about-title {
+        h2 {
+            font-size: 40px;
+            font-weight: 500;
+            color: #333333;
+            font-family: "Montserrat";
+            line-height: 39px;
+            text-transform: capitalize;
+        }
+
+        p {
+            margin: 20px 0 25px 0;
+            font-size: 18px;
+            line-height: 29px;
+            font-family: "Catamaran";
+            color: #666666;
+        }
+    }
+
+    .box {
+        -webkit-box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+        box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+        min-height: 100%;
+
+        .tittle {
+            padding: 40px;
+            text-align: center;
+
+            h3 {
+                font-size: 23px;
+                color: #570d12;
+                margin: 15px 0;
+            }
+
+            p {
+                font-size: 17px;
+                line-height: 27px;
+                word-spacing: 1px;
+                color: #666666;
+            }
+
+            .box-icon {
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex;
+                -webkit-box-align: center;
+                -ms-flex-align: center;
+                align-items: center;
+                -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                justify-content: center;
+                margin: 25px 0;
+
+                .icon {
+                    height: 50px;
+                    width: 50px;
+                    display: -webkit-box;
+                    display: -ms-flexbox;
+                    display: flex;
+                    -webkit-box-pack: center;
+                    -ms-flex-pack: center;
+                    justify-content: center;
+                    -webkit-box-align: center;
+                    -ms-flex-align: center;
+                    align-items: center;
+                    border-radius: 50%;
+                    border: 1px solid #570d12;
+                    margin-right: 5px;
+                    color: #000;
+                }
+
+                i {
+                    font-size: 20px;
+                }
+            }
+        }
+
+        .tittle:hover .icon {
+            color: #570d12 !important;
+        }
+    }
+}

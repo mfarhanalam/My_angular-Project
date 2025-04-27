@@ -1,0 +1,279 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+.teamHead {
+    background: #15181E url(../../assets/image/about/background.png) top left/cover no-repeat;
+    width: 100%;
+    height: 50vh;
+    background-size: cover;
+    position: relative;
+
+    display: -webkit-box;
+
+    display: -ms-flexbox;
+
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+
+    .imgLeft {
+        position: absolute;
+        bottom: 0;
+        left: 2%;
+    }
+
+    img {
+        height: auto;
+        max-width: 100%;
+    }
+
+    .imgRight {
+        position: absolute;
+        bottom: 0;
+        right: 5%;
+    }
+
+    .t-1 {
+
+        position: absolute;
+        font-size: 56px;
+        font-weight: 700;
+        color: #fff;
+    }
+
+
+}
+
+@media (max-width:768px) {
+    .teamHead {
+        img {
+            display: none;
+        }
+    }
+}
+
+
+.container {
+    padding: 8px 50px;
+}
+
+.content-section {
+    background-color: #f6fdfe;
+}
+
+a:link,
+a:active,
+a:visited {
+    color: rgba(255, 255, 255, 1);
+}
+
+a:hover {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.gray {
+    color: #a5a5a5;
+}
+
+
+
+.team-member figure {
+    position: relative;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+    border-radius: 16px;
+
+}
+
+.team-member figure img {
+    width: 100%;
+    border-radius: 16px;
+    -o-object-fit: contain;
+    object-fit: contain;
+}
+
+.team-member figcaption p {
+    font-size: 16px;
+}
+
+.team-member figcaption ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.team-member figcaption ul {
+    visibility: visible;
+    -webkit-transition: all 0.1s ease-in-out;
+    -o-transition: all 0.1s ease-in-out;
+    transition: all 0.1s ease-in-out;
+}
+
+.team-member figcaption ul li {
+    display: inline-block;
+    padding: 10px;
+}
+
+.team-member h4 {
+    margin: 10px 0 0;
+    padding: 0;
+    text-align: start;
+    color: #570d12;
+}
+
+.team-member p {
+    text-align: start;
+    font-size: 14px;
+    line-height: 29px;
+    font-family: "Catamaran";
+    color: #311919;
+}
+
+.team-member figcaption {
+    color: transparent;
+    background-color: transparent;
+    position: absolute;
+    z-index: 996;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+    visibility: hidden;
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+
+}
+
+.team-member figure:hover figcaption {
+    visibility: visible;
+    color: #fff;
+    /* Primary color, can be changed via colors.css */
+
+    height: 100%;
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.team-member figure:hover figcaption ul li a:hover {
+    color: rgba(49, 49, 49, .97);
+}
+
+.team-member figure img {
+    -webkit-transform: scale(1) rotate(0) translateY(0);
+    -ms-transform: scale(1) rotate(0) translateY(0);
+    transform: scale(1) rotate(0) translateY(0);
+    -webkit-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+}
+
+.team-member figure:hover img {
+    
+    -webkit-transform: scale(1.1) rotate(1deg) translateY(12px);
+    -ms-transform: scale(1.1) rotate(1deg) translateY(12px);
+    transform: scale(1.1) rotate(1deg) translateY(12px);
+    -webkit-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+}
+
+.img-responsive {
+    height: 350px;
+    width: auto;
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+
+.data {
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 8px;
+    p{
+        color: #fff ;
+    }
+}
+
+.social-link {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 100% !important;
+
+    i {
+        height: 40px;
+        width: 40px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        border-radius: 50%;
+        background-color: #e3e3e3;
+        border: 1px solid transparent;
+        color: #000;
+        margin: 5px;
+        cursor: pointer;
+    }
+}
+
+.social-link i:hover {
+    background-color: #570d12;
+    color: #fff;
+}
+
+
+
+.secondary-header {
+    text-align: start;
+    font-size: 55px;
+    color: #000;
+
+    & label {
+        position: relative;
+    }
+
+    & span {
+        color: #570d12;
+    }
+
+    & span::before {
+        content: '';
+        height: 20px;
+        width: 100%;
+        position: absolute;
+        left: 0;
+        background-size: 100% 100%;
+    }
+}
+
+.captionn {
+    margin: 20px 0 25px 0;
+    font-size: 18px;
+    line-height: 29px;
+    /* padding-right: 35%; */
+    font-family: "Catamaran";
+    color: #666666;
+    text-align: center;
+}

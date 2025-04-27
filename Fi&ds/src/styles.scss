@@ -1,0 +1,78 @@
+/* You can add global styles to this file, and also import other style files */
+@import "primeng/resources/themes/lara-light-blue/theme.css";
+@import "primeng/resources/primeng.css";
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css");
+@import "bootstrap/dist/css/bootstrap.css";
+@import "bootstrap/dist/css/bootstrap.min.css";
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap");
+@import '@fortawesome/fontawesome-free/css/all.min.css';
+
+// @font-face {
+//   font-family: "Digital";
+//   src: url(./Digital\ Bold.ttf) format("truetype");
+// }
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat";
+  }
+
+  html {
+    font-size: 62.5%;
+  }
+  
+  p,
+  a,
+  ul>li,
+  ul>li>a,
+  input,
+  textarea {
+    font-family:"Montserrat";
+    font-weight: var(--font-size-normal);
+  }
+
+:root {
+    --primmary-color: #581111;
+    --secondary-color: #000;
+    --blue-color: #5abceb;
+    --pink-color: #c6549f;
+    --green-color: #64bc46;
+    --darkblue-color: #3b64a0;
+    --white-color: #ffffff;
+    --font-size-normal: 1.3rem;
+    --font-size-larget: 1.8rem;
+    --font-size-extralarge: 2.8rem;
+
+    --img-xl: clamp(250px, 290px, 310px);
+    --img-lg: clamp(150px, 185px, 200px);
+    --img-md: clamp(90px, 100px, 110px);
+    --img-sm: clamp(60px, 70px, 80px);
+    --img-xs: clamp(28px, 32px, 36px);
+  
+    --font-xxl:clamp(60px,130px,180px);
+    --font-xl: clamp(40px, 6vw, 80px);
+    --font-lg: clamp(30px, 4vw, 40px);
+    --font-md: clamp(15px, 3vw, 30px);
+    --font-sm: clamp(14px, 2vw, 16px);
+    --font-xs: clamp(11px, 1vw, 12px);
+    }
+
+
+    .fa-regular,
+.far,
+.fab {
+  font-weight: 600;
+  font-size: 18px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    line-height: 1.1;
+}
+
+.offcanvas-start{
+  width: 80% !important;
+}

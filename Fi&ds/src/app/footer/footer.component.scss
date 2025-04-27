@@ -1,0 +1,220 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+footer {
+    color: var(--secondary-color);
+    position: relative;
+    position: relative;
+    background: -webkit-gradient(linear, left top, left bottom, from(#b69d9d), to(rgba(215, 28, 82, 0)));
+    background: -o-linear-gradient(top, #b69d9d, rgba(215, 28, 82, 0) 100%);
+    background: linear-gradient(180deg, #b69d9d, rgba(215, 28, 82, 0) 100%);
+    padding: 6rem 2rem 5rem 2rem;
+    border-top: none !important;
+    margin-top: 6rem;
+}
+
+
+@-webkit-keyframes animate {
+
+    0%,
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+
+    50% {
+        -webkit-transform: translateY(-5px);
+        transform: translateY(-5px);
+    }
+}
+
+
+@keyframes animate {
+
+    0%,
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+
+    50% {
+        -webkit-transform: translateY(-5px);
+        transform: translateY(-5px);
+    }
+}
+
+footer .footer_logo {
+    width: 60%;
+    margin-bottom: 3rem;
+}
+
+.social-icon {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-top: 35px;
+}
+
+.social-tooltip {
+    position: relative;
+}
+
+.social-tooltip a {
+    height: 40px;
+    width: 40px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    border-radius: 50%;
+    border: 1px solid #c2c0c0;
+    margin-right: 5px;
+    color: #000;
+}
+
+.social-tooltip button {
+    visibility: hidden;
+    position: absolute;
+    -webkit-transition: .4s ease-in-out;
+    -o-transition: .4s ease-in-out;
+    transition: .4s ease-in-out;
+    top: 0;
+    border: 1px solid #e0e0e0;
+    padding: 4px 8px;
+    border-radius: 8px;
+    color: #fff;
+}
+
+.social-tooltip:hover button {
+    visibility: visible;
+    position: absolute;
+    top: -80%;
+    left: 0;
+    -webkit-transition: .4s ease-in-out;
+    -o-transition: .4s ease-in-out;
+    transition: .4s ease-in-out;
+    color: #fff;
+}
+
+.social-tooltip:hover .facebook {
+    background-color: #316FF6;
+}
+
+.social-tooltip:hover .twitter {
+    background-color: #1DA1F2;
+}
+
+.social-tooltip:hover .linkedin {
+    background-color: #0077b5;
+}
+
+.social-tooltip:hover .instagram {
+    background: #f09433;
+    background: -o-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f09433', endColorstr='#bc1888', GradientType=1);
+}
+
+footer h3 {
+    /* margin-bottom: 2rem; */
+    padding-bottom: 0.5rem;
+    letter-spacing: 1px;
+}
+
+footer p {
+    text-align: justify;
+    font-size: var(--font-size-normal);
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    padding-right: 10rem;
+}
+
+footer .quick__links {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+footer .quick__links li {
+    margin: 1rem 0rem;
+}
+
+footer .quick__links li {
+    color: var(--secondary-color);
+    text-decoration: none;
+    padding: .5rem 0rem;
+    font-size: var(--font-size-normal);
+    letter-spacing: 1px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+footer .quick__links li:hover {
+    color: var(--primmary-color);
+}
+
+.info-icon {
+    text-decoration: none;
+    color: black;
+    background-color: #fff !important;
+}
+
+.info-icon:hover {
+    color: #000;
+    text-decoration: none;
+}
+
+
+@media (max-width: 768px) {
+    footer .mbm {
+        margin-bottom: 2.5rem;
+    }
+
+    footer h3 {
+        font-size: var(--font-size-larget);
+    }
+
+    footer .quick__links li a {
+        font-size: 10px;
+    }
+
+
+    .col-md-4 {
+        -webkit-box-pack: start !important;
+        -ms-flex-pack: start !important;
+        justify-content: start !important;
+    }
+}
+
+.footer-address {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 8px 0;
+
+    i {
+        position: absolute;
+        top: 8px;
+        left: 0;
+        font-size: 16px;
+    }
+
+    p {
+        padding-left: 28px;
+    }
+}

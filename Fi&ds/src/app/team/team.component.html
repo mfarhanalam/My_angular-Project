@@ -1,0 +1,53 @@
+<section>
+    <div class="teamHead">
+        <img class="imgLeft" src="../../assets/image/about/image-left.png" alt="">
+        <img class="imgRight" src="../../assets/image/about/Image-right.png" alt="">
+        <h1 class="t-1">Team</h1>
+    </div>
+
+    <!-- Our team Section --> <br />
+<section id="team" class="team content-section" style="background-color: #f6fdfe;">
+    <div class="container">
+        <div class="row text-center">
+            <div class="col-md-12 text-center">
+                <h1 class="secondary-header text-center">Our <label><span>Team </span></label> </h1>
+                <p class="captionn " style="font-weight: 100;">Meet the people who make awesome stuffs.</p>
+            </div><!-- /.col-md-12 -->
+
+            <div class="">
+                <div class="row">
+                    <div class="col-md-4 col-lg-3 col-sm-6 col-xs-6 col-12" *ngFor="let data of teamList">
+                        <div class="team-member ">
+                            <figure>
+                                <img src="{{data.img}}" [style.object-fit]="data.resize || 'initial'" alt=""
+                                    class="img-responsive">
+                                <figcaption>
+                                    <div class="d-flex align-items-center justify-content-center  data">
+                                        <div>
+                                            <p>{{data.status}}</p>
+                                            <div class="social-link">
+                                                <a *ngIf="data.facebook" href="{{data.facebook}}" target="_blank"><i
+                                                        class=" bi bi-facebook "></i></a>
+                                                <a *ngIf="data.twitter" href="{{data.twitter}}" target="_blank"><i
+                                                        class="bi bi-twitter-x "></i></a>
+                                                <a *ngIf="data.linkedLin" href="{{data.linkedLin}}" target="_blank"> <i
+                                                        class="bi bi-linkedin "></i></a>
+                                                <a *ngIf="data.instagram" href="{{data.instagram}}" target="_blank"><i
+                                                        class=" bi bi-instagram "></i></a>
+                                                <a *ngIf="data.instagram" href="{{data.instagram}}" target="_blank"><i
+                                                        class=" bi bi-instagram "></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </figcaption>
+                            </figure>
+                            <h4>{{data.name}}</h4>
+                            <p>{{data.status}}</p>
+                        </div><!-- /.team-member-->
+                    </div><!-- /.col-md-3 -->
+                </div><!-- /.row -->
+            </div><!-- /.container -->
+        </div><!-- /.row -->
+    </div><!-- /.container -->
+</section><!-- /.our-team -->
+</section>

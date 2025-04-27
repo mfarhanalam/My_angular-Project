@@ -1,0 +1,8 @@
+<section style="overflow-x: hidden;">
+    <div class="hidden-overflow">
+        <app-header *ngIf="isShowHeader"></app-header>
+        <router-outlet class="body"></router-outlet>
+        <app-footer *ngIf="isShowFooter"></app-footer>
+    </div>
+
+</section>
