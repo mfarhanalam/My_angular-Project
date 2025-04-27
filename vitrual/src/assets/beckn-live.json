@@ -1,0 +1,14 @@
+{
+    "domain": "nic2004:52110",
+    "country": "IND",
+    "city": "std:080",
+    "core_version": "0.9.4",
+    "domainCategory": "retail",
+    "bap_id": "farm-fresh-bap",
+    "bap_uri": "https://www.farmfresh.gm/bap-network",
+    "bap_ClientUri": "https://www.farmfresh.gm/bap-client/",
+    "bpp_ClientUri": "https://www.farmfresh.gm/bpp-client/",
+    "bpp_id": "farm-fresh-bpp",
+    "bpp_uri": "https://www.farmfresh.gm/bpp-network",
+    "providerId": "farm-fresh-provider-gm"
+}

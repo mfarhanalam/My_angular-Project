@@ -1,0 +1,1359 @@
+(window["webpackJsonp"] = window["webpackJsonp"] || []).push([["main"],{
+
+/***/ "./src/$$_lazy_route_resource lazy recursive":
+/*!**********************************************************!*\
+  !*** ./src/$$_lazy_route_resource lazy namespace object ***!
+  \**********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function webpackEmptyAsyncContext(req) {
+	// Here Promise.resolve().then() is used instead of new Promise() to prevent
+	// uncaught exception popping up in devtools
+	return Promise.resolve().then(function() {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	});
+}
+webpackEmptyAsyncContext.keys = function() { return []; };
+webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+module.exports = webpackEmptyAsyncContext;
+webpackEmptyAsyncContext.id = "./src/$$_lazy_route_resource lazy recursive";
+
+/***/ }),
+
+/***/ "./src/app/aboutus/aboutus.component.html":
+/*!************************************************!*\
+  !*** ./src/app/aboutus/aboutus.component.html ***!
+  \************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<!-- TEST PARALLAX START HERE -->\n<div class=\"parallax2\" style=\"margin-top: 50px\">\n  <h2 class=\"hed\">BIZMOBIA A SOFTWARE COMPANY</h2>\n  <br>\n  <p class=\"para2\">\n    It has more than 5 years of experience in Software & Mobile Application Development & Mobile Content field. BizMobia, India's\n    one of the big known Software Company. BizMobia is associated with more than 20 mobile operators in 30 countries including\n    India, SEA and MEA. We have more than 1 billion successful downloads.\n  </p>\n</div>\n\n<!-- TEST PARALLAX END HERE -->\n\n\n\n\n<!-- Sections -->\n<section id=\"business\" class=\"portfolio sections\">\n    <div style=\"text-align: center\">PLEASE HOVER THE MOUSE ON THE BELOW GIVEN IMAGES TO VIEW DETAILS</div>\n    <br><br>\n  <div class=\"container\">\n\n    <div class=\"row\">\n      <div class=\"portfolio-wrapper text-center\">\n        <div class=\"col-md-4 col-sm-6 col-xs-12\">\n          <!-- <div class=\"community-edition\"> -->\n          <div class=\"containerz\">\n            <img src=\"assets/images/officenew.jpg\" alt=\"Avatar\" class=\"imagez\">\n            <div class=\"overlayz\">\n              <div class=\"textz\">WHO WE ARE?</div>\n              <div class=\"para\">\n                The expert group of talented professionals in BizMobia team works closely with the clients to build, run and leverage solutions\n                that help businesses.\n              </div>\n            </div>\n          </div>\n          <!-- </div> -->\n        </div>\n\n        <div class=\"col-md-4 col-sm-6 col-xs-12 smallhide\">\n          <div class=\"containerz\">\n            <img src=\"assets/images/ip3.jpg\" alt=\"Avatar\" class=\"imagez\">\n            <div class=\"overlayz\">\n              <div class=\"textz\">WHY CHOOSE US?</div>\n              <div class=\"para\">\n                We love what we do, some might say a bit too much, and we bring enthusiasm and commitment to every project we work on.\n              </div>\n            </div>\n          </div>\n        </div>\n\n        <div class=\"col-md-4 col-sm-6 col-xs-12 flowrightt\">\n          <div class=\"containerz\">\n            <img src=\"assets/images/mission.jpg\" alt=\"Avatar\" class=\"imagez\">\n            <div class=\"overlayz\">\n              <div class=\"textz\">OUR MISSION</div>\n              <div class=\"para\">\n                Our mission is to enhancing the business growth of our customers with creative Design and Development to deliver market-defining\n                high-quality solutions.\n              </div>\n            </div>\n          </div>\n        </div>\n\n\n\n\n      </div>\n    </div>\n\n  </div>\n  <!-- /container -->\n</section>\n\n\n<div class=\"parallax3\">\n  <div class=\"overl\">\n      <div class=\"row slideanim\">\n          <div class=\"col-sm-6 \">\n            <!-- <span class=\"fa fa-refresh logo-small\"></span> -->\n            <h4>\n              <li class=\"fa fa-mobile\"></li> &nbsp;&nbsp;100% Responsive</h4>\n              <p class=\"para3\">We will leverage our responsive design expertise and avail you engage your customers with fluid design, flexible images and overall simplicity. Reach your customers on multiple touch points \n                  to increment your conversions and grow your business today, tomorrow and in the years to come..\n                </p>\n          </div>\n          <div class=\"col-sm-6 \">\n            <h4>\n              <li class=\"fa fa-code\"></li> &nbsp;&nbsp;Simple &amp; Clean Code</h4>\n              <p class=\"para3\">\n                  We develop clear neat web application and website scripts with HTML5 / CSS3 / JS to give you best in website development to attract your clients.\n                  “A long descriptive name is better than a short enigmatic name. A long descriptive name is better than a long descriptive comment.”\n              </p>\n          </div>\n        </div> \n  </div>\n</div>\n\n\n<!-- Sections -->\n<section id=\"business\" class=\"portfolio sections\" style=\"padding-top: 100px !important;\">\n  <div class=\"container\">\n    <div class=\"row\">\n      <div class=\"portfolio-wrapper text-center\">\n        <div class=\"col-md-3 col-sm-6 col-xs-12\">\n          <div class=\"community-edition\">\n            <i class=\"fa fa-laptop\"></i>\n            <div class=\"separator\"></div>\n            <h4>WEB DESIGNING</h4>\n            <h5></h5>\n            <p style=\"font-size: 14px;\">\n              We have smart working web designer who develop world class web site as well as web applications and meet the requirement\n              of the customer as per their wishes.\n            </p>\n          </div>\n        </div>\n\n        <div class=\"col-md-3 col-sm-6 col-xs-12\">\n          <div class=\"community-edition\">\n            <i class=\"fa fa-desktop\"></i>\n            <div class=\"separator\"></div>\n            <h4>SOFTWARE DEVELOPMENT</h4>\n            <h5></h5>\n            <p style=\"font-size: 14px;\">\n              We have smart working developers who develop world class web site as well as web applications and meet the requirement of\n              the customer as per their wishes.\n            </p>\n          </div>\n        </div>\n\n        <div class=\"col-md-3 col-sm-6 col-xs-12\">\n          <div class=\"community-edition\">\n            <i class=\"fa fa-mobile\"></i>\n            <div class=\"separator\"></div>\n            <h4>MOBILE APPLICATION</h4>\n            <h5></h5>\n            <p style=\"font-size: 14px;\">\n              We have smart working mobile developer who develop world class iOS apps and Android apps and meet the requirement of the\n              customer as per their wishes.\n            </p>\n          </div>\n        </div>\n\n        <div class=\"col-md-3 col-sm-6 col-xs-12\">\n          <div class=\"community-edition\">\n            <i class=\"fa fa-phone\"></i>\n            <div class=\"separator\"></div>\n            <h4>GREAT SUPPORT</h4>\n            <h5></h5>\n            <p style=\"font-size: 14px;\">\n              We provide 24/7 Customer Support to our clients to feel free any time to get support with our developer team. \"Our Customer's\n              Perception is our Reality.\"\n            </p>\n          </div>\n        </div>\n\n      </div>\n    </div>\n  </div>\n  <!-- /container -->\n</section>"
+
+/***/ }),
+
+/***/ "./src/app/aboutus/aboutus.component.scss":
+/*!************************************************!*\
+  !*** ./src/app/aboutus/aboutus.component.scss ***!
+  \************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = ".parallax2 {\n  /* The image used */\n  background-image: url(\"/assets/images/title2.jpg\");\n  /* Set a specific height */\n  min-height: 270px;\n  /* Create the parallax scrolling effect */\n  background-attachment: fixed;\n  background-position: center;\n  background-repeat: no-repeat;\n  background-size: cover;\n  text-align: center;\n  vertical-align: middle; }\n\n.parallax3 {\n  /* The image used */\n  background-image: url(\"/assets/images/homebg.jpg\");\n  /* Set a specific height */\n  min-height: 270px;\n  /* Create the parallax scrolling effect */\n  background-attachment: fixed;\n  background-position: center;\n  background-repeat: no-repeat;\n  background-size: cover;\n  text-align: center;\n  vertical-align: middle;\n  z-index: 1; }\n\n.overl {\n  position: absolute;\n  z-index: 2;\n  width: 100%;\n  height: 270px;\n  opacity: 0.7;\n  background-color: #094464; }\n\n.hed {\n  padding-top: 79px;\n  font-weight: bold;\n  color: white; }\n\n.para2 {\n  color: #ffffff;\n  background-color: #01baf38f;\n  padding: 15px; }\n\n.containerz {\n  position: relative;\n  width: 100%;\n  margin-bottom: 10px; }\n\n.imagez {\n  display: block;\n  width: 100%;\n  height: 300px; }\n\n.overlayz {\n  position: absolute;\n  bottom: 0;\n  left: 0;\n  right: 0;\n  background-color: #0f5c86cc;\n  overflow: hidden;\n  width: 100%;\n  height: 100%;\n  -webkit-transform: scale(0);\n  transform: scale(0);\n  transition: .3s ease; }\n\n.containerz:hover .overlayz {\n  -webkit-transform: scale(1);\n  transform: scale(1); }\n\n.textz {\n  color: white;\n  font-size: 20px;\n  position: absolute;\n  top: 20%;\n  left: 50%;\n  -webkit-transform: translate(-50%, -50%);\n  transform: translate(-50%, -50%);\n  text-align: center;\n  white-space: nowrap;\n  border: 1px solid #ffffff;\n  padding: 15px;\n  width: 80%; }\n\n.para {\n  color: white;\n  font-size: 15px;\n  position: absolute;\n  top: 60%;\n  left: 50%;\n  -webkit-transform: translate(-50%, -50%);\n  transform: translate(-50%, -50%);\n  text-align: justify; }\n\n.community-edition i {\n  font-size: 60px;\n  color: #2b6dca;\n  margin-bottom: 20px; }\n\n.community-edition:hover {\n  background-color: #aee8f9;\n  color: #515151; }\n\n.slideanim {\n  padding-top: 40px;\n  color: #ffffff; }\n\n.para3 {\n  text-align: justify;\n  padding: 30px; }\n"
+
+/***/ }),
+
+/***/ "./src/app/aboutus/aboutus.component.ts":
+/*!**********************************************!*\
+  !*** ./src/app/aboutus/aboutus.component.ts ***!
+  \**********************************************/
+/*! exports provided: AboutusComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AboutusComponent", function() { return AboutusComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var AboutusComponent = /** @class */ (function () {
+    function AboutusComponent() {
+    }
+    AboutusComponent.prototype.ngOnInit = function () {
+    };
+    AboutusComponent = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+            selector: 'app-aboutus',
+            template: __webpack_require__(/*! ./aboutus.component.html */ "./src/app/aboutus/aboutus.component.html"),
+            styles: [__webpack_require__(/*! ./aboutus.component.scss */ "./src/app/aboutus/aboutus.component.scss")]
+        }),
+        __metadata("design:paramtypes", [])
+    ], AboutusComponent);
+    return AboutusComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/app-routing.module.ts":
+/*!***************************************!*\
+  !*** ./src/app/app-routing.module.ts ***!
+  \***************************************/
+/*! exports provided: AppRoutingModule */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AppRoutingModule", function() { return AppRoutingModule; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
+/* harmony import */ var _clients_clients_component__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./clients/clients.component */ "./src/app/clients/clients.component.ts");
+/* harmony import */ var _home_home_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./home/home.component */ "./src/app/home/home.component.ts");
+/* harmony import */ var _career_career_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./career/career.component */ "./src/app/career/career.component.ts");
+/* harmony import */ var _contactus_contactus_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./contactus/contactus.component */ "./src/app/contactus/contactus.component.ts");
+/* harmony import */ var _products_products_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./products/products.component */ "./src/app/products/products.component.ts");
+/* harmony import */ var _services_services_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./services/services.component */ "./src/app/services/services.component.ts");
+/* harmony import */ var _aboutus_aboutus_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./aboutus/aboutus.component */ "./src/app/aboutus/aboutus.component.ts");
+/* harmony import */ var _privacy_privacy_component__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./privacy/privacy.component */ "./src/app/privacy/privacy.component.ts");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+
+
+
+
+
+
+
+
+
+
+var routes = [
+    {
+        path: '',
+        component: _home_home_component__WEBPACK_IMPORTED_MODULE_3__["HomeComponent"]
+    },
+    {
+        path: 'home',
+        component: _home_home_component__WEBPACK_IMPORTED_MODULE_3__["HomeComponent"]
+    },
+    {
+        path: 'clients',
+        component: _clients_clients_component__WEBPACK_IMPORTED_MODULE_2__["ClientsComponent"]
+    },
+    {
+        path: 'careers',
+        component: _career_career_component__WEBPACK_IMPORTED_MODULE_4__["CareerComponent"]
+    },
+    {
+        path: 'contactus',
+        component: _contactus_contactus_component__WEBPACK_IMPORTED_MODULE_5__["ContactusComponent"]
+    },
+    {
+        path: 'products',
+        component: _products_products_component__WEBPACK_IMPORTED_MODULE_6__["ProductsComponent"]
+    },
+    {
+        path: 'services',
+        component: _services_services_component__WEBPACK_IMPORTED_MODULE_7__["ServicesComponent"]
+    },
+    {
+        path: 'aboutus',
+        component: _aboutus_aboutus_component__WEBPACK_IMPORTED_MODULE_8__["AboutusComponent"]
+    },
+    {
+        path: 'privacy',
+        component: _privacy_privacy_component__WEBPACK_IMPORTED_MODULE_9__["PrivacyComponent"]
+    },
+];
+var AppRoutingModule = /** @class */ (function () {
+    function AppRoutingModule() {
+    }
+    AppRoutingModule = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["NgModule"])({
+            imports: [_angular_router__WEBPACK_IMPORTED_MODULE_1__["RouterModule"].forRoot(routes)],
+            exports: [_angular_router__WEBPACK_IMPORTED_MODULE_1__["RouterModule"]]
+        })
+    ], AppRoutingModule);
+    return AppRoutingModule;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/app.component.html":
+/*!************************************!*\
+  !*** ./src/app/app.component.html ***!
+  \************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<div class=\"row\">\n  <div class=\"col-md-12\">\n    <app-header></app-header>\n  </div>\n</div>\n\n<div class=\"col-md-12\" class=\"bg\">\n  <div class=\"row\">\n    <div id=\"loader\" style=\"z-index: 10;\"></div>\n    <router-outlet></router-outlet>\n  </div>\n</div>\n<div class=\"row\">\n  <div class=\"col-md-12\">\n    <app-footer></app-footer>\n  </div>\n</div>\n\n<!-- <app-products></app-products> -->"
+
+/***/ }),
+
+/***/ "./src/app/app.component.scss":
+/*!************************************!*\
+  !*** ./src/app/app.component.scss ***!
+  \************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = ""
+
+/***/ }),
+
+/***/ "./src/app/app.component.ts":
+/*!**********************************!*\
+  !*** ./src/app/app.component.ts ***!
+  \**********************************/
+/*! exports provided: AppComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AppComponent", function() { return AppComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+
+var AppComponent = /** @class */ (function () {
+    function AppComponent() {
+        this.title = 'bizmobia';
+    }
+    AppComponent = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+            selector: 'app-root',
+            template: __webpack_require__(/*! ./app.component.html */ "./src/app/app.component.html"),
+            styles: [__webpack_require__(/*! ./app.component.scss */ "./src/app/app.component.scss")]
+        })
+    ], AppComponent);
+    return AppComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/app.module.ts":
+/*!*******************************!*\
+  !*** ./src/app/app.module.ts ***!
+  \*******************************/
+/*! exports provided: AppModule */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AppModule", function() { return AppModule; });
+/* harmony import */ var _angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/platform-browser */ "./node_modules/@angular/platform-browser/fesm5/platform-browser.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/fesm5/forms.js");
+/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm5/http.js");
+/* harmony import */ var _angular_http__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/http */ "./node_modules/@angular/http/fesm5/http.js");
+/* harmony import */ var _app_routing_module__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./app-routing.module */ "./src/app/app-routing.module.ts");
+/* harmony import */ var _app_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./app.component */ "./src/app/app.component.ts");
+/* harmony import */ var _header_header_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./header/header.component */ "./src/app/header/header.component.ts");
+/* harmony import */ var _footer_footer_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./footer/footer.component */ "./src/app/footer/footer.component.ts");
+/* harmony import */ var _home_home_component__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./home/home.component */ "./src/app/home/home.component.ts");
+/* harmony import */ var _products_products_component__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./products/products.component */ "./src/app/products/products.component.ts");
+/* harmony import */ var _services_services_component__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./services/services.component */ "./src/app/services/services.component.ts");
+/* harmony import */ var _aboutus_aboutus_component__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./aboutus/aboutus.component */ "./src/app/aboutus/aboutus.component.ts");
+/* harmony import */ var _careers_careers_component__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./careers/careers.component */ "./src/app/careers/careers.component.ts");
+/* harmony import */ var _career_career_component__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./career/career.component */ "./src/app/career/career.component.ts");
+/* harmony import */ var _contactus_contactus_component__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./contactus/contactus.component */ "./src/app/contactus/contactus.component.ts");
+/* harmony import */ var _clients_clients_component__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./clients/clients.component */ "./src/app/clients/clients.component.ts");
+/* harmony import */ var _privacy_privacy_component__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./privacy/privacy.component */ "./src/app/privacy/privacy.component.ts");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+var AppModule = /** @class */ (function () {
+    function AppModule() {
+    }
+    AppModule = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["NgModule"])({
+            declarations: [
+                _app_component__WEBPACK_IMPORTED_MODULE_6__["AppComponent"],
+                _header_header_component__WEBPACK_IMPORTED_MODULE_7__["HeaderComponent"],
+                _footer_footer_component__WEBPACK_IMPORTED_MODULE_8__["FooterComponent"],
+                _home_home_component__WEBPACK_IMPORTED_MODULE_9__["HomeComponent"],
+                _products_products_component__WEBPACK_IMPORTED_MODULE_10__["ProductsComponent"],
+                _services_services_component__WEBPACK_IMPORTED_MODULE_11__["ServicesComponent"],
+                _aboutus_aboutus_component__WEBPACK_IMPORTED_MODULE_12__["AboutusComponent"],
+                _careers_careers_component__WEBPACK_IMPORTED_MODULE_13__["CareersComponent"],
+                _career_career_component__WEBPACK_IMPORTED_MODULE_14__["CareerComponent"],
+                _contactus_contactus_component__WEBPACK_IMPORTED_MODULE_15__["ContactusComponent"],
+                _clients_clients_component__WEBPACK_IMPORTED_MODULE_16__["ClientsComponent"],
+                _privacy_privacy_component__WEBPACK_IMPORTED_MODULE_17__["PrivacyComponent"]
+            ],
+            imports: [
+                _angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"],
+                _angular_forms__WEBPACK_IMPORTED_MODULE_2__["FormsModule"],
+                _angular_forms__WEBPACK_IMPORTED_MODULE_2__["ReactiveFormsModule"],
+                _angular_http__WEBPACK_IMPORTED_MODULE_4__["HttpModule"],
+                _angular_common_http__WEBPACK_IMPORTED_MODULE_3__["HttpClientModule"],
+                _app_routing_module__WEBPACK_IMPORTED_MODULE_5__["AppRoutingModule"]
+            ],
+            providers: [],
+            bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_6__["AppComponent"]]
+        })
+    ], AppModule);
+    return AppModule;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/career/career.component.html":
+/*!**********************************************!*\
+  !*** ./src/app/career/career.component.html ***!
+  \**********************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<div *ngIf=\"myCheck2\" class=\"overlay\"></div>\n\n<div style=\"position: relative;margin-top: 90px\">\n  <div class=\"parallax1\">\n    <div class=\"overl\">\n      <div class=\"row slideanim\">\n        <br>\n        <h1>Careers</h1>\n      </div> \n    </div>\n  </div>\n  <!-- <br> -->\n  <div class=\"row parallax2\">\n    <div class=\"col-md-2\"></div>\n    <div class=\"col-md-8\">\n      <br>\n      <br>\n      <br>\n      <div  style=\"text-align:center ;color:#fff;\"><strong>Current Opening</strong></div>\n      <div style=\"border: 25px solid #e5e7ecc5;margin-bottom: 50px;overflow-x:auto\">\n        <ul class=\"nav nav-tabs\">\n          <li class=\"active\" *ngFor=\"let webApp1 of firstjobList\">\n            <a data-toggle=\"tab\" href=\"#{{webApp1.id}}\"><strong>{{webApp1.title}}</strong></a>\n          </li>\n          <li *ngFor=\"let webApp of jobList\">\n            <a data-toggle=\"tab\" href=\"#{{webApp.id}}\"><strong>|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{webApp.title}}</strong></a>\n          </li>\n        </ul>\n        <div class=\"tab-content bgc pad\" >\n\n          <div id=\"{{webApp1.id}}\" class=\"tab-pane fade in active\" *ngFor=\"let webApp1 of firstjobList\">\n            <h4>{{firstjob.title}}</h4>\n            <table align=\"center\" border=\"1\" style=\"width: 99%;background-color: #fff\" class=\"border\" class=\"table-responsive\">\n              <tr>\n                <th>\n                  Designation\n                </th>\n                <th>\n                  Required Skills\n                </th>\n                <th style=\"white-space: nowrap\">\n                  Number of Openings\n                </th>\n                <th style=\"white-space: nowrap\">\n                  Experience Required\n                </th>\n              </tr>\n              <tr>\n                <td>\n                  {{webApp1.description}}\n                </td>\n                <td align=\"left\" style=\"text-align: justify\">\n                  {{webApp1.skills}}\n                </td>\n                <td align=\"center\">\n                  {{webApp1.noofpositions}}\n                </td>\n                <td align=\"center\">\n                  {{webApp1.experience}}\n                </td>\n              </tr>\n              <tr>\n                <td colspan=\"4\" align=\"center\">\n                  <button class=\"btn btn-info apply\" (click)=\"m1(webApp1)\">Apply Now</button>\n                </td>\n              </tr>\n            </table>\n          </div>\n          <div id=\"{{webApp.id}}\" class=\"tab-pane fade\" *ngFor=\"let webApp of jobList\">\n            <h4>{{webApp.title}}</h4>\n            <table align=\"center\" border=\"1\" style=\"width: 99%;background-color: #fff\" class=\"border\">\n              <tr>\n                <th>\n                  Designation\n                </th>\n                <th>\n                  Required Skills\n                </th>\n                <th style=\"white-space: nowrap\">\n                  Number of Openings\n                </th>\n                <th style=\"white-space: nowrap\">\n                  Experience Required\n                </th>\n              </tr>\n              <tr>\n                <td>\n                  {{webApp.description}}\n                </td>\n                <td align=\"left\" style=\"text-align: justify\">\n                  {{webApp.skills}}\n                </td>\n                <td align=\"center\">\n                  {{webApp.noofpositions}}\n                </td>\n                <td align=\"center\">\n                  {{webApp.experience}}\n                </td>\n              </tr>\n              <tr>\n                <td colspan=\"4\" align=\"center\">\n                  <button class=\"btn btn-info apply\" (click)=\"m1(webApp)\">Apply Now</button>\n                </td>\n              </tr>\n            </table>\n          </div>\n        </div>\n      </div>\n    </div>\n    <div class=\"col-md-2\"></div>\n  </div>\n  <br>\n\n  <div class=\"light \" *ngIf=\"myCheck\">\n    <div class=\"title\">\n      <span style=\"float:left;\">Fillup Details</span>\n      <span style=\"float:right;cursor:default\" (click)=\"m2()\">&times;</span>\n    </div>\n    <div class=\"details\">\n      <form (ngSubmit)=\"postJob()\" #job=\"ngForm\" novalidate>\n        <table style=\"width: 100%;\">\n          <tr>\n            <td>\n              <div class=\"form-group\">\n                <input type=\"text\" class=\"form-control\" name=\"applicantname\" [(ngModel)]=\"postJobObj.applicantname\" #applicantname=\"ngModel\"\n                  placeholder=\"Please Enter Name\" required minlength=\"3\" />\n              </div>\n            </td>\n            <td>\n              <div class=\"form-group\">\n                <input type=\"text\" class=\"form-control\" name=\"applicantphoneno\" [(ngModel)]=\"postJobObj.applicantphoneno\" #applicantphoneno=\"ngModel\"\n                  placeholder=\"Plesae Enter Mobile Number\" required minlength=\"3\" />\n              </div>\n            </td>\n          </tr>\n          <tr>\n            <td>\n              <input type=\"text\" class=\"form-control\" name=\"applicantemail\" [(ngModel)]=\"postJobObj.applicantemail\" #applicantemail=\"ngModel\"\n                placeholder=\"Please Enter E-Mail ID\" required minlength=\"3\" />\n            </td>\n            <td>\n              <input type=\"text\" class=\"form-control\" name=\"address\" [(ngModel)]=\"postJobObj.address\" #address=\"ngModel\" placeholder=\"Please Enter Address\"\n                required minlength=\"3\" />\n            </td>\n          </tr>\n          <tr>\n            <td>\n              \n              <input type=\"radio\" value=\"Male\" id=\"gender1\" name=\"gender\" [(ngModel)]=\"postJobObj.gender\" #gender=\"ngModel\" \n                required>\n              <label for=\"gender1\">Male</label>\n              <input type=\"radio\" id=\"gender2\" value=\"Female\" name=\"gender\" [(ngModel)]=\"postJobObj.gender\" #gender=\"ngModel\"\n                required>\n              <label for=\"gender2\">Female</label>\n            </td>\n            <td>\n              <input type=\"text\" class=\"form-control\" name=\"higestqualification\" [(ngModel)]=\"postJobObj.higestqualification\" #higestqualification=\"ngModel\"\n                placeholder=\"Highest Educational Qualification\" required minlength=\"3\" />\n            </td>\n          </tr>\n          <tr>\n            <td>\n              <input type=\"text\" class=\"form-control\" name=\"expectedsalary\" [(ngModel)]=\"postJobObj.expectedsalary\" #expectedsalary=\"ngModel\"\n                placeholder=\"Expected Salary\" required minlength=\"3\" />\n            </td>\n            <td>\n              <input type=\"text\" class=\"form-control\" name=\"experience\" [(ngModel)]=\"postJobObj.experience\" #experience=\"ngModel\" placeholder=\"Experience\"\n              />\n            </td>\n          </tr>\n          <tr>\n            <td align=\"left\">\n              <table>\n                <tr>\n                  <td>\n                    Please Upload Your Resume\n                  </td>\n                </tr>\n                <tr>\n                  <td>\n                    <div class=\"form-group\">\n                      <input type=\"file\" id=\"avatar\" (change)=\"onFileChange($event)\" #fileInput/>\n                    </div>\n                  </td>\n                </tr>\n                <tr>\n                  <td>\n                    .Doc, .Docx or .PDF file only!\n                  </td>\n                </tr>\n              </table>\n            </td>\n            <td align=\"right\" style=\"vertical-align: bottom;\">\n              <table>\n                <tr>\n                  <td>\n                    <button type=\"submit\" class=\"btn btn-info apply\">Apply</button>\n                  </td>\n                  <td>\n                    <button class=\"btn btn-info apply\" (click)=\"m2()\">Cancel</button>\n                  </td>\n                </tr>\n              </table>\n            </td>\n          </tr>\n        </table>\n      </form>\n      <!-- <button (click)=\"m2()\">Salim</button> -->\n    </div>\n  </div>"
+
+/***/ }),
+
+/***/ "./src/app/career/career.component.scss":
+/*!**********************************************!*\
+  !*** ./src/app/career/career.component.scss ***!
+  \**********************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = ".parallax1 {\n  background-image: url(\"/assets/images/cr4k.jpg\");\n  height: 600px;\n  background-attachment: fixed;\n  background-position: center;\n  background-repeat: no-repeat;\n  background-size: cover;\n  text-align: center;\n  vertical-align: middle;\n  z-index: 1; }\n\n.parallax2 {\n  background-image: url(\"/assets/images/careerimg1.png\");\n  background-attachment: fixed;\n  background-position: center;\n  background-repeat: no-repeat;\n  background-size: cover;\n  text-align: center;\n  vertical-align: middle;\n  z-index: 1; }\n\n.slideanim {\n  padding-top: 45px;\n  color: #ffffff; }\n\ntable, tr, th, td {\n  padding: 10px; }\n\n.apply {\n  width: 110px;\n  height: 33px;\n  padding-top: 3px; }\n\n.border {\n  border: 1px solid #c9c9c9; }\n\n.overlay {\n  width: 100%;\n  height: 100%;\n  background-color: black;\n  opacity: 0.7;\n  position: fixed;\n  z-index: 2; }\n\n.light {\n  transition: all linear 0.9s;\n  background-color: #ffffff65;\n  max-height: 530px;\n  width: 80%;\n  position: fixed;\n  top: 13%;\n  left: 10%;\n  border: 15px solid #ffffff13;\n  overflow-y: auto;\n  z-index: 3; }\n\n.ng-hide {\n  height: 0;\n  width: 0;\n  top: -200px;\n  left: 650px; }\n\n.title {\n  width: 100%;\n  background-color: #00baf2;\n  color: #ffffff;\n  float: left;\n  padding: 10px 6px; }\n\n.details {\n  width: 100%;\n  background-color: #ffffff;\n  float: left;\n  padding: 12px 16px; }\n\n.nav {\n  background-color: #ffffff; }\n\n.bgc {\n  background-color: #ffffff; }\n\n.pad {\n  padding: 5px 1px;\n  opacity: 0.9; }\n"
+
+/***/ }),
+
+/***/ "./src/app/career/career.component.ts":
+/*!********************************************!*\
+  !*** ./src/app/career/career.component.ts ***!
+  \********************************************/
+/*! exports provided: CareerComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CareerComponent", function() { return CareerComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/fesm5/forms.js");
+/* harmony import */ var _career_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./career.service */ "./src/app/career/career.service.ts");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+var CareerComponent = /** @class */ (function () {
+    function CareerComponent(fb, careerService, router) {
+        this.fb = fb;
+        this.careerService = careerService;
+        this.router = router;
+        this.loading = false;
+        this.createForm();
+    }
+    CareerComponent.prototype.createForm = function () {
+        this.form = this.fb.group({
+            name: ['', _angular_forms__WEBPACK_IMPORTED_MODULE_1__["Validators"].required],
+            avatar: null
+        });
+    };
+    CareerComponent.prototype.ngOnInit = function () {
+        var _this = this;
+        this.postJobObj = {};
+        this.jobList = [];
+        this.firstjobList = [];
+        this.firstjob = {};
+        this.remainingjobList = [];
+        this.careerService.getAllJobList().subscribe(function (data) {
+            // this.firstjobList = data;
+            _this.jobList = data;
+            var start_index = 0;
+            var number_of_elements_to_remove = 1;
+            _this.firstjobList = _this.jobList.splice(start_index, number_of_elements_to_remove);
+            console.log(_this.jobList);
+            console.log(_this.firstjobList);
+        }, function (error) {
+            console.log('error', error);
+        });
+    };
+    CareerComponent.prototype.postJob = function () {
+        var _this = this;
+        var formModel = this.form.value;
+        this.postJobObj.jobid = this.jobObj.id;
+        this.reqObj = {
+            jobObj: this.postJobObj,
+            imageObj: formModel.avatar
+        };
+        console.log(this.reqObj);
+        this.careerService.postJob(this.reqObj).subscribe(function (data) {
+            _this.successResponse = data;
+            console.log(_this.successResponse);
+            console.log(_this.successResponse.status);
+            if (_this.successResponse.status === 0) {
+                alert(_this.successResponse.message);
+                _this.router.navigateByUrl('careers');
+            }
+            else if (_this.successResponse.status === 1) {
+                alert(_this.successResponse.message);
+            }
+            else if (_this.successResponse.status === 2) {
+                alert(_this.successResponse.message);
+            }
+            else if (_this.successResponse.status === 3) {
+                alert(_this.successResponse.message);
+            }
+        }, function (error) {
+            console.log('error', error);
+        });
+    };
+    CareerComponent.prototype.m1 = function (webApp1) {
+        this.myCheck = true;
+        this.myCheck2 = true;
+        this.jobObj = webApp1;
+        console.log(this.jobObj);
+    };
+    CareerComponent.prototype.m2 = function () {
+        this.myCheck = false;
+        this.myCheck2 = false;
+    };
+    CareerComponent.prototype.onFileChange = function (event) {
+        var _this = this;
+        var reader = new FileReader();
+        if (event.target.files && event.target.files.length > 0) {
+            var file_1 = event.target.files[0];
+            reader.readAsDataURL(file_1);
+            reader.onload = function () {
+                _this.form.get('avatar').setValue({
+                    filename: file_1.name,
+                    filetype: file_1.type,
+                    value: reader.result.split(',')[1]
+                });
+            };
+        }
+    };
+    __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ViewChild"])('fileInput'),
+        __metadata("design:type", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ElementRef"])
+    ], CareerComponent.prototype, "fileInput", void 0);
+    CareerComponent = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+            selector: 'app-career',
+            template: __webpack_require__(/*! ./career.component.html */ "./src/app/career/career.component.html"),
+            styles: [__webpack_require__(/*! ./career.component.scss */ "./src/app/career/career.component.scss")]
+        }),
+        __metadata("design:paramtypes", [_angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormBuilder"], _career_service__WEBPACK_IMPORTED_MODULE_2__["CareerService"], _angular_router__WEBPACK_IMPORTED_MODULE_3__["Router"]])
+    ], CareerComponent);
+    return CareerComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/career/career.service.ts":
+/*!******************************************!*\
+  !*** ./src/app/career/career.service.ts ***!
+  \******************************************/
+/*! exports provided: CareerService */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CareerService", function() { return CareerService; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm5/http.js");
+/* harmony import */ var _config_AppUrls__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../config/AppUrls */ "./src/app/config/AppUrls.ts");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+var CareerService = /** @class */ (function () {
+    function CareerService(http) {
+        this.http = http;
+    }
+    CareerService.prototype.getAllJobList = function () {
+        return this.http.get(_config_AppUrls__WEBPACK_IMPORTED_MODULE_2__["AppUrls"].UtilitiesWebServicesUrl + 'getalljobs ');
+    };
+    CareerService.prototype.postJob = function (reqObj) {
+        return this.http.post(_config_AppUrls__WEBPACK_IMPORTED_MODULE_2__["AppUrls"].UtilitiesWebServicesUrl + 'postjob', reqObj);
+    };
+    CareerService = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Injectable"])({
+            providedIn: 'root'
+        }),
+        __metadata("design:paramtypes", [_angular_common_http__WEBPACK_IMPORTED_MODULE_1__["HttpClient"]])
+    ], CareerService);
+    return CareerService;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/careers/careers.component.html":
+/*!************************************************!*\
+  !*** ./src/app/careers/careers.component.html ***!
+  \************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<div style=\"position: relative;\">\n<div class=\"parallax1\">\n  <div class=\"overl\">\n    <div class=\"row slideanim\">\n      <h1>Careers fffffffffffffffffffffffff</h1>\n    </div>\n  </div>\n</div>\n\n<div class=\"parallax2\">\n  <div class=\"overl2\">\n    <div class=\"row slideanim2\">\n      <div class=\"container\">\n        <h3>Core Java Developer</h3>\n        <p>Both Freshers and Experienced Candidates</p>\n        <button type=\"button\" class=\"btn btn-info\" data-toggle=\"collapse\" data-target=\"#demo\">View Details</button>\n        <div id=\"demo\" class=\"collapse\">\n          <br>\n          <div class=\"col-md-2\"></div>\n          <div class=\"col-md-8\">\n            <table align=\"center\" border=\"1\" style=\"width: 100%;\">\n              <tr>\n                <th>\n                  Designation\n                </th>\n                <th>\n                  Required Skills\n                </th>\n                <th>\n                  Number of Openings\n                </th>\n                <th>\n                  Experience Required\n                </th>\n              </tr>\n              <tr>\n                <td>\n                  Core Java\n                </td>\n                <td align=\"left\" style=\"text-align: justify\">\n                  Java with Android Designing concept.\n                </td>\n                <td>\n                  7\n                </td>\n                <td>\n                  2\n                </td>\n              </tr>\n              <tr>\n                <td colspan=\"4\">\n                  <button class=\"btn btn-info apply\" onclick=\"fillup(1)\">Apply Now</button>\n                  <div id=\"fillup\" style=\"display: none;\">\n                    <br>\n                    <div style=\"float: left;\">\n                      <h3>Fill Details</h3>\n                    </div>\n                    <table style=\"width: 100%;\">\n                      <tr>\n                        <td>\n                          <div class=\"form-group\">\n                            <input type=\"text\" class=\"form-control\" id=\"name\" placeholder=\"Please Enter Name\">\n                          </div>\n                        </td>\n                        <td>\n                          <div class=\"form-group\">\n                            <input type=\"text\" class=\"form-control\" id=\"mob\" placeholder=\"Plesae Enter Mobile Number\">\n                          </div>\n                        </td>\n                      </tr>\n                      <tr>\n                        <td>\n                          <input type=\"email\" class=\"form-control\" id=\"email\" placeholder=\"Please Enter E-Mail ID\">\n                        </td>\n                        <td>\n                          <input type=\"text\" class=\"form-control\" id=\"loc\" placeholder=\"Please Enter Location\">\n                        </td>\n                      </tr>\n                      <tr>\n                        <td>\n                          <label class=\"radio-inline\">\n                            <input type=\"radio\" name=\"gender\" checked> Male</label>\n                          <label class=\"radio-inline\">\n                            <input type=\"radio\" name=\"gender\"> Female</label>\n                        </td>\n                        <td>\n                          <input type=\"text\" class=\"form-control\" id=\"edu\" placeholder=\"Highest Educational Qualification\">\n                        </td>\n                      </tr>\n                      <tr>\n                        <td>\n                          <input type=\"text\" class=\"form-control\" id=\"sal\" placeholder=\"Expected Salary\">\n                        </td>\n                        <td>\n                          <input type=\"text\" class=\"form-control\" id=\"exp\" placeholder=\"Experience\">\n                        </td>\n                      </tr>\n                      <tr>\n                        <td align=\"left\">\n                          <table>\n                            <tr>\n                              <td>\n                                Resume\n                              </td>\n                            </tr>\n                            <tr>\n                              <td>\n                                <input type=\"file\" id=\"myFile\" size=\"50\" placeholder=\"Resume\">\n                              </td>\n                            </tr>\n                            <tr>\n                              <td>\n                                .Doc, .Docx or .PDF file only!\n                              </td>\n                            </tr>\n                          </table>\n                        </td>\n                        <td align=\"right\" style=\"vertical-align: bottom;\">\n                          <table>\n                            <tr>\n                              <td>\n                                <button class=\"btn btn-info apply\">Apply</button>\n                              </td>\n                              <td>\n                                <button class=\"btn btn-info apply\" onclick=\"canc(1)\">Cancel</button>\n                              </td>\n                            </tr>\n                          </table>\n                        </td>\n                      </tr>\n                    </table>\n                  </div>\n                </td>\n              </tr>\n            </table>\n          </div>\n          <div class=\"col-md-2\"></div>\n        </div>\n      </div>\n      <br>\n      <div class=\"container\">\n        <h3>Senior Software Engineer</h3>\n        <p>Both Freshers and Experienced Candidates</p>\n        <button type=\"button\" class=\"btn btn-info\" data-toggle=\"collapse\" data-target=\"#demo2\">View Details</button>\n        <div id=\"demo2\" class=\"collapse\">\n          <br>\n          <div class=\"col-md-2\"></div>\n          <div class=\"col-md-8\">\n            <table align=\"center\" border=\"1\" style=\"width: 100%;\">\n              <tr>\n                <th>\n                  Designation\n                </th>\n                <th>\n                  Required Skills\n                </th>\n                <th>\n                  Number of Openings\n                </th>\n                <th>\n                  Experience Required\n                </th>\n              </tr>\n              <tr>\n                <td>\n                    Sr Software Engineer\n                </td>\n                <td align=\"left\" style=\"text-align: justify\">\n                    Looking for Application Developer,iOS and/or Android developer,Technical Skills Required eg: JAVA Swift Ionic etc,Develop Good Scable Applications that have rich User Interface,Good Knowledge of MySQL,Familiar with JAVA Web Services to meet back end requirements for making interaction with database.\n                </td>\n                <td>\n                  4\n                </td>\n                <td>\n                  2\n                </td>\n              </tr>\n              <tr>\n                <td colspan=\"4\">\n                  <button class=\"btn btn-info apply\" onclick=\"fillup(2)\">Apply Now</button>\n                  <div id=\"fillup2\" style=\"display: none;\">\n                    <br>\n                    <div style=\"float: left;\">\n                      <h3>Fill Details</h3>\n                    </div>\n                    <table style=\"width: 100%;\">\n                      <tr>\n                        <td>\n                          <div class=\"form-group\">\n                            <input type=\"text\" class=\"form-control\" id=\"name\" placeholder=\"Please Enter Name\">\n                          </div>\n                        </td>\n                        <td>\n                          <div class=\"form-group\">\n                            <input type=\"text\" class=\"form-control\" id=\"mob\" placeholder=\"Plesae Enter Mobile Number\">\n                          </div>\n                        </td>\n                      </tr>\n                      <tr>\n                        <td>\n                          <input type=\"email\" class=\"form-control\" id=\"email\" placeholder=\"Please Enter E-Mail ID\">\n                        </td>\n                        <td>\n                          <input type=\"text\" class=\"form-control\" id=\"loc\" placeholder=\"Please Enter Location\">\n                        </td>\n                      </tr>\n                      <tr>\n                        <td>\n                          <label class=\"radio-inline\">\n                            <input type=\"radio\" name=\"gender\" checked> Male</label>\n                          <label class=\"radio-inline\">\n                            <input type=\"radio\" name=\"gender\"> Female</label>\n                        </td>\n                        <td>\n                          <input type=\"text\" class=\"form-control\" id=\"edu\" placeholder=\"Highest Educational Qualification\">\n                        </td>\n                      </tr>\n                      <tr>\n                        <td>\n                          <input type=\"text\" class=\"form-control\" id=\"sal\" placeholder=\"Expected Salary\">\n                        </td>\n                        <td>\n                          <input type=\"text\" class=\"form-control\" id=\"exp\" placeholder=\"Experience\">\n                        </td>\n                      </tr>\n                      <tr>\n                        <td align=\"left\">\n                          <table>\n                            <tr>\n                              <td>\n                                Resume\n                              </td>\n                            </tr>\n                            <tr>\n                              <td>\n                                <input type=\"file\" id=\"myFile\" size=\"50\" placeholder=\"Resume\">\n                              </td>\n                            </tr>\n                            <tr>\n                              <td>\n                                .Doc, .Docx or .PDF file only!\n                              </td>\n                            </tr>\n                          </table>\n                        </td>\n                        <td align=\"right\" style=\"vertical-align: bottom;\">\n                          <table>\n                            <tr>\n                              <td>\n                                <button class=\"btn btn-info apply\">Submit</button>\n                              </td>\n                              <td>\n                                <button class=\"btn btn-info apply\" onclick=\"canc(2)\">Cancel</button>\n                              </td>\n                            </tr>\n                          </table>\n                        </td>\n                      </tr>\n                    </table>\n                  </div>\n                </td>\n              </tr>\n            </table>\n          </div>\n          <div class=\"col-md-2\"></div>\n        </div>\n      </div>\n      <br>\n      <div class=\"container\">\n        <h3>Senior Web Developer</h3>\n        <p>Both Freshers and Experienced Candidates</p>\n        <button type=\"button\" class=\"btn btn-info\" data-toggle=\"collapse\" data-target=\"#demo3\">View Details</button>\n        <div id=\"demo3\" class=\"collapse\">\n          <br>\n          <div class=\"col-md-2\"></div>\n          <div class=\"col-md-8\">\n            <table align=\"center\" border=\"1\" style=\"width: 100%;\">\n              <tr>\n                <th>\n                  Designation\n                </th>\n                <th>\n                  Required Skills\n                </th>\n                <th>\n                  Number of Openings\n                </th>\n                <th> \n                  Experience Required\n                </th>\n              </tr>\n              <tr>\n                <td>\n                    Sr Web Developer\n                </td>\n                <td align=\"left\" style=\"text-align: justify\">\n                    Looking for Website Developer,iOS and/or Android developer,Technical Skills Required, eg: HTML XHTML etc,Develop Good Scable Applications, that have rich User Interface,Good Knowledge of MySQL,Familiar with JAVA Web Services to meet back end requirements for making interaction with database.\n                </td>\n                <td>\n                  6\n                </td>\n                <td>\n                  3\n                </td>\n              </tr>\n              <tr>\n                <td colspan=\"4\">\n                  <button class=\"btn btn-info apply\" onclick=\"fillup(3)\">Apply Now</button>\n                  <div id=\"fillup3\" style=\"display: none;\">\n                    <br>\n                    <div style=\"float: left;\">\n                      <h3>Fill Details</h3>\n                    </div>\n                    <table style=\"width: 100%;\">\n                      <tr>\n                        <td>\n                          <div class=\"form-group\">\n                            <input type=\"text\" class=\"form-control\" id=\"name\" placeholder=\"Please Enter Name\">\n                          </div>\n                        </td>\n                        <td>\n                          <div class=\"form-group\">\n                            <input type=\"text\" class=\"form-control\" id=\"mob\" placeholder=\"Plesae Enter Mobile Number\">\n                          </div>\n                        </td>\n                      </tr>\n                      <tr>\n                        <td>\n                          <input type=\"email\" class=\"form-control\" id=\"email\" placeholder=\"Please Enter E-Mail ID\">\n                        </td>\n                        <td>\n                          <input type=\"text\" class=\"form-control\" id=\"loc\" placeholder=\"Please Enter Location\">\n                        </td>\n                      </tr>\n                      <tr>\n                        <td>\n                          <label class=\"radio-inline\">\n                            <input type=\"radio\" name=\"gender\" checked> Male</label>\n                          <label class=\"radio-inline\">\n                            <input type=\"radio\" name=\"gender\"> Female</label>\n                        </td>\n                        <td>\n                          <input type=\"text\" class=\"form-control\" id=\"edu\" placeholder=\"Highest Educational Qualification\">\n                        </td>\n                      </tr>\n                      <tr>\n                        <td>\n                          <input type=\"text\" class=\"form-control\" id=\"sal\" placeholder=\"Expected Salary\">\n                        </td>\n                        <td>\n                          <input type=\"text\" class=\"form-control\" id=\"exp\" placeholder=\"Experience\">\n                        </td>\n                      </tr>\n                      <tr>\n                        <td align=\"left\">\n                          <table>\n                            <tr>\n                              <td>\n                                Resume\n                              </td>\n                            </tr>\n                            <tr>\n                              <td>\n                                <input type=\"file\" id=\"myFile\" size=\"50\" placeholder=\"Resume\">\n                              </td>\n                            </tr>\n                            <tr>\n                              <td>\n                                .Doc, .Docx or .PDF file only!\n                              </td>\n                            </tr>\n                          </table>\n                        </td>\n                        <td align=\"right\" style=\"vertical-align: bottom;\">\n                          <table>\n                            <tr>\n                              <td>\n                                <button class=\"btn btn-info apply\">Apply</button>\n                              </td>\n                              <td>\n                                <button class=\"btn btn-info apply\" onclick=\"canc(3)\">Cancel</button>\n                              </td>\n                            </tr>\n                          </table>\n                        </td>\n                      </tr>\n                    </table>\n                  </div>\n                </td>\n              </tr>\n            </table>\n          </div>\n          <div class=\"col-md-2\"></div>\n        </div>\n      </div>\n      <br>\n      <div class=\"container\">\n        <h3>Android Developer</h3>\n        <p>Only Experienced Candidates</p>\n        <button type=\"button\" class=\"btn btn-info\" data-toggle=\"collapse\" data-target=\"#demo4\">View Details</button>\n        <div id=\"demo4\" class=\"collapse\">\n          <br>\n          <div class=\"col-md-2\"></div>\n          <div class=\"col-md-8\">\n            <table align=\"center\" border=\"1\" style=\"width: 100%;\">\n              <tr>\n                <th>\n                  Designation\n                </th>\n                <th>\n                  Required Skills\n                </th>\n                <th>\n                  Number of Openings\n                </th>\n                <th>\n                  Experience Required\n                </th>\n              </tr>\n              <tr>\n                <td>\n                    Android\n                </td>\n                <td align=\"left\" style=\"text-align: justify\">\n                    Java with Android Designing concept\t.\n                </td>\n                <td>\n                  2\n                </td>\n                <td>\n                  4\n                </td>\n              </tr>\n              <tr>\n                <td colspan=\"4\">\n                  <button class=\"btn btn-info apply\" onclick=\"fillup(4)\">Apply Now</button>\n                  <div id=\"fillup4\" style=\"display: none;\">\n                    <br>\n                    <div style=\"float: left;\">\n                      <h3>Fill Details</h3>\n                    </div>\n                    <table style=\"width: 100%;\">\n                      <tr>\n                        <td>\n                          <div class=\"form-group\">\n                            <input type=\"text\" class=\"form-control\" id=\"name\" placeholder=\"Please Enter Name\">\n                          </div>\n                        </td>\n                        <td>\n                          <div class=\"form-group\">\n                            <input type=\"text\" class=\"form-control\" id=\"mob\" placeholder=\"Plesae Enter Mobile Number\">\n                          </div>\n                        </td>\n                      </tr>\n                      <tr>\n                        <td>\n                          <input type=\"email\" class=\"form-control\" id=\"email\" placeholder=\"Please Enter E-Mail ID\">\n                        </td>\n                        <td>\n                          <input type=\"text\" class=\"form-control\" id=\"loc\" placeholder=\"Please Enter Location\">\n                        </td>\n                      </tr>\n                      <tr>\n                        <td>\n                          <label class=\"radio-inline\">\n                            <input type=\"radio\" name=\"gender\" checked> Male</label>\n                          <label class=\"radio-inline\">\n                            <input type=\"radio\" name=\"gender\"> Female</label>\n                        </td>\n                        <td>\n                          <input type=\"text\" class=\"form-control\" id=\"edu\" placeholder=\"Highest Educational Qualification\">\n                        </td>\n                      </tr>\n                      <tr>\n                        <td>\n                          <input type=\"text\" class=\"form-control\" id=\"sal\" placeholder=\"Expected Salary\">\n                        </td>\n                        <td>\n                          <input type=\"text\" class=\"form-control\" id=\"exp\" placeholder=\"Experience\">\n                        </td>\n                      </tr>\n                      <tr>\n                        <td align=\"left\">\n                          <table>\n                            <tr>\n                              <td>\n                                Resume\n                              </td>\n                            </tr>\n                            <tr>\n                              <td>\n                                <input type=\"file\" id=\"myFile\" size=\"50\" placeholder=\"Resume\">\n                              </td>\n                            </tr>\n                            <tr>\n                              <td>\n                                .Doc, .Docx or .PDF file only!\n                              </td>\n                            </tr>\n                          </table>\n                        </td>\n                        <td align=\"right\" style=\"vertical-align: bottom;\">\n                          <table>\n                            <tr>\n                              <td>\n                                <button class=\"btn btn-info apply\">Apply</button>\n                              </td>\n                              <td>\n                                <button class=\"btn btn-info apply\" onclick=\"canc(4)\">Cancel</button>\n                              </td>\n                            </tr>\n                          </table>\n                        </td>\n                      </tr>\n                    </table>\n                  </div>\n                </td>\n              </tr>\n            </table>\n          </div>\n          <div class=\"col-md-2\"></div>\n        </div>\n      </div>\n      <br>\n      <div class=\"container\">\n          <h3>Graphics Designer</h3>\n          <p>Only Experienced Candidates</p>\n          <button type=\"button\" class=\"btn btn-info\" data-toggle=\"collapse\" data-target=\"#demo5\">View Details</button>\n          <div id=\"demo5\" class=\"collapse\">\n            <br>\n            <div class=\"col-md-2\"></div>\n            <div class=\"col-md-8\">\n              <table align=\"center\" border=\"1\" style=\"width: 100%;\">\n                <tr>\n                  <th>\n                    Designation\n                  </th>\n                  <th>\n                    Required Skills\n                  </th>\n                  <th>\n                    Number of Openings\n                  </th>\n                  <th>\n                    Experience Required\n                  </th>\n                </tr>\n                <tr>\n                  <td>\n                      Graphic Designer\n                  </td>\n                  <td align=\"left\" style=\"text-align: justify\">\n                      Apt in Coral Draw/ Indesign / Photoshop,Designer for text books,In house editing/ designing of materials.\n                  </td>\n                  <td>\n                    1\n                  </td>\n                  <td>\n                    6\n                  </td>\n                </tr>\n                <tr>\n                  <td colspan=\"4\">\n                    <button class=\"btn btn-info apply\" onclick=\"fillup(5)\">Apply Now</button>\n                    <div id=\"fillup5\" style=\"display: none;\">\n                      <br>\n                      <div style=\"float: left;\">\n                        <h3>Fill Details</h3>\n                      </div>\n                      <table style=\"width: 100%;\">\n                        <tr>\n                          <td>\n                            <div class=\"form-group\">\n                              <input type=\"text\" class=\"form-control\" id=\"name\" placeholder=\"Please Enter Name\">\n                            </div>\n                          </td>\n                          <td>\n                            <div class=\"form-group\">\n                              <input type=\"text\" class=\"form-control\" id=\"mob\" placeholder=\"Plesae Enter Mobile Number\">\n                            </div>\n                          </td>\n                        </tr>\n                        <tr>\n                          <td>\n                            <input type=\"email\" class=\"form-control\" id=\"email\" placeholder=\"Please Enter E-Mail ID\">\n                          </td>\n                          <td>\n                            <input type=\"text\" class=\"form-control\" id=\"loc\" placeholder=\"Please Enter Location\">\n                          </td>\n                        </tr>\n                        <tr>\n                          <td>\n                            <label class=\"radio-inline\">\n                              <input type=\"radio\" name=\"gender\" checked> Male</label>\n                            <label class=\"radio-inline\">\n                              <input type=\"radio\" name=\"gender\"> Female</label>\n                          </td>\n                          <td>\n                            <input type=\"text\" class=\"form-control\" id=\"edu\" placeholder=\"Highest Educational Qualification\">\n                          </td>\n                        </tr>\n                        <tr>\n                          <td>\n                            <input type=\"text\" class=\"form-control\" id=\"sal\" placeholder=\"Expected Salary\">\n                          </td>\n                          <td>\n                            <input type=\"text\" class=\"form-control\" id=\"exp\" placeholder=\"Experience\">\n                          </td>\n                        </tr>\n                        <tr>\n                          <td align=\"left\">\n                            <table>\n                              <tr>\n                                <td>\n                                  Resume\n                                </td>\n                              </tr>\n                              <tr>\n                                <td>\n                                  <input type=\"file\" id=\"myFile\" size=\"50\" placeholder=\"Resume\">\n                                </td>\n                              </tr>\n                              <tr>\n                                <td>\n                                  .Doc, .Docx or .PDF file only!\n                                </td>\n                              </tr>\n                            </table>\n                          </td>\n                          <td align=\"right\" style=\"vertical-align: bottom;\">\n                            <table>\n                              <tr>\n                                <td>\n                                  <button class=\"btn btn-info apply\">Apply</button>\n                                </td>\n                                <td>\n                                  <button class=\"btn btn-info apply\" onclick=\"canc(5)\">Cancel</button>\n                                </td>\n                              </tr>\n                            </table>\n                          </td>\n                        </tr>\n                      </table>\n                    </div>\n                  </td>\n                </tr>\n              </table>\n            </div>\n            <div class=\"col-md-2\"></div>\n          </div>\n        </div>\n    </div>\n  </div>\n</div>\n</div>"
+
+/***/ }),
+
+/***/ "./src/app/careers/careers.component.scss":
+/*!************************************************!*\
+  !*** ./src/app/careers/careers.component.scss ***!
+  \************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = ".parallax1 {\n  /* The image used */\n  background-image: url(\"/assets/images/cr.jpg\");\n  /* Set a specific height */\n  height: 150px;\n  /* Create the parallax scrolling effect */\n  background-attachment: fixed;\n  background-position: center;\n  background-repeat: no-repeat;\n  background-size: cover;\n  text-align: center;\n  vertical-align: middle;\n  z-index: 1; }\n\n.parallax2 {\n  /* The image used */\n  background-image: url(\"/assets/images/salim.jpg\");\n  /* Set a specific height */\n  min-height: 900px;\n  /* Create the parallax scrolling effect */\n  background-attachment: fixed;\n  background-position: center;\n  background-repeat: no-repeat;\n  background-size: cover;\n  text-align: center;\n  vertical-align: middle;\n  z-index: 1;\n  overflow-y: auto; }\n\n.overl {\n  position: absolute;\n  z-index: 2;\n  width: 100%;\n  height: 150px;\n  opacity: 0.5;\n  background-color: black; }\n\n.overl2 {\n  position: absolute;\n  z-index: 2;\n  width: 100%;\n  min-height: 900px;\n  opacity: 0.9;\n  background-color: black; }\n\n.slideanim {\n  padding-top: 45px;\n  color: #ffffff; }\n\n.slideanim2 {\n  padding-top: 50px;\n  color: #ffffff; }\n\n.btn {\n  color: black;\n  font-size: 16px;\n  padding-top: 12px; }\n\ntable, tr, th, td {\n  padding: 10px; }\n\n.apply {\n  width: 110px;\n  height: 33px;\n  padding-top: 3px; }\n"
+
+/***/ }),
+
+/***/ "./src/app/careers/careers.component.ts":
+/*!**********************************************!*\
+  !*** ./src/app/careers/careers.component.ts ***!
+  \**********************************************/
+/*! exports provided: CareersComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CareersComponent", function() { return CareersComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var CareersComponent = /** @class */ (function () {
+    function CareersComponent() {
+    }
+    CareersComponent.prototype.ngOnInit = function () {
+    };
+    CareersComponent = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+            selector: 'app-careers',
+            template: __webpack_require__(/*! ./careers.component.html */ "./src/app/careers/careers.component.html"),
+            styles: [__webpack_require__(/*! ./careers.component.scss */ "./src/app/careers/careers.component.scss")]
+        }),
+        __metadata("design:paramtypes", [])
+    ], CareersComponent);
+    return CareersComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/clients/clients.component.html":
+/*!************************************************!*\
+  !*** ./src/app/clients/clients.component.html ***!
+  \************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<br>\n<div class=\"container\" style=\"margin-top: 90px\">\n   \n  \n    <ul class=\"nav nav-tabs\">\n      <li class=\"active\"><a data-toggle=\"tab\" href=\"#menu1\">Partenaires</a></li>\n    </ul>\n  \n    <div class=\"tab-content\">\n      <div id=\"menu1\" class=\"tab-pane fade in active\">\n          <br>\n        <h3>Partenaires</h3>\n        <div class=\"col-md-3\">\n            <div class=\"containerh\">\n              <img src=\"assets/image/vgi/airtelmoney2.jpg\" alt=\"Avatar\" class=\"imageh\">\n              <div class=\"overlayh\">AIRTEL MONEY</div>\n            </div>\n          </div>\n        \n          <div class=\"col-md-3\">\n            <div class=\"containerh\">\n              <img src=\"assets/image/vgi/vgip2.jpg\" alt=\"Avatar\" class=\"imageh\">\n              <div class=\"overlayh\">ORANGE MONEY</div>\n            </div>\n          </div>\n        \n          <div class=\"col-md-3\">\n            <div class=\"containerh\">\n              <img src=\"assets/image/vgi/vgip3.jpg\" alt=\"Avatar\" class=\"imageh\">\n              <div class=\"overlayh\">VODAFONE</div>\n            </div>\n          </div>\n        \n          <div class=\"col-md-3\">\n            <div class=\"containerh\">\n              <img src=\"assets/image/vgi/snel.jpg\" alt=\"Avatar\" class=\"imageh\">\n              <div class=\"overlayh\">SNEL</div>\n            </div>\n          </div>\n        \n          <div class=\"col-md-3\">\n            <div class=\"containerh\">\n              <img src=\"assets/image/vgi/vgip5.jpg\" alt=\"Avatar\" class=\"imageh\">\n              <div class=\"overlayh\">DSTV</div>\n            </div>\n          </div>\n        \n          <div class=\"col-md-3\">\n            <div class=\"containerh\">\n              <img src=\"assets/image/vgi/canalplus2.jpg\" alt=\"Avatar\" class=\"imageh\">\n              <div class=\"overlayh\">CANAL+</div>\n            </div>\n          </div>\n        \n          <div class=\"col-md-3\">\n            <div class=\"containerh\">\n              <img src=\"assets/image/vgi/regideso.jpg\" alt=\"Avatar\" class=\"imageh\">\n              <div class=\"overlayh\">REGIDESO</div>\n            </div>\n          </div>\n\n      </div>\n      \n    </div>\n  </div>\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n  \n"
+
+/***/ }),
+
+/***/ "./src/app/clients/clients.component.scss":
+/*!************************************************!*\
+  !*** ./src/app/clients/clients.component.scss ***!
+  \************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "* {\n  box-sizing: border-box; }\n\n.containerh {\n  position: relative;\n  width: 100%;\n  max-width: 300px;\n  margin-bottom: 25px; }\n\n.imageh {\n  display: block;\n  width: 100%;\n  height: 100%; }\n\n.overlayh {\n  position: absolute;\n  bottom: 0;\n  background: black;\n  background: rgba(0, 0, 0, 0.5);\n  /* Black see-through */\n  color: #f1f1f1;\n  width: 100%;\n  transition: .5s ease;\n  opacity: 0;\n  color: white;\n  font-size: 20px;\n  padding: 20px;\n  text-align: center; }\n\n.containerh:hover .overlayh {\n  opacity: 1; }\n\n.containerh:hover .imageh, .overlayh {\n  -webkit-transform: scale(1.2);\n          transform: scale(1.2); }\n"
+
+/***/ }),
+
+/***/ "./src/app/clients/clients.component.ts":
+/*!**********************************************!*\
+  !*** ./src/app/clients/clients.component.ts ***!
+  \**********************************************/
+/*! exports provided: ClientsComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ClientsComponent", function() { return ClientsComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var ClientsComponent = /** @class */ (function () {
+    function ClientsComponent() {
+    }
+    ClientsComponent.prototype.ngOnInit = function () {
+    };
+    ClientsComponent = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+            selector: 'app-clients',
+            template: __webpack_require__(/*! ./clients.component.html */ "./src/app/clients/clients.component.html"),
+            styles: [__webpack_require__(/*! ./clients.component.scss */ "./src/app/clients/clients.component.scss")]
+        }),
+        __metadata("design:paramtypes", [])
+    ], ClientsComponent);
+    return ClientsComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/config/AppUrls.ts":
+/*!***********************************!*\
+  !*** ./src/app/config/AppUrls.ts ***!
+  \***********************************/
+/*! exports provided: AppUrls */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AppUrls", function() { return AppUrls; });
+var AppUrls = /** @class */ (function () {
+    function AppUrls() {
+    }
+    AppUrls.TextWebServicesUrl = 'https://bizmobia.com/textalertws/textfeeds/';
+    AppUrls.UtilitiesWebServicesUrl = 'https://bizmobia.com/utilitiesws/utilities/';
+    // public static UtilitiesWebServicesUrl = 'http://localhost:8084/utilitiesws/utilities/';
+    AppUrls.websiteUrl = 'https://bizmobia.com/';
+    return AppUrls;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/contactus/contactus.component.html":
+/*!****************************************************!*\
+  !*** ./src/app/contactus/contactus.component.html ***!
+  \****************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<div class=\"\">\n  <div class=\"overl\">\n    <div class=\"row slideanim\">\n      <br>\n      <h1>Contact Us</h1>\n    </div>\n  </div>\n</div>\n<div class=\"row\">\n  <div class=\"row parallax2\">\n    <div class=\"col-md-1\"></div>\n    <div class=\"col-md-10 addcontainer\">\n      <br>\n      <div class=\"col-md-12\">\n        <div class=\"col-md-6\">\n          <div class=\"address\">\n            <table style=\"width: 100%;\">\n              <tr>\n                <td class=\"p\">\n                  <h3>Contact Us</h3>\n                </td>\n              </tr>\n              <tr>\n                <td class=\"p\">\n                  05 Avenue, Lokele, Commune de la Gombe\n                </td>\n              </tr>\n              <tr>\n                <td class=\"p\">\n                  Kinshasa – RD Congo\n                </td>\n              </tr>\n              <tr>\n                <td class=\"p\">\n                  <h5 style=\"color:#094464\">Mobile: +243820044550</h5>\n                </td>\n              </tr>\n              <tr>\n                <td class=\"p\">\n                  <h5 style=\"color:#094464\">info@virtualgoalintl.com</h5>\n                </td>\n              </tr>\n              <tr>\n                <td class=\"p\">\n                  <div class=\"col-md-12 col-sm-12 col-xs-12 \">\n                    <div class=\"col-md-3 col-sm-3 col-xs-3\">\n                      <div class=\"social-icon\">\n                        <a href=\"#\" target=\"_blank\">\n                          <img src=\"assets/images/fb.png\" width=\"100%\" height=\"100%\" />\n                        </a>\n                      </div>\n                    </div>\n                    <div class=\"col-md-3 col-sm-3 col-xs-3\">\n                      <div class=\"social-icon\">\n                        <a href=\"#\" target=\"_blank\">\n                          <img src=\"assets/images/tt.png\" width=\"100%\" height=\"100%\" />\n                        </a>\n                      </div>\n                    </div>\n                    <div class=\"col-md-3 col-sm-3 col-xs-3\">\n                      <div class=\"social-icon\">\n                        <a href=\"#\" target=\"_blank\">\n                          <img src=\"assets/images/insta.png\" width=\"100%\" height=\"100%\" />\n                        </a>\n                      </div>\n                    </div>\n                    <div class=\"col-md-3 col-sm-3 col-xs-3\">\n                      <div class=\"social-icon\">\n                        <a href=\"#\" target=\"_blank\">\n                          <img src=\"assets/images/li2.png\" width=\"100%\" height=\"100%\" />\n                        </a>\n                      </div>\n                    </div>\n                  </div>\n                </td>\n              </tr>\n            </table>\n          </div>\n        </div>\n        <div class=\"col-md-6\">\n          <form (ngSubmit)=\"contactUs()\" #contactus=\"ngForm\">\n            <div class=\"contactform\">\n              <table style=\"width:100%;padding: 3px;\">\n                <tr>\n                  <td>\n                    <div class=\"form-group\">\n                      <input type=\"text\" class=\"form-control\" placeholder=\"Enter First Name\" name=\"firstname\" [(ngModel)]=\"contactusObj.firstname\"\n                        #firstname=\"ngModel\" required minlength=\"3\" />\n                    </div>\n                  </td>\n                </tr>\n                <tr>\n                  <td>\n                    <div class=\"form-group\">\n                      <input type=\"text\" class=\"form-control\" placeholder=\"Enter Last Name\" name=\"lastname\" [(ngModel)]=\"this.contactusObj.lastname\"\n                        #lastname=\"ngModel\" required minlength=\"3\" />\n                    </div>\n                  </td>\n                </tr>\n                <tr>\n                  <td>\n                    <div class=\"form-group\">\n                      <input type=\"text\" class=\"form-control\" placeholder=\"Enter E-Mail ID\" name=\"email\" [(ngModel)]=\"this.contactusObj.email\"\n                        #email=\"ngModel\" required minlength=\"3\" />\n                    </div>\n                  </td>\n                </tr>\n                <tr>\n                  <td>\n                    <div class=\"form-group\">\n                      <input type=\"text\" class=\"form-control\" placeholder=\"Enter Contact Number\" name=\"phoneno\" [(ngModel)]=\"this.contactusObj.phoneno\"\n                        #phoneno=\"ngModel\" required minlength=\"3\" />\n                    </div>\n                  </td>\n                </tr>\n                <tr>\n                  <td>\n                    <div class=\"form-group\">\n                      <input  type=\"textarea\"  class=\"form-control\" placeholder=\"Enter Your Message\" name=\"description\" [(ngModel)]=\"this.contactusObj.description\"\n                        #description=\"ngModel\" required minlength=\"3\" />\n                      </div>\n                  </td>\n                </tr>\n                <tr>\n                  <td align=\"center\">\n                    <div class=\"form-group\">\n                      <button type=\"submit\" class=\"btn btn-info\" style=\"float: right\">Send</button>\n                    </div>\n                  </td>\n                </tr>\n              </table>\n            </div>\n          </form>\n        </div>\n      </div>\n    </div>\n    <div class=\"col-md-1\"></div>\n  </div>\n</div>\n<div class=\"parallax3\"></div>\n<div class=\"row\">\n  <div class=\"col-md-12\">\n    <div class=\"col-md-1\"></div>\n    <div class=\"col-md-10\">\n      <br>\n      <iframe src=\"https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d31828.204412971507!2d15.279194687703207!3d-4.311851305041421!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1s+05+Avenue+Lokele%2C+Commune+de+la+Gombe+Kinshasa+%E2%80%93+RD+Congo!5e0!3m2!1sen!2sin!4v1538309250891\"\n        width=\"100%\" height=\"450\" frameborder=\"0\" style=\"border:0\" allowfullscreen></iframe>\n    </div>\n    <div class=\"col-md-1\"></div>\n  </div>\n</div>"
+
+/***/ }),
+
+/***/ "./src/app/contactus/contactus.component.scss":
+/*!****************************************************!*\
+  !*** ./src/app/contactus/contactus.component.scss ***!
+  \****************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = ".parallax1 {\n  /* The image used */\n  background-image: url(\"/assets/images/contact2.jpg\");\n  /* Set a specific height */\n  height: 600px;\n  /* Create the parallax scrolling effect */\n  background-attachment: fixed;\n  background-position: center;\n  background-repeat: no-repeat;\n  background-size: cover;\n  text-align: center;\n  vertical-align: middle;\n  z-index: 1; }\n\n.parallax2 {\n  /* The image used */\n  background-image: url(\"/assets/images/contact3.jpg\");\n  /* Set a specific height */\n  height: auto;\n  /* Create the parallax scrolling effect */\n  background-attachment: fixed;\n  background-position: center;\n  background-repeat: no-repeat;\n  background-size: cover;\n  text-align: center;\n  vertical-align: middle;\n  z-index: 1; }\n\n.parallax3 {\n  /* The image used */\n  background-image: url(\"/assets/images/wm.jpg\");\n  /* Set a specific height */\n  height: 250px;\n  /* Create the parallax scrolling effect */\n  background-attachment: fixed;\n  background-position: center;\n  background-repeat: no-repeat;\n  background-size: cover;\n  text-align: center;\n  vertical-align: middle;\n  z-index: 1; }\n\n.addcontainer {\n  padding: 50px 25px;\n  float: left; }\n\n.address {\n  height: 100%;\n  text-align: center;\n  background-color: #ffffff; }\n\n.contactform {\n  height: 100%;\n  text-align: left;\n  background-color: #ffffff70; }\n\n.social-icon {\n  height: 35px;\n  width: 35px;\n  margin-left: 23px; }\n\n.text {\n  width: 100%; }\n\n.p {\n  padding: 11px; }\n"
+
+/***/ }),
+
+/***/ "./src/app/contactus/contactus.component.ts":
+/*!**************************************************!*\
+  !*** ./src/app/contactus/contactus.component.ts ***!
+  \**************************************************/
+/*! exports provided: ContactusComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ContactusComponent", function() { return ContactusComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _contactus_service__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./contactus.service */ "./src/app/contactus/contactus.service.ts");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
+/* harmony import */ var _contactus__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./contactus */ "./src/app/contactus/contactus.ts");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+var ContactusComponent = /** @class */ (function () {
+    function ContactusComponent(contatcusService, router) {
+        this.contatcusService = contatcusService;
+        this.router = router;
+    }
+    ContactusComponent.prototype.ngOnInit = function () {
+        this.contactusObj = {};
+    };
+    ContactusComponent.prototype.contactUs = function () {
+        var _this = this;
+        this.contactusObj = new _contactus__WEBPACK_IMPORTED_MODULE_3__["contactus"](null, this.contactusObj.firstname, this.contactusObj.lastname, this.contactusObj.email, this.contactusObj.phoneno, this.contactusObj.description, null);
+        console.log(this.contactusObj);
+        this.contatcusService.contactUs(this.contactusObj).subscribe(function (data) {
+            _this.successResponse = data;
+            console.log(_this.successResponse);
+            console.log(_this.successResponse.status);
+            if (_this.successResponse.status === 0) {
+                alert(_this.successResponse.message);
+                _this.router.navigateByUrl("contactus");
+            }
+            else if (_this.successResponse.status === 1) {
+                alert(_this.successResponse.message);
+            }
+            else if (_this.successResponse.status === 2) {
+                alert(_this.successResponse.message);
+            }
+        }, function (error) {
+            console.log('error', error);
+        });
+    };
+    ContactusComponent = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+            selector: 'app-contactus',
+            template: __webpack_require__(/*! ./contactus.component.html */ "./src/app/contactus/contactus.component.html"),
+            styles: [__webpack_require__(/*! ./contactus.component.scss */ "./src/app/contactus/contactus.component.scss")]
+        }),
+        __metadata("design:paramtypes", [_contactus_service__WEBPACK_IMPORTED_MODULE_1__["ContactusService"], _angular_router__WEBPACK_IMPORTED_MODULE_2__["Router"]])
+    ], ContactusComponent);
+    return ContactusComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/contactus/contactus.service.ts":
+/*!************************************************!*\
+  !*** ./src/app/contactus/contactus.service.ts ***!
+  \************************************************/
+/*! exports provided: ContactusService */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ContactusService", function() { return ContactusService; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm5/http.js");
+/* harmony import */ var _config_AppUrls__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../config/AppUrls */ "./src/app/config/AppUrls.ts");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+var ContactusService = /** @class */ (function () {
+    function ContactusService(http) {
+        this.http = http;
+    }
+    ContactusService.prototype.contactUs = function (contactusObj) {
+        return this.http.post(_config_AppUrls__WEBPACK_IMPORTED_MODULE_2__["AppUrls"].UtilitiesWebServicesUrl + 'contactus ', contactusObj);
+        // return this.http.post(AppUrls.UtilitiesWebServicesUrl + 'contactus', contactusObj).map((res: Response) => res);
+    };
+    ContactusService = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Injectable"])({
+            providedIn: 'root'
+        }),
+        __metadata("design:paramtypes", [_angular_common_http__WEBPACK_IMPORTED_MODULE_1__["HttpClient"]])
+    ], ContactusService);
+    return ContactusService;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/contactus/contactus.ts":
+/*!****************************************!*\
+  !*** ./src/app/contactus/contactus.ts ***!
+  \****************************************/
+/*! exports provided: contactus */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "contactus", function() { return contactus; });
+var contactus = /** @class */ (function () {
+    function contactus(id, firstname, lastname, email, phoneno, description, date) {
+        this.id = id;
+        this.firstname = firstname;
+        this.lastname = lastname;
+        this.email = email;
+        this.phoneno = phoneno;
+        this.description = description;
+        this.date = date;
+    }
+    return contactus;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/footer/footer.component.html":
+/*!**********************************************!*\
+  !*** ./src/app/footer/footer.component.html ***!
+  \**********************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<section id=\"footer-menu\" class=\"sections footer-menu\" style=\"background-image: linear-gradient(to right, #950809 0%, #cd020a 100%);color:#ffffff;\">\n    <div class=\"container\">\n        <div class=\"row\">\n            <div class=\"footer-menu-wrapper\">\n                <div class=\"col-md-8 col-sm-12 col-xs-12\">\n                    <div class=\"col-md-4 col-sm-6 col-xs-12\">\n                        <div class=\"menu-item\">\n                            <h5>A PROPOS DE NOUS</h5>\n                            <p>\n                                    Nous sommes des gens passionnés dans le digital, l’innovation, dans les nouvelles technologies et dans les Fintech. Nous avons comme axes, le développement de logiciels, d'applications mobiles et du contenu mobile. \n                            </p>\n                        </div>\n                    </div>\n                    <div class=\"col-md-4 col-sm-6 col-xs-12\">\n                        <div class=\"menu-item\">\n                            <h5>NOS BUREAUX</h5>\n                            <p>\n                                <strong>Virtual Goal Intl</strong>: , 05 Avenue<br> Lokele, Commune de la Gombe<br> Kinshasa – RD Congo <br><strong>Email-Us</strong>: info@virtualgoalintl.com\n\n                            </p>\n                        </div>\n                    </div>\n                    <div class=\"col-md-4 col-sm-6 col-xs-12\">\n                        <div class=\"menu-item\">\n                            <h5>DERNIERES NOUVELLES</h5>\n                            <p>\n                                    Lancement des applications mobiles de e-commerce  « vgoalmarket » et ewallet « vgoalewallet »\n                            </p>\n                        </div>\n                    </div>\n                </div>\n                <div class=\"col-md-4 col-sm-6 col-xs-12\">\n                    <div class=\"menu-item\">\n                        <h5>LOCALISATION</h5>\n                        <iframe src=\"https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d31828.204412971507!2d15.279194687703207!3d-4.311851305041421!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1s+05+Avenue+Lokele%2C+Commune+de+la+Gombe+Kinshasa+%E2%80%93+RD+Congo!5e0!3m2!1sen!2sin!4v1538309250891\" width=\"100%\" height=\"200px\" frameborder=\"0\" style=\"border:0\" allowfullscreen></iframe>\n                        \n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>\n<!--Footer-->\n<footer id=\"footer\" class=\"footer\">\n    <div class=\"container\">\n        <div class=\"row\">\n            <div class=\"footer-wrapper\">\n                <div class=\"col-md-12 col-sm-12 col-xs-12\">\n                    <div class=\"copyright\" style=\"text-align: center;\">\n                        <p>Designed &amp; Developed by \n                            <a  routerLink=\"\" style=\"color:#2066c7;\"> BizMobia </a>2022. All rights reserved. &nbsp;&nbsp;&nbsp;<a routerLink=\"privacy\" style=\"color:rgb(18, 85, 231)\">Privacy</a></p>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n</footer>\n<div class=\"scrollup\">\n    <a href=\"#\">\n        <i class=\"fa fa-chevron-up\"></i>\n    </a>\n</div>"
+
+/***/ }),
+
+/***/ "./src/app/footer/footer.component.scss":
+/*!**********************************************!*\
+  !*** ./src/app/footer/footer.component.scss ***!
+  \**********************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = ".menu-item p {\n  font-size: 12px;\n  text-align: justify;\n  line-height: 28px; }\n\n.copyright p {\n  font-size: 1.125rem;\n  margin-bottom: 1px;\n  padding: 0px 0px 14PX; }\n"
+
+/***/ }),
+
+/***/ "./src/app/footer/footer.component.ts":
+/*!********************************************!*\
+  !*** ./src/app/footer/footer.component.ts ***!
+  \********************************************/
+/*! exports provided: FooterComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "FooterComponent", function() { return FooterComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var FooterComponent = /** @class */ (function () {
+    function FooterComponent() {
+    }
+    FooterComponent.prototype.ngOnInit = function () {
+    };
+    FooterComponent = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+            selector: 'app-footer',
+            template: __webpack_require__(/*! ./footer.component.html */ "./src/app/footer/footer.component.html"),
+            styles: [__webpack_require__(/*! ./footer.component.scss */ "./src/app/footer/footer.component.scss")]
+        }),
+        __metadata("design:paramtypes", [])
+    ], FooterComponent);
+    return FooterComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/header/header.component.html":
+/*!**********************************************!*\
+  !*** ./src/app/header/header.component.html ***!
+  \**********************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<section id=\"social\" class=\"social\" style=\"margin-left:-15px;background-image: linear-gradient(to right, #a90102 0%, #e10e17 100%);position: fixed;width: 100%;z-index: 10;\">\n    <div class=\"container\">\n        <!-- Example row of columns -->\n        <div class=\"row\">\n            <div class=\"social-wrapper\">\n                <div class=\"col-md-6\" style=\"padding-left:0px;\">\n                    <div class=\"social-icon\">\n                        <a href=\"javascript:;\" target=\"_blank\">\n                            <i class=\"fa fa-facebook\"></i>\n                        </a>\n                        <a href=\"javascript:;\" target=\"_blank\">\n                            <i class=\"fa fa-twitter\"></i>\n                        </a>\n                        <a href=\"javascript:;\" target=\"_blank\">\n                            <i class=\"fa fa-google-plus\"></i>\n                        </a>\n                        <a href=\"javascript:;\" target=\"_blank\">\n                            <i class=\"fa fa-linkedin\"></i>\n                        </a>\n                    </div>\n                </div>\n                <div class=\"col-md-6\" style=\"padding-right:0px;\">\n                    <div class=\"social-contact\">\n                        <a href=\"javascript:;\">\n                            <i class=\"fa fa-phone\"></i>+243820044550</a>\n                        <a href=\"javascript:;\">\n                            <i class=\"fa fa-envelope\"></i>info@virtualgoalintl.com</a>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n    <!-- /container -->\n</section>\n<nav class=\"navbar navbar-default\" style=\"margin-left:-15px;position: fixed;z-index: 10;background-color: #fff;width: 100%;margin-top: 35px;\">\n    <div class=\"container\">\n        <!-- Brand and toggle get grouped for better mobile display -->\n        <div class=\"navbar-header\" style=\"height:70px\">\n            <button type=\"button\" class=\"navbar-toggle collapsed\" data-toggle=\"collapse\" data-target=\"#bs-example-navbar-collapse-1\"\n                aria-expanded=\"false\">\n                <!-- <span class=\"sr-only\">Toggle navigation</span> -->\n                <span class=\"sr-only\"></span>\n                <span class=\"icon-bar\"></span>\n                <span class=\"icon-bar\"></span>\n                <span class=\"icon-bar\"></span>\n            </button>\n            <a class=\"navbar-brand\" routerLink=\"home\">\n                <img src=\"assets/image/vgi/logo.png\" alt=\"Logo\" style=\"width:142px;margin-top: -6px;\" />\n            </a>\n        </div>\n        <!-- Collect the nav links, forms, and other content for toggling -->\n        <div class=\"collapse navbar-collapse\" id=\"bs-example-navbar-collapse-1\">\n\n            <ul class=\"nav navbar-nav navbar-right\">\n                <li>\n                    <a routerLink=\"home\">Accueil</a>\n                </li>\n                <li>\n                    <a routerLink=\"\">Services</a>\n                </li>\n                <li>\n                    <a routerLink=\"products\">Produits</a>\n                </li>\n                <li>\n                    <a routerLink=\"clients\"> PARTENAIRES</a>\n                </li>\n                <li>\n                    <a routerLink=\"home\">Emploi</a>\n                </li>\n                <li>\n                    <a routerLink=\"contactus\">Nous contacter</a>\n                </li>\n            </ul>\n\n        </div>\n    </div>\n</nav>"
+
+/***/ }),
+
+/***/ "./src/app/header/header.component.scss":
+/*!**********************************************!*\
+  !*** ./src/app/header/header.component.scss ***!
+  \**********************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = ".navbar {\n  position: relative;\n  min-height: 50px;\n  margin-bottom: 0px !important;\n  border: 1px solid transparent; }\n\n.navbar-default {\n  background-color: transparent;\n  border-color: transparent;\n  border-radius: 0;\n  padding-top: 1px !important; }\n\n.navbar-default .navbar-toggle .icon-bar {\n  background-color: #e90000; }\n\n.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {\n  background-color: #ffc0c0; }\n\n.navbar-default .navbar-collapse, .navbar-default .navbar-form {\n  border-color: #e7e7e7;\n  padding-top: 11px; }\n"
+
+/***/ }),
+
+/***/ "./src/app/header/header.component.ts":
+/*!********************************************!*\
+  !*** ./src/app/header/header.component.ts ***!
+  \********************************************/
+/*! exports provided: HeaderComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "HeaderComponent", function() { return HeaderComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var HeaderComponent = /** @class */ (function () {
+    function HeaderComponent() {
+    }
+    HeaderComponent.prototype.ngOnInit = function () {
+    };
+    HeaderComponent = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+            selector: 'app-header',
+            template: __webpack_require__(/*! ./header.component.html */ "./src/app/header/header.component.html"),
+            styles: [__webpack_require__(/*! ./header.component.scss */ "./src/app/header/header.component.scss")]
+        }),
+        __metadata("design:paramtypes", [])
+    ], HeaderComponent);
+    return HeaderComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/home/home.component.html":
+/*!******************************************!*\
+  !*** ./src/app/home/home.component.html ***!
+  \******************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<!--Home page style-->\n<header id=\"home\" class=\"home\" style=\"margin-top: 107px\">\n    <div class=\"overlay-fluid-block \">\n        <div class=\"container text-center\">\n            <div class=\"row\">\n                <div class=\"home-wrapper\">\n                    <div class=\"col-md-10 col-md-offset-1\">\n                        <div class=\"home-content\">\n                            <h2 style=\"color: #fff;font-weight: bold\">Nous vous offrons le futur dans le\n                                <br> Digital présentement ici chez\n                            </h2>\n                            <br>\n                            <h1 style=\"color: #be060c\">\n                                VIRTUAL GOAL INTL\n                            </h1>\n                        </div>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n</header>\n<section id=\"features\" class=\"features sections\">\n    <!-- <div class=\" col-md-12 head_title text-center\"></div> -->\n    <div class=\"col-md-1\"></div>\n    <div class=\"col-md-10 text-center \">\n        <br>\n        <span style=\"color: #ca080e;font-size: 30px;\">Bienvenue chez Virtual Goal</span>\n        <br>\n        <h5>VIRTUAL GOAL INTL EST UNE FINTECH</h5>\n        <hr class=\"lin1\">\n        <p>Crée en 2022, ayant en son sein des dirigeants de plus de 10 ans d'expérience dans le domaine du digital, des systèmes\n            de paiement et dans la monétique. Nous avons comme axes, le développement de logiciels, d'applications mobiles\n            et du contenu mobile. Ayant un grand partenaire au nom de BizMobia en Inde. L'Inde qui est l'un des pays des\n            grandes sociétés de logiciels au monde. Nous sommes partenaires de 3 opérateurs de téléphonie mobile dans le\n            pays.\n        </p>\n    </div>\n    <div class=\"col-md-1\"></div>\n    <div class=\"container animate slideInRight\">\n        <div class=\"row\">\n            <div class=\"main_features_content2\" style=\"margin-top: 35px\">\n                <div class=\"col-sm-6\">\n                    <div class=\"single_features_left text-center\">\n                        <img src=\"assets/image/vgi/home1.jpg\" alt=\"\" style=\"margin-top: 62px;height: auto;\" />\n                    </div>\n                </div>\n                <div class=\"col-sm-6 \">\n                    <div class=\"single_features_right \">\n                        <h4 style=\"font-size: 23px\">DITES NOUS VOS REVES, NOUS LES REALISONS</h4>\n                        <hr class=\"lin2\">\n                        <p style=\"line-height: 32px;text-align: justify;font-size: 15px;\">\n                            Virtual Goal International est une société réputée FinTech International basée à Kinshasa, en RD Congo. Nous fournissons\n                            des services numériques dans chaque domaine de la vie. Nous fournissons l'infrastructure numérique\n                            complète pour les universités, les écoles, les hôpitaux, les restaurants, etc.\n                        </p>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>\n<section id=\"business\" class=\"portfolio sections desktop\">\n    <div class=\"container\">\n        <div class=\"head_title text-center\">\n            <p style=\"font-size: 19px;line-height: 22px;font-weight: bold;color: #ca080e\">Veuillez faire glisser la souris sur les images ci-dessous pour voir les détails</p>\n        </div>\n        <div class=\"row\">\n            <div class=\"portfolio-wrapper text-center\">\n                <div class=\"col-md-4 col-sm-6 col-xs-12\">\n                    <!-- <div class=\"community-edition\"> -->\n                    <div class=\"containerz\">\n                        <img src=\"assets/image/vgi/vgi3.jpg\" alt=\"Avatar\" class=\"imagez\">\n                        <div class=\"overlayz\">\n                            <div class=\"textz\">Qui sommes-nous ?</div>\n                            <div class=\"para\">\n\n                                Un groupe d'experts et de professionnels talentueux travaillant pour faciliter la vie de nos populations\n                            </div>\n                        </div>\n                    </div>\n                    <!-- </div> -->\n                </div>\n\n                <div class=\"col-md-4 col-sm-6 col-xs-12 smallhide\">\n                    <div class=\"containerz\">\n                        <img src=\"assets/image/vgi/vgi6.jpg\" alt=\"Avatar\" class=\"imagez\">\n                        <div class=\"overlayz\">\n                            <div class=\"textz\">Pourquoi nous choisir?</div>\n                            <div class=\"para\">\n                                Certains diront peut-être un peu trop, et nous apportons enthousiasme et engagement à tous les projets sur lesquels nous\n                                travaillons.\n                            </div>\n                        </div>\n                    </div>\n                </div>\n\n                <div class=\"col-md-4 col-sm-6 col-xs-12 flowrightt\">\n                    <div class=\"containerz\">\n                        <img src=\"assets/image/vgi/vgi4.jpg\" alt=\"Avatar\" class=\"imagez\">\n                        <div class=\"overlayz\">\n                            <div class=\"textz\">Notre Mission</div>\n                            <div class=\"para\">\n                                Faciliter la vie des gens et pour nos clients, améliorer leur rendement par des solutions adaptées, de haute qualité pour\n                                les besoins spécifiques du marché.\n                            </div>\n                        </div>\n                    </div>\n                </div>\n            </div>\n        </div>\n        <div class=\"row\">\n            <div class=\"portfolio-wrapper text-center\">\n              <div class=\"col-md-4 col-sm-6 col-xs-12\">\n                <!-- <div class=\"community-edition\"> -->\n                <div class=\"containerz\">\n                  <img src=\"assets/image/vgi/vgi5.jpg\" alt=\"Avatar\" class=\"imagez\">\n                  <div class=\"overlayz\">\n                    <div class=\"textz\">Notre Vision</div>\n                    <div class=\"para\">\n                      Innovatrice dans le secteur du Digital en RDC, dans la sous- région et même en Afrique.\n                    </div>\n                  </div>\n                </div>\n                <!-- </div> -->\n              </div>\n      \n              <div class=\"col-md-4 col-sm-6 col-xs-12 smallhide\">\n                <div class=\"containerz\">\n                  <img src=\"assets/image/vgi/ma.jpg\" alt=\"Avatar\" class=\"imagez\">\n                  <div class=\"overlayz\">\n                    <div class=\"textz\">TBD</div>\n                    <div class=\"para\">\n                      TBD\n                    </div>\n                  </div>\n                </div>\n              </div>\n      \n              <div class=\"col-md-4 col-sm-6 col-xs-12 flowrightt\">\n                <div class=\"containerz\">\n                  <img src=\"assets/image/vgi/sd.jpg\" alt=\"Avatar\" class=\"imagez\">\n                  <div class=\"overlayz\">\n                    <div class=\"textz\">TBD</div>\n                    <div class=\"para\">\n                      TBD\n                    </div>\n                  </div>\n                </div>\n              </div>\n            </div>\n          </div>\n    </div>\n</section>"
+
+/***/ }),
+
+/***/ "./src/app/home/home.component.scss":
+/*!******************************************!*\
+  !*** ./src/app/home/home.component.scss ***!
+  \******************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = ".containerz {\n  position: relative;\n  width: 100%;\n  margin-bottom: 10px; }\n\n.imagez {\n  display: block;\n  width: 100%;\n  height: 300px; }\n\n.overlayz {\n  position: absolute;\n  bottom: 0;\n  left: 0;\n  right: 0;\n  background-image: linear-gradient(to right, #950809 0%, #cd020a 100%);\n  overflow: hidden;\n  width: 100%;\n  height: 100%;\n  -webkit-transform: scale(0);\n  transform: scale(0);\n  transition: .3s ease;\n  opacity: 0.8; }\n\n.containerz:hover .overlayz {\n  -webkit-transform: scale(1);\n  transform: scale(1); }\n\n.textz {\n  color: white;\n  font-size: 20px;\n  position: absolute;\n  top: 20%;\n  left: 50%;\n  -webkit-transform: translate(-50%, -50%);\n  transform: translate(-50%, -50%);\n  text-align: center;\n  white-space: nowrap;\n  border: 1px solid #ffffff;\n  padding: 15px;\n  width: 80%; }\n\n.para {\n  color: white;\n  font-size: 15px;\n  position: absolute;\n  top: 60%;\n  left: 50%;\n  -webkit-transform: translate(-50%, -50%);\n  transform: translate(-50%, -50%);\n  text-align: justify; }\n\n.sections {\n  padding-top: 100px;\n  padding-bottom: 16px !important;\n  position: relative;\n  overflow: hidden; }\n\n.lin1 {\n  margin-top: 20px;\n  margin-bottom: 20px;\n  border: 0;\n  border-top: 3px solid #a90102;\n  width: 10%; }\n\n.lin2 {\n  margin-top: 20px;\n  margin-bottom: 20px;\n  border: 0;\n  border-top: 1px solid #a90102;\n  width: 100%; }\n\n.logo-small {\n  color: #02bbf2;\n  font-size: 50px; }\n\n.log {\n  text-align: center;\n  padding: 69px; }\n\n.sections {\n  padding-top: 0px;\n  padding-bottom: 100px;\n  position: relative;\n  overflow: hidden; }\n\n.single_service2 img {\n  width: 70px;\n  margin-top: 0px; }\n\n.single_service_left {\n  display: inline-block;\n  vertical-align: top; }\n\n.single_service_right p {\n  font-size: 18px;\n  color: #777777;\n  text-align: justify; }\n\n.parallax {\n  /* The image used */\n  background-image: url(\"/assets/images/contact.jpg\");\n  /* Set a specific height */\n  min-height: 270px;\n  /* Create the parallax scrolling effect */\n  background-attachment: fixed;\n  background-position: center;\n  background-repeat: no-repeat;\n  background-size: cover;\n  text-align: center;\n  color: #ffffff; }\n\n.overl {\n  position: absolute;\n  z-index: 2;\n  width: 101%;\n  height: 270px;\n  opacity: 0.7;\n  background-color: #094464; }\n\n.head_title {\n  margin-bottom: 1px; }\n\n.head_title p {\n  max-width: 100%;\n  margin: 10px auto;\n  padding-bottom: 20px; }\n\np {\n  line-height: 0rem;\n  font-size: 0rem; }\n"
+
+/***/ }),
+
+/***/ "./src/app/home/home.component.ts":
+/*!****************************************!*\
+  !*** ./src/app/home/home.component.ts ***!
+  \****************************************/
+/*! exports provided: HomeComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "HomeComponent", function() { return HomeComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var HomeComponent = /** @class */ (function () {
+    function HomeComponent() {
+    }
+    HomeComponent.prototype.ngOnInit = function () {
+    };
+    HomeComponent = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+            selector: 'app-home',
+            template: __webpack_require__(/*! ./home.component.html */ "./src/app/home/home.component.html"),
+            styles: [__webpack_require__(/*! ./home.component.scss */ "./src/app/home/home.component.scss")]
+        }),
+        __metadata("design:paramtypes", [])
+    ], HomeComponent);
+    return HomeComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/privacy/privacy.component.html":
+/*!************************************************!*\
+  !*** ./src/app/privacy/privacy.component.html ***!
+  \************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<div style=\"margin-top:90px;margin-bottom: 10px;padding: 17px 102px;text-align: justify\">\n  <h3>Introduction</h3>\n  Bizmobia, previously known as NCVAS, is a known name in growing market of Mobile Value Added Services (MVAS), Mobile Applications, Software Development, Apps Development and Internet Products & Services. We are very big known name in content distributer and Software development. Our mission is to deliver all type of entertainment content through all platforms of Digital Media Globally and having valuable years of experience in software and Apps Development, using the latest technologies . \n  <br><br>\n  BizMobia has association with more than 20 operators in 30 countries includes India, SEA and MEA. We have more than 1 billion successful downloads.\n  <br><br>\n  Thank you for being with us, as we assure you for security of information required for using our any product and we will never let you down. Please read the follwoing information and statement from us to understand our privacy policy\n<br><br>\n<h3>Personal identifications</h3>\nWhen you use our product either Mobile App or Web Application, the basic personal information provided by is never shared with any third party client \nWe use data collection devices such as \"cookies\" on certain pages of the Website to help analyse our web page flow, measure promotional effectiveness, and promote trust and safety. \"Cookies\" are small files placed on your hard drive that assist us in providing our services. We offer certain features that are only available through the use of a \"cookie\".\n <br><br>           \nGet A Free Quote / Need a Help ? Contact Us\n<br><br><br>\n<h3>About Us</h3>\nBizMobia is dedicated to delivering all of our clients the same high standard of project execution and excellence. Every business is unique and it is critical that your online presence, Mobile App or Software tool distinguishes you from your competition.\n</div>\n"
+
+/***/ }),
+
+/***/ "./src/app/privacy/privacy.component.scss":
+/*!************************************************!*\
+  !*** ./src/app/privacy/privacy.component.scss ***!
+  \************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = ""
+
+/***/ }),
+
+/***/ "./src/app/privacy/privacy.component.ts":
+/*!**********************************************!*\
+  !*** ./src/app/privacy/privacy.component.ts ***!
+  \**********************************************/
+/*! exports provided: PrivacyComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "PrivacyComponent", function() { return PrivacyComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var PrivacyComponent = /** @class */ (function () {
+    function PrivacyComponent() {
+    }
+    PrivacyComponent.prototype.ngOnInit = function () {
+    };
+    PrivacyComponent = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+            selector: 'app-privacy',
+            template: __webpack_require__(/*! ./privacy.component.html */ "./src/app/privacy/privacy.component.html"),
+            styles: [__webpack_require__(/*! ./privacy.component.scss */ "./src/app/privacy/privacy.component.scss")]
+        }),
+        __metadata("design:paramtypes", [])
+    ], PrivacyComponent);
+    return PrivacyComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/products/products.component.html":
+/*!**************************************************!*\
+  !*** ./src/app/products/products.component.html ***!
+  \**************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<!-- Sections -->\n<section id=\"price\" class=\"price sections\" style=\"margin-top: 50px;text-align: center\">\n\n\n  <div class=\"head_title text-center\">\n    <h1 style=\"color: #c3070b\">NOS PRODUITS</h1>\n    <p style=\"color: #c3070b\">Disponible sur téléphone mobile et sur le web</p>\n  </div>\n  <!-- <span style=\"font-size: 10px;\">CLICK BELOW GIVEN SLIDER BUTTON TO VIEW MOBILE OR DESKTOP APPLICATIONS</span> -->\n  <!-- Example row of columns -->\n  <div class=\"cd-pricing-container \">\n\n    <div class=\"col-md-12\">\n      <!-- <h3 style=\"color: #e80002;font-weight: bold\">Voici nos applications</h3> -->\n    </div>\n    <!-- <br> -->\n    <ul class=\"cd-pricing-list cd-bounce-invert\">\n      <div class=\"col-md-12\">\n\n        <div class=\"col-md-12\">\n          <div class=\"col-md-3\">\n            <h5 style=\"color: #e80002;font-weight: bold\">VgoalMarket</h5>\n            <div style=\"width: 100%;height: 200px; border:1px solid #e80002 ;\">\n              <img src=\"assets/image/vgi/market.png\" width=\"100\" style=\"width:175px\" />\n            </div>\n            \n          </div>\n          <div class=\"col-md-3\">\n            <h5 style=\"color: #e80002;font-weight: bold\">VgoaleWallet</h5>\n            <div style=\"width: 100%;height: 200px; border:1px solid #e80002; \">\n              <img src=\"assets/image/vgi/wallet.png\" width=\"100\" style=\"width:175px\" />\n            </div>\n          </div>\n          <div class=\"col-md-3\">\n            <h5 style=\"color: #e80002;font-weight: bold\">VgoalTicket</h5>\n            <div style=\"width: 100%;height: 200px; border:1px solid #e80002; \">\n              <img src=\"assets/image/vgi/ticket.png\" width=\"100\" style=\"width:108px\" />\n            </div>\n          </div>\n          <div class=\"col-md-3\">\n            <h5 style=\"color: #e80002;font-weight: bold\">VgoalMedicalis</h5>\n            <div style=\"width: 100%;height: 200px; border:1px solid #e80002;padding-top: 12px \">\n              <img src=\"assets/image/vgi/medical.png\" width=\"100\" style=\"width:175px\" />\n            </div>\n          </div>\n        </div>\n      </div>\n    </ul>\n    <!-- .cd-pricing-list -->\n\n  </div>\n  <!-- .cd-pricing-container -->\n\n\n</section>"
+
+/***/ }),
+
+/***/ "./src/app/products/products.component.scss":
+/*!**************************************************!*\
+  !*** ./src/app/products/products.component.scss ***!
+  \**************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = ".cd-pricing-switcher .fieldset {\n  display: inline-block;\n  position: relative;\n  padding: 2px;\n  border-radius: 50em;\n  background: #59c3e478;\n  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);\n  background-image: linear-gradient(to right, #1c92d2 0%, #f2fcfe 75%, #1c92d2 100%); }\n\n.cd-pricing-switcher:hover {\n  background-position: right center; }\n\n.cd-pricing-switcher .cd-switch {\n  position: absolute;\n  top: 2px;\n  left: 2px;\n  height: 40px;\n  width: 90px;\n  background-color: #ffffff;\n  border-radius: 50em;\n  transition: -webkit-transform 0.5s;\n  transition: transform 0.5s;\n  transition: transform 0.5s, -webkit-transform 0.5s; }\n\n@media (min-width: 1200px) {\n  .container {\n    width: 100%;\n    padding-bottom: 25px; } }\n\n.containerr {\n  position: relative;\n  width: 100%;\n  margin-bottom: 15px;\n  background-color: #fff;\n  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); }\n\n.imagee {\n  display: block;\n  width: 100%;\n  height: 300px; }\n\n.overlayy {\n  position: absolute;\n  bottom: 0;\n  left: 0;\n  right: 0;\n  background-color: #2066c7e7;\n  overflow: hidden;\n  width: 100%;\n  height: 0;\n  transition: .5s ease; }\n\n.containerr:hover .overlayy {\n  height: 100%; }\n\n.textt {\n  color: white;\n  font-size: 20px;\n  position: absolute;\n  top: 50%;\n  left: 50%;\n  -webkit-transform: translate(-50%, -50%);\n  transform: translate(-50%, -50%);\n  text-align: center; }\n\n.lin1 {\n  margin-top: 20px;\n  margin-bottom: 20px;\n  border: 0;\n  border-top: 3px solid #03bbf2;\n  width: 30%; }\n\n.lin2 {\n  margin-top: 20px;\n  margin-bottom: 20px;\n  border: 0;\n  border-top: 1px solid #03bbf2;\n  width: 100%; }\n\n.parallax {\n  /* The image used */\n  background-image: url(\"/assets/images/homebg.jpg\");\n  /* Set a specific height */\n  min-height: 250px;\n  /* Create the parallax scrolling effect */\n  background-attachment: fixed;\n  background-position: center;\n  background-repeat: no-repeat;\n  background-size: cover;\n  text-align: center; }\n\n.logo-small {\n  color: #2fc6f3;\n  font-size: 50px; }\n\n.log {\n  text-align: center;\n  padding: 30px;\n  color: #ffffff; }\n\n.slideanim {\n  padding-top: 40px; }\n\n.overl {\n  position: absolute;\n  z-index: 2;\n  width: 100%;\n  height: 250px;\n  opacity: 0.7;\n  background-color: #094464; }\n"
+
+/***/ }),
+
+/***/ "./src/app/products/products.component.ts":
+/*!************************************************!*\
+  !*** ./src/app/products/products.component.ts ***!
+  \************************************************/
+/*! exports provided: ProductsComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ProductsComponent", function() { return ProductsComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _products_service__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./products.service */ "./src/app/products/products.service.ts");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+var ProductsComponent = /** @class */ (function () {
+    function ProductsComponent(productService, router) {
+        this.productService = productService;
+        this.router = router;
+    }
+    ProductsComponent.prototype.ngOnInit = function () {
+        var _this = this;
+        this.mobileAppList = [];
+        this.webAppList = [];
+        this.productService.getAllMobileApplciations().subscribe(function (data) {
+            _this.mobileAppList = data;
+        }, function (error) {
+            console.log('error', error);
+        });
+        this.productService.getAllWebApplciations().subscribe(function (data) {
+            _this.webAppList = data;
+        }, function (error) {
+            console.log('error', error);
+        });
+    };
+    ProductsComponent = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+            selector: 'app-products',
+            template: __webpack_require__(/*! ./products.component.html */ "./src/app/products/products.component.html"),
+            styles: [__webpack_require__(/*! ./products.component.scss */ "./src/app/products/products.component.scss")]
+        }),
+        __metadata("design:paramtypes", [_products_service__WEBPACK_IMPORTED_MODULE_1__["ProductsService"], _angular_router__WEBPACK_IMPORTED_MODULE_2__["Router"]])
+    ], ProductsComponent);
+    return ProductsComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/products/products.service.ts":
+/*!**********************************************!*\
+  !*** ./src/app/products/products.service.ts ***!
+  \**********************************************/
+/*! exports provided: ProductsService */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ProductsService", function() { return ProductsService; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm5/http.js");
+/* harmony import */ var _config_AppUrls__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../config/AppUrls */ "./src/app/config/AppUrls.ts");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+var ProductsService = /** @class */ (function () {
+    function ProductsService(http) {
+        this.http = http;
+    }
+    ProductsService.prototype.getAllWebApplciations = function () {
+        return this.http.get(_config_AppUrls__WEBPACK_IMPORTED_MODULE_2__["AppUrls"].TextWebServicesUrl + 'getallwebapplicationweb ');
+    };
+    ProductsService.prototype.getAllMobileApplciations = function () {
+        return this.http.get(_config_AppUrls__WEBPACK_IMPORTED_MODULE_2__["AppUrls"].TextWebServicesUrl + 'getallappsweb ');
+    };
+    ProductsService = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Injectable"])({
+            providedIn: 'root'
+        }),
+        __metadata("design:paramtypes", [_angular_common_http__WEBPACK_IMPORTED_MODULE_1__["HttpClient"]])
+    ], ProductsService);
+    return ProductsService;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/services/services.component.html":
+/*!**************************************************!*\
+  !*** ./src/app/services/services.component.html ***!
+  \**************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<section id=\"business\" class=\"portfolio sections desktop\" style=\"margin-top: 90px\">\n  <div class=\"container\">\n    <div class=\"head_title text-center\">\n      <h3>SERVICES WE PROVIDE</h3>\n      <p>Please put your mouse over the image to view details.</p>\n    </div>\n    <div class=\"row\">\n      <div class=\"portfolio-wrapper text-center\">\n        <div class=\"col-md-4 col-sm-6 col-xs-12\">\n          <div class=\"container2\">\n            <img src=\"assets/images/homebg.jpg\" alt=\"Avatar\" class=\"image2\">\n            <div class=\"overlay2\">\n              <div class=\"text2\">Software Development</div>\n              <div class=\"para\">\n                We specialize in building custom products based on your specific need.Since every organization has unique requirements.\n              </div>\n            </div>\n          </div>\n        </div>\n\n        <div class=\"col-md-4 col-sm-6 col-xs-12 smallhide\">\n          <div class=\"container2\">\n            <img src=\"assets/images/ip1.jpg\" alt=\"Avatar\" class=\"image2\">\n            <div class=\"overlay2\">\n              <div class=\"text2\">Mobile Applications</div>\n              <div class=\"para\">\n\n                We custom design, develop, test and deploy Android apps of your choice. Our team is well versed with Android SDK.\n              </div>\n            </div>\n          </div>\n        </div>\n\n        <div class=\"col-md-4 col-sm-6 col-xs-12 smalldesk\">\n          <div class=\"container3\">\n            <img src=\"assets/images/ma2.jpg\" alt=\"Avatar\" class=\"image3\">\n            <div class=\"overlay3\">\n              <div class=\"text3\">Mobile Applications</div>\n              <div class=\"para\">\n                We custom design, develop, test and deploy Android apps of your choice. Our team is well versed with Android SDK.\n              </div>\n            </div>\n          </div>\n        </div>\n        <div class=\"col-md-4 col-sm-6 col-xs-12 flowrightt\">\n          <div class=\"container3\">\n            <img src=\"assets/images/ani.jpg\" alt=\"Avatar\" class=\"image3\">\n            <div class=\"overlay3\">\n              <div class=\"text3\">Great Animation</div>\n              <div class=\"para\">\n                Animating elements of an interface serves both a functional and aesthetic purpose, when applied thoughtfully.\n              </div>\n            </div>\n          </div>\n        </div>\n        <div class=\"col-md-4 col-sm-6 col-xs-12 flowright\">\n          <div class=\"container2\">\n            <img src=\"assets/images/am.jpg\" alt=\"Avatar\" class=\"image2\">\n            <div class=\"overlay2\">\n              <div class=\"text2\">Great Animation</div>\n              <div class=\"para\">\n                Animating elements of an interface serves both a functional and aesthetic purpose, when applied thoughtfully.\n              </div>\n            </div>\n          </div>\n        </div>\n      </div>\n    </div>\n    <div class=\"row\">\n      <div class=\"portfolio-wrapper2 text-center\">\n        <div class=\"col-md-4 col-sm-6 col-xs-12\">\n          <div class=\"container2\">\n            <img src=\"assets/images/ip.jpg\" alt=\"Avatar\" class=\"image2\">\n            <div class=\"overlay2\">\n              <div class=\"text2\">Internet Product &amp; Services</div>\n              <div class=\"para\">\n                Our highly experienced engineers develop applications that offer the highest level of usability, scalability and compatibility.\n              </div>\n            </div>\n          </div>\n        </div>\n        <div class=\"col-md-4 col-sm-6 col-xs-12 smallhide\">\n          <div class=\"container2\">\n            <img src=\"assets/images/va.jpg\" alt=\"Avatar\" class=\"image2\">\n            <div class=\"overlay2\">\n              <div class=\"text2\">Mobile Value Added Services</div>\n              <div class=\"para\">\n                BizMobia is distributing content through Mobile which includes music, videos, SMS, applications and providing our service\n                .\n              </div>\n            </div>\n          </div>\n        </div>\n        <div class=\"col-md-4 col-sm-6 col-xs-12 smalldesk\">\n          <div class=\"container3\">\n            <img src=\"assets/images/va.jpg\" alt=\"Avatar\" class=\"image3\">\n            <div class=\"overlay3\">\n              <div class=\"text3\">Mobile Value Added Services</div>\n              <div class=\"para\">\n                BizMobia is distributing content through Mobile which includes music, videos, SMS, applications and providing our service\n                .\n              </div>\n            </div>\n          </div>\n        </div>\n        <div class=\"col-md-4 col-sm-6 col-xs-12 flowrightt\">\n          <div class=\"container3\">\n            <img src=\"assets/images/sd.jpg\" alt=\"Avatar\" class=\"image3\">\n            <div class=\"overlay3\">\n              <div class=\"text3\">Software Maintenance</div>\n              <div class=\"para\">\n                We also provide software maintenance services in order to keep the system  smooth to work fast and consistently.\n              </div>\n            </div>\n          </div>\n        </div>\n        <div class=\"col-md-4 col-sm-6 col-xs-12 flowright\">\n          <div class=\"container2\">\n            <img src=\"assets/images/sd.jpg\" alt=\"Avatar\" class=\"image2\">\n            <div class=\"overlay2\">\n              <div class=\"text2\">Software Maintenance</div>\n              <div class=\"para\">\n                We also provide software maintenance services in order to keep the system  smooth to work fast and consistently.\n              </div>\n            </div>\n          </div>\n        </div>\n      </div>\n    </div>\n  </div>\n</section>\n<section id=\"business\" class=\"portfolio sections mobile\">\n  <div class=\"container\">\n    <div class=\"head_title text-center\">\n      <h3>SERVICES WE PROVIDE</h3>\n      <p>Please put your mouse over the image to view details.</p>\n    </div>\n    <div class=\"row\">\n      <div class=\"portfolio-wrapper text-center\">\n        <div class=\"col-md-4 col-sm-6 col-xs-12\">\n          <div class=\"containerr\">\n            <img src=\"assets/images/homebg.jpg\" alt=\"Avatar\" class=\"imagee\">\n            <div class=\"overlayy\">\n                <div class=\"textt\">Software Development</div>\n              <div class=\"para\">\n                We specialize in building custom products based on your specific need.Since every organization has unique requirements.\n              </div>\n            </div>\n          </div>\n        </div>\n        <div class=\"col-md-4 col-sm-6 col-xs-12\">\n          <div class=\"containerr\">\n            <img src=\"assets/images/ma2.jpg\" alt=\"Avatar\" class=\"imagee\">\n            <div class=\"overlayy\">\n              <div class=\"textt\">Mobile Applications</div>\n              <div class=\"para\">\n                We custom design, develop, test and deploy Android apps of your choice. Our team is well versed with Android SDK.\n              </div>\n            </div>\n          </div>\n        </div>\n        <div class=\"col-md-4 col-sm-6 col-xs-12\">\n          <div class=\"containerr\">\n            <img src=\"assets/images/am.jpg\" alt=\"Avatar\" class=\"imagee\">\n            <div class=\"overlayy\">\n              <div class=\"textt\">Great Animation</div>\n              <div class=\"para\">\n                Animating elements of an interface serves both a functional and aesthetic purpose, when applied thoughtfully.\n              </div>\n            </div>\n          </div>\n        </div>\n      </div>\n    </div>\n    <div class=\"row\">\n      <div class=\"portfolio-wrapper2 text-center\">\n        <div class=\"col-md-4 col-sm-6 col-xs-12\">\n          <div class=\"containerr\">\n            <img src=\"assets/images/ip.jpg\" alt=\"Avatar\" class=\"imagee\">\n            <div class=\"overlayy\">\n              <div class=\"textt\">Internet Product &amp; Services</div>\n              <div class=\"para\">\n                Our highly experienced engineers develop applications that offer the highest level of usability, scalability and compatibility.\n              </div>\n            </div>\n          </div>\n        </div>\n        <div class=\"col-md-4 col-sm-6 col-xs-12\">\n          <div class=\"containerr\">\n            <img src=\"assets/images/va.jpg\" alt=\"Avatar\" class=\"imagee\">\n            <div class=\"overlayy\">\n              <div class=\"textt\">Mobile Value Added Services</div>\n              <div class=\"para\">\n                BizMobia is distributing content through Mobile which includes music, videos, SMS, applications and providing our service\n                .\n              </div>\n            </div>\n          </div>\n        </div>\n        <div class=\"col-md-4 col-sm-6 col-xs-12\">\n          <div class=\"containerr\">\n            <img src=\"assets/images/sd.jpg\" alt=\"Avatar\" class=\"imagee\">\n            <div class=\"overlayy\">\n              <div class=\"textt\">Software Maintenance</div>\n              <div class=\"para\">\n                We also provide software maintenance services in order to keep the system  smooth to work fast and consistently.\n              </div>\n            </div>\n          </div>\n        </div>\n      </div>\n    </div>\n  </div>\n</section>\n<div class=\"parallax\">\n  <div class=\"overl\">\n    <div class=\"row slideanim\">\n      <div class=\"col-sm-4 log\">\n        <h4><li class=\"fa fa-cog\"></li> &nbsp;&nbsp;Bootstrap 3.X</h4>\n      </div>\n      <div class=\"col-sm-4 log\">\n        <h4><li class=\"fa fa-mobile\"></li> &nbsp;&nbsp;100% Responsive</h4>\n      </div>\n      <div class=\"col-sm-4 log\">\n        <h4><li class=\"fa fa-html5\"></li> &nbsp;&nbsp;HTML 5</h4>\n      </div>\n      <div class=\"col-sm-4 log\">\n        <h4><li class=\"fa fa-chain-broken\"></li> &nbsp;&nbsp;Javascript</h4>\n      </div>\n      <div class=\"col-sm-4 log\">\n        <h4><li class=\"fa fa-magic\"></li> &nbsp;&nbsp;JQuery</h4>\n      </div>\n      <div class=\"col-sm-4 log\">\n        <h4><li class=\"fa fa-apple\"></li> &nbsp;&nbsp;iOS &amp; Android</h4>\n      </div>\n      <div class=\"col-sm-4 log\">\n        <h4><li class=\"fa fa-lock\"></li> &nbsp;&nbsp;Security</h4>\n      </div>\n      <div class=\"col-sm-4 log\">\n        <h4><li class=\"fa fa-arrows-alt\"></li> &nbsp;&nbsp;Great Animation</h4>\n      </div>\n      <div class=\"col-sm-4 log\">\n        <h4><li class=\"fa fa-clock-o\"></li> &nbsp;&nbsp;Unlimited Support</h4>\n      </div>\n    </div>\n  </div>\n  </div>\n  <div class=\"parallax2\">\n   \n  </div>\n  <section id=\"features\" class=\"features sections\">\n    <div class=\"container\">\n        <div class=\"row\">\n            <div class=\"main_features_content2\">\n                <div class=\"col-sm-3\">\n                    <div class=\"single_features_left text-center\">\n                        <img src=\"assets/images/iphome.png\" alt=\"\" />\n                    </div>\n                </div>\n                <div class=\"col-sm-9 \">\n                    <div class=\"single_features_right \">\n                        <h5>BizMobia can help strategically build your brand, improve your overall and develop more meaningful relationships with your customers.</h5>\n                        <hr class=\"lin2\">\n                        <p style=\"line-height: 32px;text-align: justify;font-size: 15px;\">\n                          Great design, development and usability are the most paramount aspects of your product and you require to nail them down as early as possible, ideally during your orchestrating-stage. We are here to avail you achieve the best results and kickstart your product. We relish to work with people that have a good sense of design, development and understand their users and their terminus goal. Tell us about your background, about your customers, and any categorical goals you’ll want to achieve. We will ask the right questions and present you with an orchestration of action yare to surmount the digital world!\n                        </p>\n                        <p style=\"line-height: 32px;text-align: justify;font-size: 15px;\">\n                          With a very ocular perceiver-catching and expert marketing presentation, we avail our clients in integrating value to how their business is apperceived. A well-made company profile is a very efficient marketing implement for businesses. If you are probing for options to develop online tutorials, animated advertising, web banners, corporate business presentations, we can do the job for you. You can send the business presentation to your customers on a CD or in the email, just like sending the company brochure.\n                        </p>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>\n\n"
+
+/***/ }),
+
+/***/ "./src/app/services/services.component.scss":
+/*!**************************************************!*\
+  !*** ./src/app/services/services.component.scss ***!
+  \**************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = ".lin1 {\n  margin-top: 20px;\n  margin-bottom: 20px;\n  border: 0;\n  border-top: 3px solid #03bbf2;\n  width: 10%; }\n\n.lin2 {\n  margin-top: 20px;\n  margin-bottom: 20px;\n  border: 0;\n  border-top: 1px solid #03bbf2;\n  width: 100%; }\n\n.logo-small {\n  color: #2fc6f3;\n  font-size: 50px; }\n\n.log {\n  text-align: center;\n  padding: 30px; }\n\n.sections {\n  padding-top: 0px;\n  padding-bottom: 100px;\n  position: relative;\n  overflow: hidden;\n  padding-top: 40px; }\n\n.single_service2 img {\n  width: 70px;\n  margin-top: 0px; }\n\n.single_service2 {\n  margin-top: 18px; }\n\n.single_service_left {\n  display: inline-block;\n  vertical-align: top; }\n\n.single_service_right p {\n  font-size: 18px;\n  color: #777777;\n  line-height: 27px; }\n\n.sertext {\n  font-weight: 500 !important;\n  font-size: 15px !important;\n  color: #000000 !important; }\n\n.serdettext {\n  font-size: 15px !important;\n  color: black !important; }\n\n.containerr {\n  position: relative;\n  width: 100%;\n  margin-bottom: 10px; }\n\n.imagee {\n  display: block;\n  width: 100%;\n  height: 300px; }\n\n.overlayy {\n  position: absolute;\n  bottom: 0;\n  left: 0;\n  right: 0;\n  background-color: #272727b7;\n  overflow: hidden;\n  width: 100%;\n  height: 100%;\n  transition: .5s ease; }\n\n.containerr:hover .overlayy {\n  height: 100%; }\n\n.textt {\n  color: white;\n  font-size: 20px;\n  position: absolute;\n  top: 25%;\n  left: 50%;\n  -webkit-transform: translate(-50%, -50%);\n  transform: translate(-50%, -50%);\n  text-align: center;\n  white-space: nowrap;\n  border: 1px solid #ffffff;\n  padding: 15px;\n  width: 80%; }\n\n.para {\n  color: white;\n  font-size: 15px;\n  position: absolute;\n  top: 60%;\n  left: 50%;\n  -webkit-transform: translate(-50%, -50%);\n  transform: translate(-50%, -50%);\n  text-align: justify; }\n\n.parallax {\n  /* The image used */\n  background-image: url(\"/assets/images/homebg.jpg\");\n  /* Set a specific height */\n  min-height: 500px;\n  /* Create the parallax scrolling effect */\n  background-attachment: fixed;\n  background-position: center;\n  background-repeat: no-repeat;\n  background-size: cover;\n  text-align: center; }\n\n.parallax2 {\n  /* The image used */\n  background-image: url(\"/assets/images/office2.jpg\");\n  /* Set a specific height */\n  min-height: 500px;\n  /* Create the parallax scrolling effect */\n  background-attachment: fixed;\n  background-position: center;\n  background-repeat: no-repeat;\n  background-size: cover;\n  text-align: center; }\n\n.log {\n  text-align: left;\n  padding: 45px;\n  color: #ffffff;\n  padding-left: 121px; }\n\n.slideanim {\n  padding-top: 40px; }\n\n.container2 {\n  position: relative;\n  width: 100%;\n  margin-bottom: 10px;\n  height: 300px; }\n\n.image2 {\n  display: block;\n  width: 100%;\n  height: 300px; }\n\n.overlay2 {\n  position: absolute;\n  bottom: 0;\n  left: 100%;\n  right: 0;\n  background-color: #06bcf3;\n  overflow: hidden;\n  width: 0;\n  height: 100%;\n  transition: .5s ease;\n  z-index: 1000; }\n\n.container2:hover .overlay2 {\n  width: 110%; }\n\n.container2:hover .container2 {\n  border: 2px solid #ce0101; }\n\n.text2 {\n  color: white;\n  font-size: 20px;\n  position: absolute;\n  top: 25%;\n  left: 50%;\n  -webkit-transform: translate(-50%, -50%);\n  transform: translate(-50%, -50%);\n  text-align: center;\n  white-space: nowrap;\n  border: 1px solid #ffffff;\n  padding: 15px;\n  width: 80%; }\n\n.container3 {\n  position: relative;\n  width: 100%;\n  margin-bottom: 10px;\n  height: 300px; }\n\n.image3 {\n  display: block;\n  width: 100%;\n  height: 300px; }\n\n.overlay3 {\n  position: absolute;\n  bottom: 0;\n  left: 0;\n  right: 0;\n  background-color: #0ebef2;\n  overflow: hidden;\n  width: 0;\n  height: 100%;\n  transition: .5s ease; }\n\n.container3:hover .overlay3 {\n  width: 110%;\n  left: -110%; }\n\n.text3 {\n  color: white;\n  font-size: 20px;\n  position: absolute;\n  top: 25%;\n  left: 50%;\n  -webkit-transform: translate(-50%, -50%);\n  transform: translate(-50%, -50%);\n  text-align: center;\n  white-space: nowrap;\n  border: 1px solid #ffffff;\n  padding: 15px;\n  width: 80%; }\n\n.mobile {\n  display: none; }\n\n@media screen and (max-width: 767px) {\n  .desktop {\n    display: none; }\n  .mobile {\n    display: block; } }\n\n.smalldesk {\n  display: none; }\n\n.flowright {\n  display: none; }\n\n@media screen and (max-width: 1000px) {\n  .smalldesk {\n    display: block; }\n  .smallhide {\n    display: none; }\n  .flowrightt {\n    display: none; }\n  .flowright {\n    display: block; } }\n\n.single_features_left img {\n  margin-top: 57px;\n  width: 100%; }\n\n.overl {\n  position: absolute;\n  z-index: 2;\n  width: 100%;\n  height: 500px;\n  opacity: 0.7;\n  background-color: #094464; }\n"
+
+/***/ }),
+
+/***/ "./src/app/services/services.component.ts":
+/*!************************************************!*\
+  !*** ./src/app/services/services.component.ts ***!
+  \************************************************/
+/*! exports provided: ServicesComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ServicesComponent", function() { return ServicesComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var ServicesComponent = /** @class */ (function () {
+    function ServicesComponent() {
+    }
+    ServicesComponent.prototype.ngOnInit = function () {
+    };
+    ServicesComponent = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+            selector: 'app-services',
+            template: __webpack_require__(/*! ./services.component.html */ "./src/app/services/services.component.html"),
+            styles: [__webpack_require__(/*! ./services.component.scss */ "./src/app/services/services.component.scss")]
+        }),
+        __metadata("design:paramtypes", [])
+    ], ServicesComponent);
+    return ServicesComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/environments/environment.ts":
+/*!*****************************************!*\
+  !*** ./src/environments/environment.ts ***!
+  \*****************************************/
+/*! exports provided: environment */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "environment", function() { return environment; });
+// This file can be replaced during build by using the `fileReplacements` array.
+// `ng build ---prod` replaces `environment.ts` with `environment.prod.ts`.
+// The list of file replacements can be found in `angular.json`.
+var environment = {
+    production: false
+};
+/*
+ * In development mode, to ignore zone related error stack frames such as
+ * `zone.run`, `zoneDelegate.invokeTask` for easier debugging, you can
+ * import the following file, but please comment it out in production mode
+ * because it will have performance impact when throw error
+ */
+// import 'zone.js/dist/zone-error';  // Included with Angular CLI.
+
+
+/***/ }),
+
+/***/ "./src/main.ts":
+/*!*********************!*\
+  !*** ./src/main.ts ***!
+  \*********************/
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _angular_platform_browser_dynamic__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/platform-browser-dynamic */ "./node_modules/@angular/platform-browser-dynamic/fesm5/platform-browser-dynamic.js");
+/* harmony import */ var _app_app_module__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./app/app.module */ "./src/app/app.module.ts");
+/* harmony import */ var _environments_environment__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./environments/environment */ "./src/environments/environment.ts");
+
+
+
+
+if (_environments_environment__WEBPACK_IMPORTED_MODULE_3__["environment"].production) {
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["enableProdMode"])();
+}
+Object(_angular_platform_browser_dynamic__WEBPACK_IMPORTED_MODULE_1__["platformBrowserDynamic"])().bootstrapModule(_app_app_module__WEBPACK_IMPORTED_MODULE_2__["AppModule"])
+    .catch(function (err) { return console.log(err); });
+
+
+/***/ }),
+
+/***/ 0:
+/*!***************************!*\
+  !*** multi ./src/main.ts ***!
+  \***************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__(/*! D:\Salim Projects\virtualgoalintl\src\main.ts */"./src/main.ts");
+
+
+/***/ })
+
+},[[0,"runtime","vendor"]]]);
+//# sourceMappingURL=main.js.map

@@ -1,0 +1,37 @@
+<header id="header">
+  <nav class="container">
+      <div>
+          <a href=""><img src="../../assets/image/Fi&ds4.png" alt=""></a>
+      </div>
+
+      <div class="navBar">
+          <span (click)="openSideDrawer('offcanvas')" class="bi bi-list toogle"></span>
+          <ul class="navIteam">
+              <li class="navLink" [ngClass]="{'activeLink': selectedLink === 'home'}" (click)="navigateTo('home')">Home</li>
+              <li class="navLink" [ngClass]="{'activeLink': selectedLink === 'about'}" (click)="navigateTo('about')">About</li>
+              <li class="navLink" [ngClass]="{'activeLink': selectedLink === 'services'}" (click)="navigateTo('services')">Services</li>
+              <li class="navLink" [ngClass]="{'activeLink': selectedLink === 'team'}" (click)="navigateTo('team')">Team</li>
+              <li class="navLink" [ngClass]="{'activeLink': selectedLink === 'contact'}" (click)="navigateTo('contact')">Contact</li>
+          </ul>
+      </div>
+  </nav>
+
+
+  <div class="offcanvas offcanvas-start " tabindex="-1" id="offcanvas" aria-labelledby="offcanvasLabel">
+      <div class="offcanvas-header">
+          <div><img src="../../assets/image/Fi&ds4.png" alt=""></div>
+          <div>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+      </div>
+      <div class="offcanvas-body">
+          <ul class="MobilenavIteam">
+              <li class="navLink" [ngClass]="{'activeLink': selectedLink === 'home'}" (click)="navigateTo('home')">Home</li>
+              <li class="navLink" [ngClass]="{'activeLink': selectedLink === 'about'}" (click)="navigateTo('about')">About</li>
+              <li class="navLink" [ngClass]="{'activeLink': selectedLink === 'services'}" (click)="navigateTo('services')">Services</li>
+              <li class="navLink" [ngClass]="{'activeLink': selectedLink === 'team'}" (click)="navigateTo('team')">Team</li>
+              <li class="navLink" [ngClass]="{'activeLink': selectedLink === 'contact'}" (click)="navigateTo('contact')">Contact</li>
+          </ul>
+      </div>
+  </div>
+</header>

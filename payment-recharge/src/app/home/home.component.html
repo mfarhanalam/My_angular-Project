@@ -1,0 +1,123 @@
+<nav class="heading">
+  <div class="d-flex align-items-center justify-content-between" style="width: 100%; ">
+
+    <div class="d-flex align-items-center" style="gap: 10px;">
+      <img src="img/logo/logo.png" alt="">
+    </div>
+    <div class="d-flex align-items-center" style="gap: 15px;">
+      <i (click)="openLanguageCanvas()" class="bi bi-translate" style="font-size: 20px;
+      z-index: 10;"></i>
+      <i style="font-size: 23px;" (click)="handleMenuClick()" class="bi bi-person-circle"></i>
+    </div>
+  </div>
+
+  <div class="input-container mt-3">
+    <input type="search" placeholder="{{'search' | translate}}..." style="border-radius:25px">
+  </div>
+</nav>
+
+<main class="main-container" style="background-color: transparent;overflow-x: hidden;">
+
+  <div style="overflow-x: hidden;
+    padding: 15px;">
+    <ngx-slick-carousel class="carousel" #slickModal="slick-carousel" [config]="slideConfig">
+      <div ngxSlickItem *ngFor="let slide of slides;let i = index" class="slide"
+        [ngClass]="{'active-slide': i === slickModal?.currentSlide}" style="margin-right: 10px;">
+        <img src="{{ slide.img }}" alt="" width="100%" style="height: 140px;object-fit: cover;">
+      </div>
+    </ngx-slick-carousel>
+  </div>
+
+
+  <div class="container data-container">
+    <section class="moneySection list-box">
+      <div class="transferSection">
+        <h2>{{'transferMoney' | translate }}</h2>
+        <div class="grid" (click)="handleMenuClick()">
+          <div class="item">
+            <i class="bi bi-person"></i>
+            <p>{{'toMobileNumber' | translate}}</p>
+          </div>
+          <div class="item">
+            <i class="bi bi-bank"></i>
+            <p>{{'toBankUPIID' | translate}}</p>
+          </div>
+          <div class="item">
+            <i class="bi bi-recycle"></i>
+            <p>{{'toSelfAccount' | translate}}</p>
+          </div>
+          <div class="item">
+            <i class="bi bi-bank2"></i>
+            <p>{{'checkBankBalance' | translate}}</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="mt-4">
+      <div class="section list-box">
+        <h2>{{'payment' | translate}}</h2>
+        <div class="grid" (click)="handleMenuClick()">
+          <div class="item">
+            <i class="bi bi-phone"></i>
+            <p>{{'mobileRecharge' | translate}}</p>
+          </div>
+          <div class="item">
+            <i class="bi bi-wallet"></i>
+            <p>{{'fee'| translate}}</p>
+          </div>
+          <div class="item">
+            <i class="bi bi-gift"></i>
+            <p>{{'voucher' | translate}}</p>
+          </div>
+          <div class="item">
+            <i class="bi bi-lightbulb"></i>
+            <p>{{'electricity' | translate}}</p>
+          </div>
+          <div class="item">
+            <i class="bi bi-broadcast"></i>
+            <p>DTH</p>
+          </div>
+          <div class="item">
+            <i class="bi bi-droplet"></i>
+            <p>{{'water' | translate}}</p>
+          </div>
+          <div class="item">
+            <i class="bi bi-credit-card-fill"></i>
+            <p>{{'creditCard' | translate}}</p>
+          </div>
+          <div class="item">
+            <i class="bi bi-telephone"></i>
+            <p>{{'broadbandlandline' | translate}}</p>
+          </div>
+
+
+        </div>
+      </div>
+    </section>
+
+
+
+
+
+
+
+  </div>
+
+
+
+</main>
+
+
+
+<div class="offcanvas offcanvas-bottom" tabindex="-1" id="languageCanvas" aria-labelledby="languageCanvasLabel">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="languageCanvasLabel">Select Language</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    <div class="language-btn">
+      <button (click)="convertLanguage('en')" [ngClass]="{'selected-language' : language =='en'}">English</button>
+      <button (click)="convertLanguage('fr')" [ngClass]="{'selected-language' : language =='fr'}">French</button>
+    </div>
+  </div>
+</div>

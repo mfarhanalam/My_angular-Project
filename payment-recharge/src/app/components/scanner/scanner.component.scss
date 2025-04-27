@@ -1,0 +1,63 @@
+#qr-reader {
+  margin: 0 auto;
+  border: 2px solid #ccc;
+
+  video {
+    width: 100%;
+    display: block;
+    height: 100%;
+    object-fit: none;
+  }
+}
+
+.action-btn {
+  position: absolute;
+  bottom: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 15px;
+  align-items: center;
+
+  label {
+    background-color: rgba(0, 0, 0, 0.2);
+    border: 1px solid #656565;
+    height: 40px;
+    color: #ffffff;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    padding: 0 15px;
+    border-radius: 8px;
+    font-size: 15px;
+    white-space: nowrap;
+  }
+
+  .tourch-light {
+    height: 40px;
+    width: 40px;
+    display: grid;
+    place-content: center;
+    background-color: rgba(0, 0, 0, 0.2);
+    border: 1px solid #656565;
+    color: #ffffff;
+    border-radius: 8px;
+    font-size: 15px;
+  }
+}
+
+header {
+  position: fixed;
+  top: 0;
+  width: 450px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: transparent;
+  color: #ffffff;
+}
+
+@media(max-width:450px) {
+  header {
+    width: 100% !important;
+  }
+}

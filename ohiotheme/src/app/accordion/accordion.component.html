@@ -1,0 +1,192 @@
+<section>
+    <div class="accordian">
+        <div style="text-align: center;" class="heading">
+            <h1>Accordion</h1>
+            <h4>Layout Variants</h4>
+        </div>
+        <div class="row">
+            <div class="col-sm-4"></div>
+            <div class="col-sm-4">
+                <div class="accordian-data">
+                    <div *ngFor="let item of accordianData; let i = index">
+                        <div class="question" (click)="toggleAnswer(i)">
+                            <h6>{{ item.question }}</h6>
+                            <i class="bi" [ngClass]="{'bi-plus': !isOpenAns[i], 'bi-dash': isOpenAns[i]}"></i>
+                        </div>
+                        <div class="answer" [ngClass]="{'open': isOpenAns[i]}">
+                            <p>{{ item.answer }}</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordian-data2">
+                    <div *ngFor="let item2 of accordianData2; let i = index">
+                        <div class="question2" (click)="toggleAnswer(i)">
+                            <i class="bi" [ngClass]="{'bi-plus': !isOpenAns[i], 'bi-dash': isOpenAns[i]}"></i>
+                            <h6>{{ item2.question2 }}</h6>
+                        </div>
+                        <div class="answer2" [ngClass]="{'open': isOpenAns[i]}">
+                            <p>{{ item2.answer2 }}</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-sm-4"></div>
+        </div>
+    </div>
+</section>
+<!-- //  ======================accordianData end========================= -->
+
+
+<!-- ========================Banner============================ -->
+<section>
+    <div class="banner">
+        <h1>Banner</h1>
+        <h4>Layout Variants</h4>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="poster">
+                        <img class="poster-img" src="../../assets/img/banner1.jpeg" alt="">
+                        <div class="hideTitle">
+                            <p>The first step of any design process and collaboration is to understand who exactly it is
+                                that you are designing for.</p>
+                        </div>
+                    </div>
+                    <div class="title">
+                        <p>Product Strategy</p>
+                        <h3>Organize, structure and synchronize media insights.</h3>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="poster">
+                        <img class="poster-img" src="../../assets/img/banner2.jpeg" alt="">
+                        <div class="hideTitle">
+                            <p style="text-align: center;">The first step of any design process and collaboration is to
+                                understand who exactly it is
+                                that you are designing for.</p>
+                        </div>
+                    </div>
+                    <div class="title" style="text-align: center;">
+                        <p>Design Sprints</p>
+                        <h3>Helping understand the value of UI design.</h3>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="poster2">
+                        <img class="poster-img2" src="../../assets/img/banner1.jpeg" alt="">
+                        <div class="title2">
+                            <p>Product Strategy</p>
+                            <h3>Organize, structure and synchronize media insights.</h3>
+                        </div>
+                        <div class="hideTitle2">
+                            <p>The first step of any design process and collaboration is to understand who exactly it is
+                                that you are designing for.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div>
+                        <div class="poster2">
+                            <img class="poster-img2" src="../../assets/img/banner2.jpeg" alt="">
+                            <div>
+                                <div class="title2" style="text-align: center;">
+                                    <p>Design Sprints</p>
+                                    <h3>Helping understand the value of UI design.</h3>
+                                </div>
+                                <div class="hideTitle2">
+                                    <p style="text-align: center;">The first step of any design process and
+                                        collaboration is
+                                        to understand who exactly it is
+                                        that you are designing for.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ========================Banner end============================ -->
+
+
+<!-- =================================button=========================== -->
+<section class="button-section">
+    <div class="head">
+        <h1>Button</h1>
+        <h4>Layout Variants</h4>
+    </div>
+    <div class="row">
+
+        <div class="col-sm-4">
+
+            <div><button class="dflt-BTn">Default button</button></div> <br>
+
+            <div>
+                <button class="outline">Outline Button</button>
+            </div> <br>
+
+            <div>
+                <button class="flat">Flat Button</button>
+            </div> <br>
+
+        </div>
+
+        <div class="col-sm-4">
+            <div>
+                <button class="hoverBtn">Default Button
+
+                    <div class="arrow">
+                        <button class="arrow-hover-1"><i class="bi bi-arrow-right-short"></i></button>
+                        <button class="arrow-hover-2"><i class="bi bi-arrow-right-short"></i></button>
+                    </div>
+                </button>
+            </div>
+            <br>
+
+        </div>
+
+        <div class="col-sm-4">
+
+            <br>
+
+        </div>
+    </div>
+</section>
+
+
+<br><br><br><br><br><br>
+
+
+<div class="container">
+    <div>
+        <button class="hoverBtn">Flat Button
+
+            <div class="arrow">
+                <button class="arrow-hover-1"><i class="bi bi-arrow-right-short"></i></button>
+                <button class="arrow-hover-2"><i class="bi bi-arrow-right-short"></i></button>
+            </div>
+        </button>
+    </div>
+</div> <br>
+<div class="container">
+    <div>
+        <button class="hoverBtn">
+            <div class="arrow">
+                <button class="arrow-hover-1"><i class="bi bi-arrow-right-short"></i></button>
+                <button class="arrow-hover-2"><i class="bi bi-arrow-right-short"></i></button>
+            </div>
+            Flat Button
+        </button>
+    </div>
+</div>
+
+<!-- =================================button end=========================== -->
+
+
+
+<br><br><br><br><br><br>

@@ -1,0 +1,13 @@
+<div id="loadings" class="loader-container">
+    <div class="text-center" style="background-color: #ffffff;padding: 20px 45px;border-radius: 25px;">
+        <div class="d-flex justify-content-center">
+            <span class="loader"></span>
+        </div>
+    </div>
+</div>
+<app-header *ngIf="showHeader"></app-header>
+<div class="router-outlet" [ngClass]="{'pb':showFooter===true}">
+    <router-outlet></router-outlet>
+</div>
+<app-bottom-tab></app-bottom-tab>
+<p-toast></p-toast>

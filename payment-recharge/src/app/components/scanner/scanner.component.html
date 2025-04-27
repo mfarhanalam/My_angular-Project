@@ -1,0 +1,17 @@
+<header>
+    <i (click)="onBack()" class="bi bi-arrow-left"></i>
+</header>
+<main style="overflow-x: hidden;position: relative;">
+    <div id="qr-reader" style="width: 100%; height: 100vh;"></div>
+    <div class="action-btn">
+        <input type="file" id="qr-input-file" accept="image/*" (change)="handleFileUpload($event)" hidden />
+        <label for="qr-input-file"><i class="bi bi-qr-code"></i>Upload QR</label>
+        <i (click)="toggleTorch()" class="bi tourch-light" [ngClass]="{'bi-lightning-charge': !isTorchOn, 'bi-lightning-charge-fill': isTorchOn}"></i>
+        <div *ngIf="scannedMessage">
+            <h3>Scanned Message:</h3>
+            <p>{{ scannedMessage }}</p>
+        </div>
+    </div>
+
+
+</main>

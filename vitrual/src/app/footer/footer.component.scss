@@ -1,0 +1,101 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+
+.row {
+  line-height: 1.5rem;
+  word-spacing: 0.4rem;
+}
+
+.row h2 {
+  color: #fff;
+  margin-bottom: 20px;
+  font-size: 18px;
+  font-weight: 400
+}
+
+.row p {
+  color: #f2ebeb;
+  font-size: 14px;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.container ul {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.container ul li {
+  margin: 5px;
+  border-radius: 3px;
+  border: 1px solid #ebebeb;
+
+}
+
+.pagination {
+  height: 38px;
+  width: 38px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+@media (max-width:675px) {
+  .footer p {
+    font-size: 12px !important;
+    padding: 20px !important;
+  }
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+.pagination:hover {
+  background-color: #fe4066;
+  -webkit-transition: .5s;
+  -o-transition: .5s;
+  transition: .5s;
+  color: rgb(250, 247, 247) !important;
+}
+
+.pagination {
+  -webkit-animation: up-down linear 4s;
+  animation: up-down linear 4s;
+}
+
+.pagination:hover a i {
+  color: #fff;
+}

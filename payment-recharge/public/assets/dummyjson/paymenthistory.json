@@ -1,0 +1,157 @@
+[
+  {
+    "id": "PH001",
+    "paymentDate": "2024-11-20T14:30:00.000Z",
+    "paymentStatus": "Completed",
+    "subService": {
+      "id": "SS001",
+      "serviceId": "TAX001",
+      "name": "Income Tax",
+      "subserviceImage": "img/flaticons/incometax.svg",
+      "description": "Levied on individual earnings. Progressive rates apply based on income levels.",
+      "serviceType": "Pay Taxes",
+      "associatedService": {
+        "id": "TAX001",
+        "serviceImage": "img/flaticons/taxes.svg",
+        "serviceName": "Pay Taxes",
+        "updatedDate": "2024-11-28T12:34:56.789Z",
+        "createdDate": "2024-11-01T08:00:00.000Z"
+      }
+    },
+    "service": {
+      "id": "TAX001",
+      "serviceImage": "img/flaticons/taxes.svg",
+      "serviceName": "Pay Taxes",
+      "updatedDate": "2024-11-28T12:34:56.789Z",
+      "createdDate": "2024-11-01T08:00:00.000Z"
+    },
+    "amount": 5000,
+    "paymentMethod": "Credit Card",
+    "transactionId": "TXN123456789",
+    "description": "Annual income tax payment"
+  },
+  {
+    "id": "PH002",
+    "paymentDate": "2024-11-25T10:00:00.000Z",
+    "paymentStatus": "Pending",
+    "subService": {
+      "id": "SS002",
+      "serviceId": "TAX001",
+      "name": "Value-Added Tax (VAT)",
+      "subserviceImage": "img/flaticons/valueadded.svg",
+      "description": "A consumption tax applied to goods and services.",
+      "serviceType": "Pay Taxes",
+      "associatedService": {
+        "id": "TAX001",
+        "serviceImage": "img/flaticons/taxes.svg",
+        "serviceName": "Pay Taxes",
+        "updatedDate": "2024-11-28T12:34:56.789Z",
+        "createdDate": "2024-11-01T08:00:00.000Z"
+      }
+    },
+    "service": {
+      "id": "TAX001",
+      "serviceImage": "img/flaticons/taxes.svg",
+      "serviceName": "Pay Taxes",
+      "updatedDate": "2024-11-28T12:34:56.789Z",
+      "createdDate": "2024-11-01T08:00:00.000Z"
+    },
+    "amount": 2500,
+    "paymentMethod": "Bank Transfer",
+    "transactionId": "TXN223344556",
+    "description": "VAT payment for Q4"
+  },
+  {
+    "id": "PH003",
+    "paymentDate": "2024-11-15T18:45:00.000Z",
+    "paymentStatus": "Completed",
+    "subService": {
+      "id": "SS003",
+      "serviceId": "TAX001",
+      "name": "Property Tax",
+      "subserviceImage": "img/flaticons/property.svg",
+      "description": "Applied to land and real estate ownership.",
+      "serviceType": "Pay Taxes",
+      "associatedService": {
+        "id": "TAX001",
+        "serviceImage": "img/flaticons/taxes.svg",
+        "serviceName": "Pay Taxes",
+        "updatedDate": "2024-11-28T12:34:56.789Z",
+        "createdDate": "2024-11-01T08:00:00.000Z"
+      }
+    },
+    "service": {
+      "id": "TAX001",
+      "serviceImage": "img/flaticons/taxes.svg",
+      "serviceName": "Pay Taxes",
+      "updatedDate": "2024-11-28T12:34:56.789Z",
+      "createdDate": "2024-11-01T08:00:00.000Z"
+    },
+    "amount": 12000,
+    "paymentMethod": "Debit Card",
+    "transactionId": "TXN987654321",
+    "description": "Annual property tax"
+  },
+  {
+    "id": "PH004",
+    "paymentDate": "2024-11-26T09:15:00.000Z",
+    "paymentStatus": "Failed",
+    "subService": {
+      "id": "SS004",
+      "serviceId": "FINE001",
+      "name": "Traffic Fine",
+      "subserviceImage": "img/flaticons/traficfine.svg",
+      "description": "For speeding violation.",
+      "serviceType": "Pay Fines",
+      "associatedService": {
+        "id": "FINE001",
+        "serviceImage": "img/flaticons/fines.svg",
+        "serviceName": "Pay Fines",
+        "updatedDate": "2024-11-28T12:34:56.789Z",
+        "createdDate": "2024-11-01T08:00:00.000Z"
+      }
+    },
+    "service": {
+      "id": "FINE001",
+      "serviceImage": "img/flaticons/fines.svg",
+      "serviceName": "Pay Fines",
+      "updatedDate": "2024-11-28T12:34:56.789Z",
+      "createdDate": "2024-11-01T08:00:00.000Z"
+    },
+    "amount": 1500,
+    "paymentMethod": "UPI",
+    "transactionId": "TXN1122334455",
+    "description": "Traffic fine for speeding"
+  },
+  {
+    "id": "PH005",
+    "paymentDate": "2024-11-26T09:15:00.000Z",
+    "paymentStatus": "Failed",
+    "subService": {
+      "id": "SS005",
+      "serviceId": "FINE001",
+      "name": "Enviromental Fine",
+      "subserviceImage": "img/flaticons/enviromental.svg",
+      "description": "For speeding violation.",
+      "serviceType": "Pay Fines",
+      "associatedService": {
+        "id": "FINE001",
+        "serviceImage": "img/flaticons/fines.svg",
+        "serviceName": "Pay Fines",
+        "updatedDate": "2024-11-28T12:34:56.789Z",
+        "createdDate": "2024-11-01T08:00:00.000Z"
+      }
+    },
+    "service": {
+      "id": "FINE001",
+      "serviceImage": "img/flaticons/fines.svg",
+      "serviceName": "Pay Fines",
+      "updatedDate": "2024-11-28T12:34:56.789Z",
+      "createdDate": "2024-11-01T08:00:00.000Z"
+    },
+    "amount": 1500,
+    "paymentMethod": "UPI",
+    "transactionId": "TXN1122334455",
+    "description": "Traffic fine for speeding"
+  }
+]

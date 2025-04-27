@@ -1,0 +1,126 @@
+/* kyc-flow.component.css */
+.flow-container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: linear-gradient(to bottom, #047072 2%, #239b95 16%, #5dc4bf 26%, #ffffff 54%, #ffffff 100%);
+}
+
+.step {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+    text-align: center;
+}
+
+.step-image {
+    width: 120px;
+    height: 120px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: #035d5f;
+    margin-bottom: 8px;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.step-description {
+    color: #1d7779;
+    font-size: 18px;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.input-group {
+    width: 100%;
+    text-align: left;
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+    font-size: 17px;
+    font-weight: 600;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="number"],
+input[type="password"] {
+    padding: 12px;
+    border: 2px solid #1d7779;
+    border-radius: 8px 8px 8px 8px;
+    font-size: 18px;
+    font-weight: 600;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.terms-group {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+    font-size: 14px;
+}
+
+.terms-group a {
+    color: #3a64a0;
+    text-decoration: none;
+}
+
+.button-group {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.main-btn {
+    // background-color: #3a64a0;
+    background-color: #035d5f;
+    color: white;
+    padding: 12px 24px;
+    width: 100%;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    flex: 1;
+    font-size: 19px;
+    font-weight: 600;
+    transition: background-color 0.3s;
+}
+
+.main-btn:hover {
+    background-color: #2a4a80;
+}
+
+.secondary-btn {
+    background-color: #f0f0f0;
+    color: #333;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    flex: 1;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.secondary-btn:hover {
+    background-color: #ddd;
+}

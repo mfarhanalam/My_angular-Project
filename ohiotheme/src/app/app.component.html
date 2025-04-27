@@ -1,0 +1,18 @@
+<section style="overflow-x: hidden;">
+
+  <section class="sticky-header">
+    <!-- Toggle Switch HTML -->
+    <label class="switch">
+      <input type="checkbox" (change)="toggleDarkMode()">
+      <span class="slider"></span>
+    </label>
+  </section>
+
+  <section id="nav-bar-section" [ngClass]="{'dark-mode': isDarkMode}">
+    <app-header></app-header>
+    <router-outlet></router-outlet>
+    <app-footer></app-footer>
+  </section>
+
+
+</section>

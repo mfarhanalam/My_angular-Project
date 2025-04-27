@@ -1,0 +1,160 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+.container {
+  padding: 15px 5px;
+}
+
+.contact-us {
+  line-height: 3.2rem;
+  text-align: center;
+
+  h1 {
+    color: #565656;
+    font-size: 38px;
+    font-weight: 350;
+  }
+
+  p {
+    margin-top: 16px;
+  }
+
+  .contactInfo {
+    p {
+      font-size: 24px;
+      font-weight: 350;
+      color: #094464;
+    }
+  }
+}
+
+.social-icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+
+  a {
+    height: 35px;
+    width: 35px;
+  }
+
+  img {
+    max-width: 100%;
+  }
+}
+
+.contactForm {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+
+  .input-box {
+    .inputs {
+      text-align: center;
+    }
+
+    .input-style {
+      width: 100%;
+      margin-top: 10px;
+      padding: 10px;
+      border: 1px solid #dedede;
+
+    }
+
+    input[type=text]:focus {
+      border: 1px solid #5bc0de !important;
+      outline: none !important;
+    }
+
+    .submit {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: end;
+          -ms-flex-pack: end;
+              justify-content: flex-end;
+    }
+
+    .send-button {
+      padding: 15px;
+      font-size: 20px;
+      background-color: #5bc0de;
+      border: none;
+      color: #fff;
+      width: 50%;
+      border-radius: 3px;
+    }
+
+  }
+}
+
+.iframe {
+  background-image: url('../../assets/contact.jpg');
+  height: 300px;
+  background-size: 100% 100%;
+  background-attachment: fixed;
+}
+
+.map {
+  iframe {
+    border: 0;
+    height: 500px;
+    width: 100%;
+  }
+}
+
+
+
+@media(max-width:675px) {
+  .iframe {
+    height: 200px !important;
+  }
+}
+
+
+.contact-social {
+  font-size: 30px;
+  border-radius: 8px;
+  color: #fff;
+}
+
+@media(max-width:675px) {
+  .contact-us h1 {
+    font-size: 20px !important;
+  }
+
+  .contact-us p {
+    font-size: 15px !important;
+    text-align: center;
+  }
+
+  .contact-social {
+    font-size: 25px !important;
+  }
+
+  .input-box {
+    width: 80%;
+  }
+
+}
+
+.contact-us p {
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 2;
+}

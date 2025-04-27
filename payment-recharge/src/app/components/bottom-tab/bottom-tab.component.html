@@ -1,0 +1,24 @@
+<footer class="bottom-nav" *ngIf="isShowFooter">
+  <div (click)="navigateTo('/home')" [class.active]="activePage === 'home'" class="nav-item">
+    <div class="text-center">
+      <img class="nav-icon" [src]="activePage === 'home' ? 'img/footer/housefill.png' : 'img/footer/houseblank.png'"
+        alt="Home">
+      <i class="fi fi-sr-house-blank"></i>
+      <p class="nav-text">{{'home' | translate}}</p>
+    </div>
+  </div>
+
+  <!-- QR Scan Button -->
+  <adiv class="nav-item qr-scan">
+    <div (click)="navigateTo('/scanner')" class="qr-container">
+      <i class="bi bi-qr-code-scan"></i>
+    </div>
+  </adiv>
+
+  <div (click)="navigateTo('/history')" [class.active]="activePage === 'history'" class="nav-item">
+    <div>
+      <i [ngClass]="activePage === 'history' ? 'bi-clock-fill' : 'bi-clock'"></i>
+      <p class="nav-text">{{'history' | translate}}</p>
+    </div>
+  </div>
+</footer>

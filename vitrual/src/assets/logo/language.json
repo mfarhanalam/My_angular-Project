@@ -1,0 +1,20 @@
+[
+  {
+    "id": "5df4fabd5e95e80af23498d7",
+    "languageName": "English",
+    "otherlanguageName": "Anglais",
+    "shortLanguageName": "en",
+    "showOnMobile": true,
+    "showOnWeb": true,
+    "createddate": null
+  },
+  {
+    "id": "60c9b457e74b127e2012a3ea",
+    "languageName": "French",
+    "otherlanguageName": "français",
+    "shortLanguageName": "fr",
+    "showOnMobile": true,
+    "showOnWeb": true,
+    "createddate": null
+  }
+]

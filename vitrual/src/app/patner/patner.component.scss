@@ -1,0 +1,111 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+
+.main {
+    .headingMain {
+        width: 100%;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+
+        button {
+            border: 1px solid rgb(182, 182, 182);
+            border-bottom: 1px solid transparent !important;
+            width: 100%;
+            background-color: white;
+            padding: 6px 16px;
+            border-radius: 5px 5px 0 0;
+            font-size: 20px;
+            font-weight: 250;
+        }
+
+        .line {
+            width: 88%;
+            border-bottom: 1px solid rgb(182, 182, 182);
+        }
+    }
+
+    .Partenaires {
+        span {
+            font-size: 35px;
+            font-weight: 200;
+        }
+    }
+}
+
+.client-box {
+    height: 265px;
+    position: relative;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+    width: 100%;
+    overflow: hidden !important;
+}
+
+.client-box img {
+    height: 100%;
+    width: 100%;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: end;
+    -ms-flex-align: end;
+    align-items: flex-end;
+    opacity: 0;
+}
+
+.overlay-text {
+    padding: 25px;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 15px;
+}
+
+.overlay:hover {
+    opacity: 1;
+}
+
+.client-box:hover {
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+}
+
+
+@media(max-width:675px) {
+    .Partenaires span {
+        font-size: 30px !important;
+        font-weight: 300 !important;
+    }
+
+    .client-box:hover {
+        -webkit-transform: scale(1.02);
+        -ms-transform: scale(1.02);
+        transform: scale(1.02);
+        -webkit-transition: 0.5s;
+        -o-transition: 0.5s;
+        transition: 0.5s;
+    }
+}

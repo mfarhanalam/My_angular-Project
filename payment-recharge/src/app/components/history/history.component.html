@@ -1,0 +1,84 @@
+<header>
+  <i class="bi bi-clock-fill"></i>
+  <h5>{{'history' | translate}}</h5>
+  <i class="bi bi-funnel-fill"></i>
+</header>
+
+<main class="history-container">
+
+  <div class="main-container" style="background-color: transparent;padding-top: 70px;">
+
+    <section class="transaction-list">
+      <!-- Display Transactions Dynamically -->
+      <div class="transaction" *ngFor="let transaction of filteredTransactions">
+        <div class="transaction-details">
+          <!-- Dynamically apply icons for transaction types -->
+          <i [ngClass]="{
+            'bi bi-arrow-up': !transaction.isDebit,
+            'bi bi-arrow-down': transaction.isDebit, 
+            'bi bi-phone': transaction.type === 'recharge',
+            'bi bi-lightning': transaction.type === 'payment',
+            'bi bi-arrow-counterclockwise': transaction.type === 'refund', 
+            'bi bi-arrow-left-right': transaction.type === 'transfer', 
+            'bi bi-cart': transaction.type === 'shopping',
+            'bi bi-tv': transaction.type === 'subscription', 
+            'bi bi-wallet': transaction.type === 'deposit',
+            'bi bi-cash': transaction.type === 'withdrawal', 
+            'bi bi-graph-up': transaction.type === 'investment' 
+        }"></i>
+          <div>
+            <p class="transaction-user">{{ transaction.user }}</p>
+            <p class="transaction-description">{{ transaction.description }}</p>
+            <small class="transaction-time">{{ transaction.time }}</small>
+          </div>
+        </div>
+        <div class="transaction-amount">
+          <span [class.isDebit]="transaction.isDebit" [class.isNotDebit]="!transaction.isDebit">
+            CFA{{ transaction.amount }}
+          </span>
+          <p>{{ transaction.isDebit ? 'Debited from' : 'Credited to' }}</p>
+        </div>
+      </div>
+      <!-- Show "Not Found" if no plans match -->
+      <div style="height: 67.7vh;display: flex;justify-content: center;align-items: center;" *ngIf="filteredTransactions.length === 0" class="not-found">
+        <div class="text-center">
+          <h2>No Transactions Yet</h2>
+          <p>Your transactions will appear here once you start making payments.</p>
+          <button (click)="makePayment()" class="btn">Make a Payment</button>
+        </div>
+      </div>
+    </section>
+  </div>
+</main>
+
+
+
+
+
+
+
+
+<!-- <header>
+    <h2>{{'paymentHistory' | translate}}</h2>
+</header>
+<main class="main-container" style="padding-top: 70px;">
+    <div class="payment-history-container">
+        <div class="payment-card" *ngFor="let payment of paymentHistory">
+            <div class="d-flex align-items-center">
+                <img class="subservice-images" src="{{payment.subService.subserviceImage}}" alt="">
+                <div class="payment-card-data">
+                    <h6> {{ payment.subService.name }}</h6>
+                    <p> {{ payment.paymentDate | date: 'shortDate' }}</p>
+                    <p [ngClass]="{
+                        'status-completed': payment.paymentStatus === 'Completed',
+                        'status-pending': payment.paymentStatus === 'Pending',
+                        'status-failed': payment.paymentStatus === 'Failed'
+                      }">
+                        {{ payment.paymentStatus }}
+                    </p>
+                </div>
+            </div>
+            <h5 class="amount"> {{ payment.amount | currency }}</h5>
+        </div>
+    </div>
+</main> -->

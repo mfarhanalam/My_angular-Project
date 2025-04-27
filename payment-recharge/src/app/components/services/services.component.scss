@@ -1,0 +1,57 @@
+/* tax-list.component.css */
+.tax-list {
+  font-family: Arial, sans-serif;
+}
+
+.tax-list ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.tax-item {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #e5e2e2;
+  padding: 20px 10px;
+}
+
+.tax-icon {
+  width: 30px;
+  height: 30px;
+  margin-right: 15px;
+}
+
+.tax-info h3 {
+  margin: 0;
+  font-size: 1em;
+  line-height: 1.1;
+}
+
+.tax-info p {
+  margin: 5px 0 0;
+  color: #555;
+  font-size: 13px;
+}
+
+.tab-view-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  overflow-y: auto;
+
+  button {
+    padding: 6px 25px;
+    border: 1px solid #eaeaea;
+    border-radius: 25px;
+    white-space: nowrap;
+  }
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.selected {
+  background-color: #234477;
+  color: #ffffff;
+}

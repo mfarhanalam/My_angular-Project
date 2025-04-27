@@ -1,0 +1,71 @@
+<!-- kyc-flow.component.html -->
+<div class="flow-container">
+    <!-- Step 1 - Sign Up -->
+    <div *ngIf="currentStep === 1" class="step">
+      <img src="img/login/getstart.png" alt="Sign Up" class="step-image">
+      <h2>Welcome to OTT</h2>
+      <p class="step-description">Sign up to get started with your eKYC process.</p>
+      <button class="main-btn" (click)="nextStep()">Get Started</button>
+    </div>
+  
+    <!-- Step 2 - Personal Details -->
+    <div *ngIf="currentStep === 2" class="step">
+      <img src="assets/personal-details-image.png" alt="Personal Details" class="step-image">
+      <h2>Your Details</h2>
+      <p class="step-description">Please enter your full name and phone number.</p>
+      
+      <div class="input-group">
+        <label for="fullName">Full Name</label>
+        <input id="fullName" type="text" placeholder="Enter full name">
+      </div>
+      
+      <div class="input-group">
+        <label for="phoneNumber">Phone Number</label>
+        <input id="phoneNumber" type="tel" placeholder="Enter phone number">
+      </div>
+      
+      <div class="button-group">
+        <button class="secondary-btn" (click)="prevStep()">Back</button>
+        <button class="main-btn" (click)="nextStep()">Next</button>
+      </div>
+    </div>
+  
+    <!-- Step 3 - OTP Verification -->
+    <div *ngIf="currentStep === 3" class="step">
+      <img src="assets/otp-image.png" alt="OTP Verification" class="step-image">
+      <h2>Verify Your Number</h2>
+      <p class="step-description">We've sent an OTP to your phone number.</p>
+      
+      <div class="input-group">
+        <label for="otp">Enter OTP</label>
+        <input id="otp" type="number" placeholder="Enter OTP">
+      </div>
+      
+      <div class="button-group">
+        <button class="secondary-btn" (click)="prevStep()">Back</button>
+        <button class="main-btn" (click)="nextStep()">Verify</button>
+      </div>
+    </div>
+  
+    <!-- Step 4 - Terms & PIN -->
+    <div *ngIf="currentStep === 4" class="step">
+      <img src="assets/terms-image.png" alt="Terms & Conditions" class="step-image">
+      <h2>Almost There!</h2>
+      <p class="step-description">Create a PIN and accept our terms to complete your eKYC.</p>
+      
+      <div class="input-group">
+        <label for="pin">Create PIN</label>
+        <input id="pin" type="password" placeholder="Create 4-digit PIN">
+      </div>
+      
+      <div class="terms-group">
+        <input type="checkbox" id="terms">
+        <label for="terms">I accept the <a href="#">Terms & Conditions</a></label>
+      </div>
+      
+      <div class="button-group">
+        <button class="secondary-btn" (click)="prevStep()">Back</button>
+        <button class="main-btn" (click)="nextStep()">Submit</button>
+      </div>
+    </div>
+  </div>

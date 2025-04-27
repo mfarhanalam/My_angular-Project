@@ -1,0 +1,375 @@
+/* CSS for Accordion with Slow Open and Close Animation */
+
+/* Question Styles */
+.question {
+  background-color: #f0f0f0;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  padding: 10px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background-color 0.3s ease;
+}
+
+.question:hover {
+  background-color: #e0e0e0;
+}
+
+.question h6 {
+  margin: 0;
+  font-size: 18px;
+}
+
+/* Plus and Minus Icons */
+.bi {
+  font-size: 1.5rem;
+  transition: transform 0.3s ease;
+}
+
+/* Answer Styles */
+.answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease-in-out, opacity 0.5s ease-in-out;
+  opacity: 0;
+  padding: 10px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.answer.open {
+  max-height: 1000px;
+  /* Adjust the maximum height as needed */
+  opacity: 1;
+}
+
+/* Slow Close Animation */
+
+
+
+
+.question2 {
+  border-top: 1px solid #000;
+  padding: 10px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  transition: background-color 0.3s ease;
+}
+
+.question2 h6 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.answer2 {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease-in-out, opacity 0.5s ease-in-out;
+  opacity: 0;
+  padding: 10px;
+  background-color: #fff;
+}
+
+.answer2.open {
+  max-height: 1000px;
+  /* Adjust the maximum height as needed */
+  opacity: 1;
+}
+
+//  ======================accordianData end=========================
+
+
+// <!-- ========================Banner============================ -->
+.banner {
+  margin-top: 2rem;
+
+  & h1 {
+    text-align: center;
+    font-size: 4rem;
+    font-weight: 600;
+  }
+
+  & h4 {
+    margin: 1rem 0 2rem;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+
+  & .poster {
+    position: relative;
+    overflow: hidden;
+
+    & .poster-img {
+
+      width: 100%;
+      height: 34rem;
+      border-radius: 1rem;
+      overflow: hidden;
+    }
+
+    & .hideTitle {
+      padding: 8px;
+      color: #fff;
+      font-weight: 600;
+      position: absolute;
+      visibility: hidden;
+      bottom: 0;
+      height: 0;
+      width: 100%;
+      transition: .5s ease-in-out;
+      background: linear-gradient(0deg, rgba(17, 16, 19, 0.65) 0%, rgba(17, 16, 19, 0) 100%);
+    }
+  }
+
+  & .poster:hover .hideTitle {
+    visibility: visible;
+    transition: .5s ease-in-out;
+    border-radius: 0 0 1rem 1rem;
+    height: 80px;
+  }
+
+  & .title {
+    padding: 18px;
+
+    & p {
+      font-weight: 600;
+      font-size: 13px;
+      padding: 0;
+      margin: 0;
+    }
+
+    & h3 {
+      font-size: 2rem;
+      font-weight: 650;
+      letter-spacing: 1px;
+      line-height: 1;
+    }
+  }
+
+  & .poster2 {
+    position: relative;
+    overflow: hidden;
+    background-color: #ddd;
+    transition:  0.3s ease-in-out;
+
+    & .poster-img2 {
+      transition: 0.3s ease-in-out;
+      width: 100%;
+      height: 34rem;
+      transform: translateX(100%);
+      border-radius: 1rem;
+      overflow: hidden;
+      visibility: hidden;
+    }
+
+    &:hover {
+      background-color: transparent;
+    }
+
+    &:hover .poster-img2 {
+      transition: 0.3s ease-in-out;
+      visibility: visible;
+      transform: translateX(-0);
+    }
+
+    & .title2 {
+      padding: 18px;
+      position: absolute;
+      top: 0;
+
+      & p {
+        color: #fff;
+        font-weight: 600;
+        font-size: 13px;
+        padding: 0;
+        margin: 0;
+      }
+
+      & h3 {
+        color: #fff;
+        font-size: 2rem;
+        font-weight: 650;
+        letter-spacing: 1px;
+        line-height: 1;
+      }
+    }
+
+    & .hideTitle2 {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      padding: 10px;
+
+      & p {
+        padding: 0 20px 0 0;
+        font-size: 1rem;
+        line-height: 1.7;
+        color: #070707;
+        font-weight: 600;
+
+
+      }
+    }
+  }
+
+}
+
+// <!-- ========================Banner============================ -->
+
+
+// <!-- =================================button=========================== -->
+.button-section {
+  margin: 25px 0;
+
+  & .head {
+    text-align: center;
+
+    & h1 {
+      text-align: center;
+      font-size: 4rem;
+      font-weight: 600;
+    }
+
+    & h4 {
+      text-align: center;
+      font-size: 1.5rem;
+      font-weight: 600;
+    }
+  }
+
+  & .row {
+    text-align: center;
+    margin-top: 35px;
+
+    & .col-sm-4 {
+      & .dflt-BTn {
+        padding: 10px 20px;
+        color: #fff;
+        background-color: #000;
+        border: none;
+        font-weight: 500;
+        font-size: 1rem;
+        border-radius: 8px;
+        transition: .5s ease-in-out;
+      }
+
+      & .dflt-BTn:hover {
+        background-color: #e41010;
+        transition: .5s ease-in-out;
+      }
+
+      & .outline {
+        padding: 10px 20px;
+        color: #000;
+        background-color: #fff;
+        border: 2px solid #000;
+        font-weight: 500;
+        font-size: 1rem;
+        border-radius: 8px;
+        transition: .5s ease-in-out;
+      }
+
+      & .outline:hover {
+        color: #aa0000;
+        border: 2px solid #aa0000;
+        transition: .5s ease-in-out;
+      }
+
+      & .flat {
+        color: #000;
+        background-color: #fff;
+        border: none;
+        font-weight: 500;
+        font-size: 1rem;
+        border-radius: 8px;
+        transition: .5s ease-in-out;
+      }
+
+      & .flat:hover {
+        color: #aa0000;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        transition: .5s ease-in-out;
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.arrow {
+  margin-bottom: 6px;
+  height: 40px;
+  width: 40px;
+  display: flex;
+  overflow: hidden;
+}
+
+.arrow-hover-1 {
+  height: 40px;
+  width: 40px;
+  background-color: transparent;
+  border: none;
+  transition: .1s ease-in-out;
+  color: #fff;
+  transform: translateX(-40px);
+}
+
+.arrow-hover-2 {
+  color: #fff;
+  height: 40px;
+  width: 40px;
+  background-color: transparent;
+  border: none;
+  transition: .1s ease-in-out;
+  transform: translateX(-40px);
+
+}
+
+.hoverBtn {
+  padding: 2px 20px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  border-radius: 8px;
+  border: none;
+  background-color: #000;
+  color: #fff;
+  transition: .1s ease-in-out;
+}
+
+.hoverBtn:hover .arrow-hover-1 {
+  transform: translateX(0);
+  visibility: visible;
+  color: #fff;
+  transition: .5s ease-in-out;
+}
+
+.hoverBtn:hover .arrow-hover-2 {
+  transform: translateX(40px);
+  transition: .1s ease-in-out;
+
+}
+
+.hoverBtn:hover {
+  background-color: #e41010;
+  transition: .1s ease-in-out;
+}
+
+// <!-- =================================button end=========================== -->

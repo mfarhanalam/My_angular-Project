@@ -1,0 +1,128 @@
+<section>
+  <div class="nav-bar">
+    <div class="container responsive-row">
+      <div class="row ">
+        <div class="col-sm-6 col-6 header-icon">
+          <a target="_blank" href="https://www.facebook.com/"><i class="fa fa-facebook icon"></i></a>
+          <a target="_blank" href="https://www.instagram.com/"><i class="fa fa-instagram icon"></i></a>
+          <a target="_blank" href="https://www.twitter.com/"><i class="fa fa-twitter icon"></i></a>
+          <a target="_blank" href="https://www.youtube.com/"><i class="fa fa-youtube icon"></i></a>
+          <a target="_blank" href="https://www.google.com/"><i class="fa fa-google-plus icon"></i></a>
+          <a target="_blank" href="https://in.linkedin.com/"><i class="fa fa-linkedin icon"></i></a>
+        </div>
+        <div class="col-sm-6 col-6 " >
+          <div class="header-icon-hide ">
+            <div style="display: flex;">
+              <a href="#" class="icon"><i class="fa fa-phone "></i><span>+243820044550</span></a>
+            </div>
+            <a href="# " class="icon"><i class="fa fa-envelope"></i><span>info&#;virtualgoalintl.com</span></a>
+            <!-- <a class="icon" (click)="openBoottsrapModal('languageModal')"><i class="bi bi-globe"></i>&nbsp; Language</a> -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <img src="../../assets/logo.png" alt="">
+      </a>
+      <div class="mobileToggle">
+        <i class="bi bi-translate" (click)="openBoottsrapModal('languageModal')"></i> &nbsp; &nbsp;
+        <span class="navbar-toggler-icon " (click)="openSideDrawer('sideDrawer')" ></span>
+        <!-- <i class="bi bi-list" (click)="openSideDrawer('sideDrawer')" ></i> -->
+      </div>
+      <!-- <button class="navbar-toggler" (click)="openSideDrawer('sideDrawer')">
+          <a class="icon" (click)="openBoottsrapModal('languageModal')"><i class="bi bi-translate"></i>&nbsp;
+            Language</a>
+        <span class="navbar-toggler-icon"></span>
+      </button> -->
+      <div #collapsePanel class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul id="toggleNav" class="navbar-nav ml-auto mb-2 mb-lg-0 nav-list" >
+          <li><a [ngClass]="{'activeLink': selectedLink === 'home'}" (click)="navigateTo('')" class="box">{{'home' |
+              translate}}</a></li>
+          <li><a [ngClass]="{'activeLink': selectedLink === 'service'}" (click)="navigateTo('service')"
+              class="box">{{'service' | translate}}</a>
+          </li>
+          <li><a [ngClass]="{'activeLink': selectedLink === 'product'}" (click)="navigateTo('product')"
+              class="box">{{'product' | translate}}</a>
+          </li>
+          <li><a [ngClass]="{'activeLink': selectedLink === 'patner'}" (click)="navigateTo('patner')"
+              class="box">{{'partners' | translate}}</a>
+          </li>
+          <li><a [ngClass]="{'activeLink': selectedLink === 'employe'}" (click)="navigateTo('employe')"
+              class="box">{{'employment' | translate}}</a>
+          </li>
+          <li><a [ngClass]="{'activeLink': selectedLink === 'contact'}" (click)="navigateTo('contact')"
+              class="box">{{'contactUs' | translate}}</a>
+          </li>
+          <li>
+            <a class="icon" (click)="openBoottsrapModal('languageModal')"><i class="bi bi-translate" style="font-size: 20px;"></i>&nbsp;
+              Language</a>
+          </li>
+        </ul>
+
+      </div>
+    </div>
+  </nav>
+</section>
+
+
+
+
+
+<div class="modal fade" id="languageModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-sm modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Choose Language</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <button class="lang-btn" [ngClass]="{'active':activeLang === 'en'}" (click)="switchLanguage('en')"><i
+            *ngIf="activeLang==='en'" class="bi bi-check2-all"></i>&nbsp;English</button>
+        <button [ngClass]="{'active':activeLang==='fr'}" class="lang-btn" (click)="switchLanguage('fr')"><i
+            *ngIf="activeLang==='fr'" class="bi bi-check2-all"></i>&nbsp;French</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="offcanvas offcanvas-start " tabindex="-1" id="sideDrawer" aria-labelledby="offcanvasLabel">
+  <div class="offcanvas-header">
+    <a class="navbar-brand" href="#">
+      <img src="../../assets/logo.png" alt="">
+    </a>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    <ul id="toggleNav" class="navbar-nav ml-auto mb-2 mb-lg-0 nav-list" >
+      <li><a [ngClass]="{'activeLink': selectedLink === 'home'}" (click)="navigateTo('')" class="box">{{'home' |
+          translate}}</a></li>
+      <li><a [ngClass]="{'activeLink': selectedLink === 'service'}" (click)="navigateTo('service')"
+          class="box">{{'service' | translate}}</a>
+      </li>
+      <li><a [ngClass]="{'activeLink': selectedLink === 'product'}" (click)="navigateTo('product')"
+          class="box">{{'product' | translate}}</a>
+      </li>
+      <li><a [ngClass]="{'activeLink': selectedLink === 'patner'}" (click)="navigateTo('patner')"
+          class="box">{{'partners' | translate}}</a>
+      </li>
+      <li><a [ngClass]="{'activeLink': selectedLink === 'employe'}" (click)="navigateTo('employe')"
+          class="box">{{'employment' | translate}}</a>
+      </li>
+      <li><a [ngClass]="{'activeLink': selectedLink === 'contact'}" (click)="navigateTo('contact')"
+          class="box">{{'contactUs' | translate}}</a>
+      </li>
+
+    </ul>
+  </div>
+</div>

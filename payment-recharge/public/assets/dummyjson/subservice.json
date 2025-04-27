@@ -1,0 +1,65 @@
+[
+    {
+        "id": "SS001",
+        "serviceId": "TAX001",
+        "name": "Income Tax",
+        "frenchName": "Impôt sur le revenu",
+        "subserviceImage": "img/flaticons/incometax.svg",
+        "description": "Levied on individual earnings. Progressive rates apply based on income levels.",
+        "frenchDescription": "Prélevé sur les revenus individuels. Des taux progressifs s'appliquent en fonction des niveaux de revenus."
+    },
+    {
+        "id": "SS002",
+        "serviceId": "TAX001",
+        "name": "Value-Added Tax (VAT)",
+        "frenchName": "Taxe sur la valeur ajoutée (TVA)",
+        "subserviceImage": "img/flaticons/valueadded.svg",
+        "description": "A consumption tax applied to goods and services, typically included in the final price.",
+        "frenchDescription": "Une taxe à la consommation appliquée aux biens et services, généralement incluse dans le prix final."
+    },
+    {
+        "id": "SS003",
+        "serviceId": "TAX001",
+        "name": "Property Tax",
+        "frenchName": "Taxe foncière",
+        "subserviceImage": "img/flaticons/property.svg",
+        "description": "Applied to land and real estate ownership.",
+        "frenchDescription": "Appliqué à la propriété de terrains et de biens immobiliers."
+    },
+    {
+        "id": "SS004",
+        "serviceId": "TAX002",
+        "name": "Traffic Fine",
+        "frenchName": "Amende de circulation",
+        "subserviceImage": "img/flaticons/traficfine.svg",
+        "description": "Speeding, driving without valid documents, parking violations, or running red lights.",
+        "frenchDescription": "Excès de vitesse, conduite sans documents valides, infractions de stationnement ou non-respect des feux rouges."
+    },
+    {
+        "id": "SS005",
+        "serviceId": "TAX002",
+        "name": "Environmental Fine",
+        "frenchName": "Amende environnementale",
+        "subserviceImage": "img/flaticons/enviromental.svg",
+        "description": "Illegal logging, poaching, or polluting natural resources.",
+        "frenchDescription": "Exploitation forestière illégale, braconnage ou pollution des ressources naturelles."
+    },
+    {
+        "id": "SS006",
+        "serviceId": "TAX003",
+        "name": "License and Permit Fees",
+        "frenchName": "Frais de licence et de permis",
+        "subserviceImage": "img/flaticons/license.svg",
+        "description": "For obtaining or renewing a driver’s license.",
+        "frenchDescription": "Pour obtenir ou renouveler un permis de conduire."
+    },
+    {
+        "id": "SS007",
+        "serviceId": "TAX003",
+        "name": "Utility Bills",
+        "frenchName": "Factures de services publics",
+        "subserviceImage": "img/flaticons/utilitybills.svg",
+        "description": "Charges for water, electricity, and waste management services.",
+        "frenchDescription": "Frais pour l'eau, l'électricité et les services de gestion des déchets."
+    }
+]
