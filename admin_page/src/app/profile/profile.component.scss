@@ -1,0 +1,70 @@
+.page {
+  color: #022a70;
+  padding: 0 1rem;
+  background: #dde5f3;
+
+  &__box {
+    min-height: 90px;
+    margin: -1rem;
+    font-size: 26px;
+  }
+
+  &__content {
+    min-height: calc(100vh - 178px);
+    border-radius: 10px;
+    margin: -1rem;
+    // margin-top: -2rem;
+    background: #ecf1f9;
+    color: black;
+    font-size: 2rem;
+
+    &-data {
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+}
+
+
+
+.iconn i {
+  padding: 5px;
+  color: #899bbd;
+  font-size: 18px;
+}
+
+.iconn i:hover {
+  color: #012970;
+}
+
+
+
+
+// / Styling for the active filter tab /
+
+.tab-bar {
+  font-size: 17px;
+  padding: 10px 20px 5px;
+  color: #706f6f;
+  cursor: pointer;
+  border-bottom: 1px solid rgb(238, 231, 231);
+
+}
+.tab-bar.active {
+  color: #012970;
+  border-bottom: 1px solid #012970;
+}
+
+
+input {
+  font-size: 16px;
+  padding:  5px;
+ 
+}
+
+textarea {
+  font-size: 16px;
+  padding:5px;
+}
+

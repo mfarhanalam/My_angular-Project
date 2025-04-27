@@ -1,0 +1,98 @@
+<div class="container-fluid page">
+    <div class="d-flex page__box p-3 mt-2">Tables</div>
+    <div class="page__content shadow p-3 position-relative">
+        <div class="data">
+            <div class="row">
+                <div class="col-sm-6">
+                    <!-- ====================Default Table================= -->
+                    <div style="margin: 15px 0;">
+                        <div style="padding: 15px;border-radius: 3px;background-color: #ffffff; ">
+                            <div class="mb-4">
+                                <h5 style="font-size: 16px;font-weight: 500;color: #012970;">Default Table
+                                </h5>
+                            </div>
+
+                            <table class="Default-table mb-4">
+                                <tr>
+                                    <th>#</th>
+                                    <th>Name</th>
+                                    <th>Position</th>
+                                    <th>Age</th>
+                                    <th>Start Date</th>
+                                </tr>
+                                <tr class="tableData" *ngFor="let default of table">
+                                    <td><b>{{default.No}}</b></td>
+                                    <td>{{default.Name}}</td>
+                                    <td>{{default.Position}}</td>
+                                    <td>{{default.Age}}</td>
+                                    <td>{{default.Date}}</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <!-- ====================Default Table END================= -->
+
+
+                    <!-- ====================Active Table================= -->
+                    <div style="margin: 15px 0;">
+                        <div style="padding: 15px;border-radius: 3px;background-color: #ffffff; ">
+                            <div class="mb-4">
+                                <h5 style="font-size: 16px;font-weight: 500;color: #012970;">Active Table
+                                </h5>
+                            </div>
+
+                            <table class="active-table mb-4">
+                                <tr>
+                                    <th>#</th>
+                                    <th>Name</th>
+                                    <th>Position</th>
+                                    <th>Age</th>
+                                    <th>Start Date</th>
+                                </tr>
+                                <tr class="activeData" *ngFor="let default of table">
+                                    <td><b>{{default.No}}</b></td>
+                                    <td>{{default.Name}}</td>
+                                    <td>{{default.Position}}</td>
+                                    <td>{{default.Age}}</td>
+                                    <td>{{default.Date}}</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <!-- ====================Active Table END================= -->
+
+
+                </div>
+                <div class="col-sm-6">
+                    <!-- ========================Table with stripped rows=================== -->
+                    <div style="margin: 15px 0;">
+                        <div style="padding: 15px;border-radius: 3px;background-color: #ffffff; ">
+                            <div class="mb-4">
+                                <h5 style="font-size: 16px;font-weight: 500;color: #012970;">Table with stripped rows
+                                </h5>
+                            </div>
+
+                            <table class="stripped-table mb-4">
+                                <tr>
+                                    <th>#</th>
+                                    <th>Name</th>
+                                    <th>Position</th>
+                                    <th>Age</th>
+                                    <th>Start Date</th>
+                                </tr>
+                                <tr class="Datastripped" *ngFor="let default of table">
+                                    <td><b>{{default.No}}</b></td>
+                                    <td>{{default.Name}}</td>
+                                    <td>{{default.Position}}</td>
+                                    <td>{{default.Age}}</td>
+                                    <td>{{default.Date}}</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <!-- ========================Table with stripped rows END=================== -->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

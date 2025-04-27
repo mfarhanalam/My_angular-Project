@@ -1,0 +1,50 @@
+<div class="container-fluid page">
+  <div class="d-flex page__box p-3 mt-2">Frequently Asked Questions</div>
+  <div class="page__content shadow p-3 position-relative">
+    <div class="data">
+
+
+      <section>
+        <!-- <div>
+          <span style="color: #012970;font-weight: 500;">Frequently Asked Questions</span>
+          <p style="font-size: 10px;font-family: Arial;color: #899bbd;">Home / Pages / Frequently Asked Questions</p>
+        </div> -->
+        <div class="row">
+          <div class="col-sm-6">
+            <div
+              style="box-shadow: 0px 0 30px rgba(1, 41, 112, 0.1);border-radius: 4px;padding: 19px 13px 20px 19px;background-color: #ffffff;">
+              <div *ngFor="let ask of basic">
+                <h5 style="font-weight: 500;color: #012970;font-size: 18px;">{{ask.header}}</h5>
+                <h6 style="font-size: 18px;color: #4154f1;font-family: Nunito, sans-serif;">{{ask.question}}</h6>
+                <p style="font-size: medium; color: #6980aa;">{{ask.text}}</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="question_answer">
+              <h5>Deserunt ut unde accord</h5>
+              <div *ngFor="let accord of accordList; let i = index;">
+                <div class="question" (click)="clickToShow(i)">
+                  <span>{{accord.question}}</span>
+                  <i class="bi bi-chevron-down" *ngIf="currentAnswerIndex !== i"></i>
+                  <i class="bi bi-chevron-up" *ngIf="currentAnswerIndex === i"></i>
+                </div>
+                <div class="answer" *ngIf="currentAnswerIndex === i">
+                  <span>{{accord.answer}}</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section><br>
+      <hr>
+      <div style="text-align: center;">
+        <span style="font-size: 15px;color: #012970;">© Copyright <span style="font-weight: 700;">NiceAdmin</span>. All
+          Rights Reserved</span>
+        <p style="font-size: 15px;">Designed by <a style="text-decoration: none;"
+            href="https://bootstrapmade.com/demo/NiceAdmin/">BootstrapMade</a></p>
+      </div>
+
+    </div>
+  </div>
+</div>

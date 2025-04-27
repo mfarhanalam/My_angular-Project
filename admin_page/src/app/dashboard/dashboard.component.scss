@@ -1,0 +1,232 @@
+.page {
+  color: #022a70;
+  padding: 0 1rem;
+  background: #dde5f3;
+
+  &__box {
+    min-height: 90px;
+    margin: -1rem;
+    font-size: 26px;
+  }
+
+  &__content {
+    min-height: calc(100vh - 178px);
+    border-radius: 10px;
+    margin: -1rem;
+    // margin-top: -2rem;
+    background: #ecf1f9;
+    color: black;
+    font-size: 2rem;
+
+    &-data {
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+}
+
+
+
+// =====================Sales card=================
+.card {
+  padding: 20px 20px 40px;
+  background-color: white;
+  margin: 0 0 10px 0;
+
+  & .cardInfo {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 20px;
+
+    & h5 {
+      font-size: 18px;
+      font-weight: 500;
+      color: #012970;
+
+      & span {
+        color: #899bbd;
+        font-size: 14px;
+        font-weight: 400;
+      }
+    }
+
+    & i {
+      margin-top: -4px;
+      font-size: 17px;
+      color: #aab7cf;
+    }
+  }
+
+  & .cardIteam {
+    display: flex;
+
+    & .cardIcon {
+      height: 64px;
+      width: 64px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+    }
+  }
+}
+
+// =====================Sales card end=================
+
+
+// ===================apex chart=====================-
+.chart {
+  max-width: 650px;
+  margin: 35px auto;
+}
+
+// ===================apex chart end=====================-
+
+// <!-- =================Recent Sales==================== --> 
+
+.Recent-table {
+  width: 100%;
+  font-size: 15px;
+
+  & td {
+    & a {
+      text-decoration: none;
+    }
+
+    & span {
+      border-radius: 7px;
+      padding: 2px 8px;
+      color: #fff;
+      font-size: 11px;
+    }
+  }
+}
+
+.Recent-table th,
+.Recent-table td {
+  padding: 8px;
+  text-align: left;
+}
+
+// <!-- =================Recent Sales end==================== --> 
+
+// ====================Top selling product=================
+.Top-table {
+  width: 100%;
+  font-size: 15px;
+
+  & tr {
+    & td {
+      & a {
+        text-decoration: none;
+        font-weight: 500;
+      }
+
+      & img {
+        max-width: 60px;
+      }
+    }
+  }
+}
+
+.Top-table th,
+.Top-table td {
+  padding: 8px;
+  text-align: left;
+  border: 1px solid #a09b9b;
+}
+
+// ====================Top selling product end=================
+
+
+// ===================Default=================
+.alert {
+  border-radius: 5px;
+  font-size: 18px;
+  font-weight: 350;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+
+  & span {
+    align-items: center;
+    display: flex;
+
+    & mat-icon {
+      color: #3d3d3d;
+      font-weight: 350;
+      font-size: 21px;
+    }
+  }
+
+  & mat-icon {
+    color: #3d3d3d;
+    font-weight: 350;
+  }
+}
+
+@media (max-width: 767px) {
+  .alert {
+    align-items: center;
+      display: flex;
+    font-size: 13px;
+    /* Adjust font size for smaller screens */
+    padding: 10px;
+
+    /* Adjust padding for smaller screens */
+    & span {
+      align-items: center;
+      display: flex;
+      & mat-icon {
+        font-size: 15px;
+      }
+    }
+    & mat-icon {
+      font-size: 15px;
+    }
+  }
+
+  /* You can add more responsive styles as needed */
+}
+
+// ===================Default end=================
+
+
+
+
+
+/* Small screens (phones) */
+@media (max-width: 576px) {
+  h5 {
+    font-size: 14px;
+  }
+
+  td {
+    padding: 4px;
+    font-size: 10px;
+  }
+
+  table th {
+    font-size: 12px;
+  }
+
+  select,
+  input[type="search"] {
+    width: 100%;
+  }
+
+  .m-1 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .bi {
+    font-size: 12px;
+  }
+
+  p {
+    font-size: 12px;
+    width: auto;
+  }
+}

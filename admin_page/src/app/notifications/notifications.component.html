@@ -1,0 +1,61 @@
+<div class="container-fluid page">
+    <div class="d-flex page__box p-3 mt-2">Notifications</div>
+    <div class="page__content shadow p-3 position-relative">
+        <div class="data">
+
+
+            <div class="row">
+
+                <div class="col-sm-6">
+                    <!-- =================Default==================  -->
+                    <div class="mb-3" style="padding: 15px;border-radius: 3px;background-color: #ffffff;">
+                        <div class="mb-3">
+                            <h5 style="font-size: 18px;font-weight: 500;color: #012970;">Default</h5>
+                        </div>
+                        <div *ngFor="let alert of alertData; let i = index" [id]="'delete' + i">
+                            <div class="alert" [style.background-color]="alert.bgColor" [style.border]="alert.border">
+                                <span [style.color]="alert.data"><mat-icon [style.color]="alert.data">
+                                        {{alert.sIcon}}</mat-icon>
+                                    {{ alert.paragraph}}</span>
+                                <mat-icon (click)="cancel('delete' + i)">close</mat-icon>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- =================Default end==================  -->
+
+                    
+
+                </div>
+
+
+                <div class="col-sm-6">
+                    <!-- =====================With Heading & Separator alert ====================== -->
+                    <div class="mb-3" style="padding: 15px;border-radius: 3px;background-color: #ffffff;">
+                        <div class="mb-3">
+                            <h5 style="font-size: 18px;font-weight: 500;color: #012970;">With Heading & Separator</h5>
+                        </div>
+                        <div *ngFor="let alert2 of alert2Data; let i = index" [id]="'delete2' + i">
+                            <div class="alert2 mb-3" [style.background-color]="alert2.bgColor"
+                                [style.border]="alert2.border">
+                                <div class="alert2Head">
+                                    <h4 [style.color]="alert2.textColor">{{alert2.heading}} </h4>
+                                    <mat-icon (click)="cancel2('delete2' + i)">close</mat-icon>
+                                </div>
+                                <div class="alert2Info">
+                                    <p [style.color]="alert2.textColor">{{alert2.paragraph}} </p>
+                                    <hr [style.color]="alert2.textColor">
+                                    <p [style.color]="alert2.textColor">{{alert2.paragraph2}} </p>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="btn btn-primary">Add</button>
+                    </div>
+                    <!-- =====================With Heading & Separator alert end ====================== -->
+                </div>
+
+
+            </div>
+
+        </div>
+    </div>
+</div>

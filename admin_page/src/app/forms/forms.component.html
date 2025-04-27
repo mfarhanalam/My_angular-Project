@@ -1,0 +1,206 @@
+<div class="container-fluid page">
+  <div class="d-flex page__box p-3 mt-2">Forms</div>
+  <div class="page__content shadow p-3 position-relative">
+    <div class="data">
+
+      <div>
+        <span style="color: #012970;font-weight: 500;font-size: 20px;">Form Elements</span>
+        <p style="font-size: 11px;color: #899bbd;font-weight: 500;">Home / Users / Forms</p>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-6">
+          <!-- =========================General Form Elements====================== -->
+          <div class="mb-3" style="padding: 15px;border-radius: 3px;background-color: #ffffff;">
+            <div class="mb-3">
+              <h5 style="font-size: 18px;font-weight: 500;color: #012970;">General Form Elements</h5>
+            </div>
+            <div class="row form">
+              <label class="col-sm-2 form-label">Text</label>
+              <div class="col-sm-10">
+                <input type="text" class="form-control">
+              </div>
+
+              <label class="col-sm-2 form-label">Email</label>
+              <div class="col-sm-10">
+                <input type="email" class="form-control">
+              </div>
+
+              <label class="col-sm-2 form-label">Password</label>
+              <div class="col-sm-10">
+                <input type="password" class="form-control">
+              </div>
+
+              <label class="col-sm-2 form-label">Number</label>
+              <div class="col-sm-10">
+                <input type="number" class="form-control">
+              </div>
+
+              <label class="col-sm-2 form-label">File Upload
+              </label>
+              <div class="col-sm-10">
+                <input type="file" class="form-control">
+              </div>
+
+              <label class="col-sm-2 form-label">Date
+              </label>
+              <div class="col-sm-10">
+                <input type="date" class="form-control">
+              </div>
+
+              <label class="col-sm-2 form-label">Time
+              </label>
+              <div class="col-sm-10">
+                <input type="time" class="form-control">
+              </div>
+
+              <label class="col-sm-2 form-label">Color Picker
+              </label>
+              <div class="col-sm-10">
+                <input type="color" class="form-control form-control-color">
+              </div>
+
+              <label class="col-sm-2 form-label">Textarea
+              </label>
+              <div class="col-sm-10">
+                <textarea class="form-control" name="" id="" cols="30" rows="4"></textarea>
+              </div>
+
+              <label class="col-sm-2 form-label">Disabled
+              </label>
+              <div class="col-sm-10 ">
+                <input type="text" class="form-control" value="Read only / Disabled" disabled="">
+              </div>
+
+              <label class="col-sm-2 form-label">Select
+              </label>
+              <div class="col-sm-10">
+                <select class="form-select">
+                  <option selected>Open this select menu</option>
+                  <option value="1">One</option>
+                  <option value="2">Two</option>
+                  <option value="3">Three</option>
+                </select>
+              </div>
+
+              <label class="col-sm-2 form-label">Multi Select
+              </label>
+              <div class="col-sm-10">
+                <select class="form-select" multiple aria-label="multiple select example">
+                  <option selected>Open this select menu</option>
+                  <option value="1">One</option>
+                  <option value="2">Two</option>
+                  <option value="3">Three</option>
+                </select>
+              </div>
+
+              <label class="col-sm-2 form-label">Submit Button
+              </label>
+              <div class="col-sm-10">
+                <button class="btn btn-primary">Submit Form</button>
+              </div>
+
+            </div>
+          </div>
+          <!-- =========================General Form Elements end====================== -->
+        </div>
+
+        <div class="col-sm-6">
+          <div class="mb-3" style="padding: 15px;border-radius: 3px;background-color: #ffffff;">
+            <div class="mb-3">
+              <h5 style="font-size: 18px;font-weight: 500;color: #012970;">Advanced Form Elements</h5>
+            </div>
+
+            <div class="row form2">
+
+              <div class="row">
+
+                <div class="row">
+                  <label class="col-sm-2 form-label-control">Switches</label>
+                  <div class="col-sm-10 mb-5">
+                    <div class="form-check form-switch">
+                      <input type="checkbox" class="form-check-input" id="flexSwitchCheckDefault">
+                      <label class="form-check-label" for="flexSwitchCheckDefault">Default switch checkbox input</label>
+                    </div>
+                    <div class="form-check form-switch">
+                      <input type="checkbox" class="form-check-input" id="flexSwitchCheckChecked">
+                      <label class="form-check-label" for="flexSwitchCheckChecked">Checked switch checkbox input</label>
+                    </div>
+                    <div class="form-check form-switch">
+                      <input type="checkbox" class="form-check-input" id="flexSwitchCheckDisabled" disabled>
+                      <label class="form-check-label" for="flexSwitchCheckDisabled">Disabled switch checkbox
+                        input</label>
+                    </div>
+                    <div class="form-check form-switch">
+                      <input type="checkbox" class="form-check-input" id="flexSwitchCheckCheckedDisabled" checked
+                        disabled>
+                      <label class="form-check-label" for="flexSwitchCheckDisabled">Disabled checked switch checkbox
+                        input</label>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <label class="col-sm-2 form-label-control">Range</label>
+                  <div class="col-sm-10" style="font-size: 1rem;">
+                    <div>
+                      <label class="form-label">Example range</label>
+                      <input type="range" class="form-range" id="customRange1">
+                    </div>
+                    <div>
+                      <label class="form-label" for="disabledRange">Disabled range</label>
+                      <input type="range" class="form-range" id="disabledRange" disabled>
+                    </div>
+                    <div>
+                      <label class="form-label" for="customRange2">Min and max with steps</label>
+                      <input type="range" class="form-range" min="0" max="5" step="0.5" id="customRange2">
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <label class="col-sm-2 form-label-control">Floating labels</label>
+                  <div class="col-sm-10">
+                    <div class="form-floating mb-3">
+                      <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                      <label style="font-size: 15px ;" for="floatingInput">Email address</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                      <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                      <label style="font-size: 15px ;" for="floatingInput">Password</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                      <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"
+                        style="height: 100px;"></textarea>
+                      <label style="font-size: 15px ;" for="floatingTextarea">Comments</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                      <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                        <option selected="">Open this select menu</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                      </select>
+                      <label style="font-size: 15px ;" for="floatingSelect">Works with selects</label>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row">
+
+                </div>
+
+              </div>
+
+
+            </div>
+
+
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+</div>

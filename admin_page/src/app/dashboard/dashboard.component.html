@@ -1,0 +1,273 @@
+<div class="container-fluid page">
+  <div class="d-flex page__box p-3 mt-2">Dashboard</div>
+  <div class="page__content shadow p-3 position-relative">
+    <div class="data">
+      <div class="row">
+        <div class="col-sm-8">
+          <!--=============== Sales card ==================-->
+          <div class="row">
+            <div class="col-sm-4 ">
+              <div class="card">
+                <div class="cardInfo">
+                  <h5>
+                    Sales
+                    <span>| Today</span>
+                  </h5>
+                  <i class="bi bi-three-dots"></i>
+                </div>
+                <div class="cardIteam">
+                  <div style="background-color: #e5e5f8;" class="cardIcon">
+                    <i style="color:#012970 ;" class="bi bi-cart"></i>
+                  </div>
+                  <div style="padding-left: 12px;">
+                    <h6 style="font-size: 28px; margin-bottom: -19px; color: #012970;">145</h6>
+                    <span style="font-size: 14px; font-weight: 700; color: #378754;">12% </span>
+                    <span style="font-size: 14px; color: rgb(126 110 100);"> increase</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-4 ">
+              <div>
+                <div class="card">
+                  <div class="cardInfo">
+                    <h5>
+                      Revenue
+                      <span>| This Month</span>
+                    </h5>
+                    <i class="bi bi-three-dots"></i>
+                  </div>
+                  <div class="cardIteam">
+                    <div style=" background-color: #e0f8e9;" class="cardIcon">
+                      <mat-icon style="color: #2eca6a;font-size: 28px;">attach_money</mat-icon>
+                    </div>
+                    <div style="padding-left: 12px;">
+                      <h6 style="font-size: 28px; margin-bottom: -19px; color: #012970;">$32,64</h6>
+                      <span style="font-size: 14px; font-weight: 700; color: #378754;">8% </span>
+                      <span style="font-size: 14px; color: rgb(126 110 100);"> increase</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-4 ">
+              <div>
+                <div class="card">
+                  <div class="cardInfo">
+                    <h5>
+                      Customers
+                      <span>| This Year</span>
+                    </h5>
+                    <i class="bi bi-three-dots"></i>
+                  </div>
+                  <div class="cardIteam">
+                    <div style="background-color: #ffecdf;" class="cardIcon">
+                      <i style="color: #ff771d;" class="bi bi-people"></i>
+                    </div>
+                    <div style="padding-left: 12px;">
+                      <h6 style="font-size: 28px; margin-bottom: -19px; color: #012970;">1244</h6>
+                      <span style="font-size: 14px; font-weight: 700; color: #ec0202;">12% </span>
+                      <span style="font-size: 14px; color: rgb(126, 100, 100);"> decrease</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--=============== Sales card end ==================-->
+
+
+            <!-- ===================apex chart===================== -->
+            <div class="col-md-12" style="margin: 15px 0;">
+              <div style="padding: 15px;border-radius: 3px;background-color: #ffffff;">
+                <div class="mb-4">
+                  <h5 style="font-size: 16px;font-weight: 500;color: #012970;">Report
+                    <span style="font-size: 14px;color: #595c5f;font-weight: 400;"> | Today</span>
+                  </h5>
+                  <i style="display: flex;justify-content: end;margin-top: -29px;color: #899bbd;font-size: 16px;"
+                    class="bi bi-three-dots"></i>
+                </div>
+                <div id="chart">
+                  <apx-chart [series]="chartOptions.series!" [chart]="chartOptions.chart!" [xaxis]="chartOptions.xaxis!"
+                    [stroke]="chartOptions.stroke!" [tooltip]="chartOptions.tooltip!"
+                    [dataLabels]="chartOptions.dataLabels!"></apx-chart>
+                </div>
+              </div>
+            </div>
+            <!-- ===================apex chart end===================== -->
+
+            <!-- =================Recent Sales==================== -->
+            <div class="col-md-12" style="margin: 15px 0;">
+              <div style="padding: 15px;border-radius: 3px;background-color: #ffffff;">
+                <div class="mb-4">
+                  <h5 style="font-size: 16px;font-weight: 500;color: #012970;">Recent Sales
+                    <span style="font-size: 14px;color: #595c5f;font-weight: 400;"> | Today</span>
+                  </h5>
+                  <i style="display: flex;justify-content: end;margin-top: -29px;color: #899bbd;font-size: 16px;"
+                    class="bi bi-three-dots"></i>
+                </div>
+                <div class="m-1 p-2" style="display: flex; justify-content: space-between;">
+                  <label style="font-size: 15px; color: #4c5152;">
+                    <select style="padding: 5px; font-size: 15px;">
+                      <option>5</option>
+                      <option>10</option>
+                      <option>15</option>
+                      <option>25</option>
+                    </select>
+                    entries per page
+                  </label>
+                  <input style="padding: 6px; font-size: 15px;" type="search" placeholder="search...">
+                </div>
+                <div>
+                  <table class="Recent-table">
+                    <tr>
+                      <th>#</th>
+                      <th>Customer</th>
+                      <th>Product</th>
+                      <th>Price</th>
+                      <th>Status</th>
+                    </tr>
+                    <tr *ngFor="let sale of recent">
+                      <td><a href="">{{sale.num}}</a></td>
+                      <td>{{sale.customer}}</td>
+                      <td><a href="">{{sale.product}}</a></td>
+                      <td>{{sale.price}}</td>
+                      <td><span [style.background-color]="sale.bgColor">{{sale.status}}</span></td>
+                    </tr>
+                  </table>
+                </div>
+
+              </div>
+            </div>
+            <!-- =================Recent Sales end==================== -->
+
+            <!-- ====================Top selling product================= -->
+            <div class="col-md-12" style="margin: 15px 0;">
+              <div style="padding: 15px;border-radius: 3px;background-color: #ffffff; ">
+                <div class="mb-4">
+                  <h5 style="font-size: 16px;font-weight: 500;color: #012970;">Top Selling
+                    <span style="font-size: 14px;color: #595c5f;font-weight: 400;"> | Today</span>
+                  </h5>
+                  <i style="display: flex;justify-content: end;margin-top: -29px;color: #899bbd;font-size: 16px;"
+                    class="bi bi-three-dots"></i>
+                </div>
+
+                <table class="Top-table">
+                  <tr>
+                    <th>Preview</th>
+                    <th>Product</th>
+                    <th>Price</th>
+                    <th>Sold</th>
+                    <th>Revenue</th>
+                  </tr>
+                  <tr *ngFor="let selling of top">
+                    <td><img src="{{selling.Preview}}" alt=""></td>
+                    <td><a href="">{{selling.Product}}</a></td>
+                    <td>{{selling.Price}}</td>
+                    <td style="font-weight: bold;">{{selling.Sold}}</td>
+                    <td>{{selling.Revenue}}</td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+            <!-- ====================Top selling product end================= -->
+
+
+            <!-- polarArea -->
+            <div class="col-md-12" style="margin: 15px 0;">
+              <div style="padding: 15px;border-radius: 3px;background-color: #ffffff;">
+                <div class="mb-3">
+                  <h5 style="font-size: 18px;font-weight: 500;color: #012970;">Budget Report
+                    <span style="font-size: 14px;color: #595c5f;font-weight: 400;"> | This Month</span>
+                  </h5>
+                  <i style="display: flex;justify-content: end;margin-top: -29px;color: #899bbd;font-size: 16px;"
+                    class="bi bi-three-dots"></i>
+                </div>
+                <canvas baseChart class="chart" [data]="polarAreaChartData" [legend]="polarAreaLegend"
+                  [type]="polarAreaChartType">
+                </canvas>
+              </div>
+            </div>
+            <!-- polarArea end -->
+
+          </div>
+        </div>
+
+        <div class="col-sm-4">
+          <!-- =====================Recent Activity========================= -->
+          <div class="mb-3"
+            style="padding: 15px;border-radius: 3px;background-color: #ffffff;">
+            <div class="mb-3">
+              <h5 style="font-size: 18px;font-weight: 500;color: #012970;">Recent Activity
+                <span style="font-size: 14px;color: #595c5f;font-weight: 400;"> | Today</span>
+              </h5>
+              <i style="display: flex;justify-content: end;margin-top: -29px;color: #899bbd;font-size: 16px;"
+                class="bi bi-three-dots"></i>
+            </div>
+            <div style="width: 100%;">
+              <div *ngFor="let act of recentAct" style="display: flex;">
+                <p style="font-size: 14px;color: #888;width: 12%;">{{act.minut}}</p>
+                <i [style.color]="act.iconcolor" style="font-size: 9px;width: 5%;" class="{{act.icon}}"></i>
+                <p style="font-size: 14px;width: 83%;">{{act.text}}
+                  <span style="font-weight: 700;">{{act.txt}}</span><span>{{act.text1}}</span>
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- =====================Recent Activity end========================= -->
+
+          <!-- doughnut area  -->
+          <div class="mb-3"
+            style="padding: 15px;border-radius: 3px;background-color: #ffffff;">
+            <div class="mb-3">
+              <h5 style="font-size: 18px;font-weight: 500;color: #012970;">Budget Report
+                <span style="font-size: 14px;color: #595c5f;font-weight: 400;"> | Today</span>
+              </h5>
+              <i style="display: flex;justify-content: end;margin-top: -29px;color: #899bbd;font-size: 16px;"
+                class="bi bi-three-dots"></i>
+            </div>
+            <canvas baseChart class="chart" [data]="doughnutChartData" [type]="doughnutChartType">
+            </canvas>
+          </div>
+          <!-- doughnut area end  -->
+
+          <!-- radar area  -->
+          <div class="mb-3"
+            style="padding: 15px;border-radius: 3px;background-color: #ffffff;">
+            <div class="mb-3">
+              <h5 style="font-size: 18px;font-weight: 500;color: #012970;">Budget Report
+                <span style="font-size: 14px;color: #595c5f;font-weight: 400;"> | This Month</span>
+              </h5>
+              <i style="display: flex;justify-content: end;margin-top: -29px;color: #899bbd;font-size: 16px;"
+                class="bi bi-three-dots"></i>
+            </div>
+            <canvas baseChart class="chart" [data]="radarChartData" [options]="radarChartOptions"
+              [type]="radarChartType">
+            </canvas>
+          </div>
+          <!-- radar area end  -->
+
+          <!-- ===================Default================= -->
+          <div>
+            <div class="mb-3" style="padding: 15px;border-radius: 3px;background-color: #ffffff;">
+              <div class="mb-3">
+                <h5 style="font-size: 18px;font-weight: 500;color: #012970;">Default</h5>
+              </div>
+              <div *ngFor="let alert of alertData; let i = index" [id]="'delete' + i">
+                <div class="alert" [style.background-color]="alert.bgColor" [style.border]="alert.border">
+                  <span><mat-icon> {{alert.sIcon}}</mat-icon>
+                    {{ alert.paragraph}}</span>
+                  <mat-icon (click)="cancel('delete' + i)">close</mat-icon>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- ===================Default end================= -->
+
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

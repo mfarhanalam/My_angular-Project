@@ -1,0 +1,182 @@
+<div class="container-fluid page">
+  <div class="d-flex page__box p-3 mt-2">Profile</div>
+  <div class="page__content shadow p-3 position-relative">
+    <div class="data">
+
+      <div class="row">
+        <div class="col-sm-4">
+          <div
+            style="box-shadow: 0px 0 30px rgba(1, 41, 112, 0.1);border-radius: 4px;background-color: #ffffff;padding: 10px 13px 20px 13px;text-align: center;">
+            <img style="height:120px;width: 120px;border-radius: 50%;" src="../../assets/img/userimg.jpg" alt="">
+            <h2 style="font-size: 24px; color: #2c384e;margin:15px 0 0 0 ;">Kevin Anderson</h2>
+            <h3 style="font-size: 18px; font-weight: 400;">Web Designer</h3>
+            <div class="iconn">
+              <i class="bi bi-twitter"></i>
+              <i class="bi bi-facebook"></i>
+              <i class="bi bi-instagram"></i>
+              <i class="bi bi-linkedin"></i>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-8">
+          <div style="box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;background-color: #ffffff;">
+            <ul style="display: flex; padding: 10px; list-style: none;">
+              <li (click)="TabBar('overview')" class="tab-bar" id="overview"> Overview</li>
+              <li (click)="TabBar('edit-Profile')" class="tab-bar" id="edit-Profile">Edit Profile</li>
+              <li (click)="TabBar('setting')" class="tab-bar" id="setting">Setting</li>
+              <li (click)="TabBar('change-Password')" class="tab-bar" id="change-Password">Change Password
+              </li>
+            </ul>
+
+            <!-- =====================overview=================== -->
+            <section *ngIf="showTabBar==='overview'">
+              <div style="padding: 0px 15px 10px 15px;">
+                <h5 class="mb-4" style="color: #012970;font-weight: 500;">About</h5>
+                <p class="mb-4" style="font-style: italic;font-size: 14px; color: rgb(33 37 41);">Sunt est soluta
+                  temporibus accusantium neque nam
+                  maiores cumque temporibus. Tempora libero
+                  non est unde veniam est qui dolor. Ut sunt iure rerum quae quisquam autem eveniet
+                  perspiciatis odit. Fuga sequi sed ea saepe at unde.</p>
+                <h5 class="mb-4" style="color: #012970;font-weight: 500;">Profile Details</h5>
+                <div style="width: 100%;display: flex;">
+                  <div style="width: 25%;font-size: 15px;font-weight: 500;color: #899bbd;">
+                    <p>Full Name</p>
+                    <p>Company</p>
+                    <p>Job</p>
+                    <p>Country</p>
+                    <p>Address</p>
+                    <p>Phone</p>
+                    <p>Email</p>
+                  </div>
+                  <div style="width: 75%;font-size: 15px;">
+                    <p>Kevin Anderson</p>
+                    <p>Lueilwitz, Wisoky and Leuschke</p>
+                    <p>Web Designer</p>
+                    <p>USA</p>
+                    <p>A108 Adam Street, New York, NY 535022</p>
+                    <p>(436) 486-3538 x29071</p>
+                    <!-- <p>k.anderson@example.com</p> -->
+                  </div>
+                </div>
+              </div>
+            </section>
+            <!-- =====================overview end=================== -->
+
+            <!-- ======================edit-Profile===================== -->
+            <section *ngIf="showTabBar==='edit-Profile'">
+              <div class="row" style="display: flex;padding: 0px 15px 10px 15px;">
+
+                <div class="mb-3 row">
+                  <label style="color: rgb(1 41 112 / 60%);font-weight: 500;font-size: 16px;"
+                    class="col-sm-3 form-label">Profile
+                    Image</label>
+                  <div class="col-sm-9">
+                    <img style="max-width: 120px;" src="../../assets/img/userimg.jpg" alt="">
+                    <div>
+                      <i style="background-color: #0d6efd;padding: 4px 6px;color: #fff;font-size: 13px;border-radius: 4px;"
+                        class="bi bi-upload"></i>&nbsp;
+                      <i style="background-color: #dc3545;padding: 4px 6px;color: #fff;font-size: 13px;border-radius: 4px;"
+                        class="bi bi-trash"></i>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="mb-3 row" *ngFor="let data of profile;">
+                  <label style="color: rgb(1 41 112 / 60%);font-weight: 500;font-size: 16px; "
+                    class="col-sm-3 form-label">{{data.detail}}</label>
+                  <div class="col-sm-9">
+                    <input type="{{data.type}}" class="form-control" value="{{data.input}}">
+                  </div>
+                </div>
+
+                <div class="mb-3 row">
+                  <label style="color: rgb(1 41 112 / 60%);font-weight: 500;font-size: 16px; "
+                    class="col-sm-3 form-label">About</label>
+                  <div class="col-sm-9">
+                    <textarea class="form-control" name="" id="" cols="30" rows="4">Sunt est soluta temporibus accusantium neque nam maiores cumque temporibus. Tempora libero non est unde veniam est qui dolor. Ut sunt iure rerum quae quisquam autem eveniet perspiciatis odit. Fuga sequi sed ea saepe at unde.
+                    </textarea>
+                  </div>
+                </div>
+
+                <div style="display: flex; align-items: center; justify-content: center; margin-bottom: 5px;">
+                  <button class="btn btn-primary">Save Change</button>
+                </div>
+              </div>
+
+            </section>
+            <!-- ======================edit-Profile end===================== -->
+
+
+            <section *ngIf="showTabBar==='setting'">
+              <div class="row" style="padding: 0px 15px 10px 15px;">
+                <label style="font-size: 17px;" for="fullName" class="col-md-4 col-lg-3 col-form-label">Email
+                  Notifications</label>
+                <div class="col-md-8 col-lg-9">
+                  <div class="form-check"
+                    style="display: flex; font-size: 18px; font-weight: 300; align-items: center;">
+                    <input class="form-check-input" type="checkbox" id="changesMade">
+                    <label style="padding-left: 12px;" class="form-check-label" for="changesMade">Changes made to your
+                      account</label>
+                  </div>
+
+                  <div class="form-check"
+                    style="display: flex; font-size: 18px; font-weight: 300; align-items: center;">
+                    <input class="form-check-input" type="checkbox" id="newProducts">
+                    <label style="padding-left: 12px;" class="form-check-label" for="newProducts">Information on new
+                      products and services</label>
+                  </div>
+
+                  <div class="form-check"
+                    style="display: flex; font-size: 18px; font-weight: 300; align-items: center;">
+                    <input class="form-check-input" type="checkbox" id="proOffers">
+                    <label style="padding-left: 12px;" class="form-check-label" for="proOffers">Marketing and promo
+                      offers</label>
+                  </div>
+
+                  <div class="form-check"
+                    style="display: flex; font-size: 18px; font-weight: 300; align-items: center;">
+                    <input class="form-check-input" type="checkbox" id="securityNotify" checked disabled>
+                    <label style="padding-left: 12px;" class="form-check-label" for="securityNotify">Security
+                      alerts</label>
+                  </div>
+
+                </div>
+                <div class="text-center">
+                  <button type="submit" class="btn btn-primary"> Save Change</button>
+                </div>
+              </div>
+            </section>
+
+            <section *ngIf="showTabBar==='change-Password'">
+              <div class="row" style="padding: 0px 15px 10px 15px;">
+                <label style="font-size: 18px; font-weight: 300;" for="currentPassword"
+                  class="col-md-4 col-lg-3 col-form-label">Current Password</label>
+                <div class="col-md-8 col-lg-9 mb-3">
+                  <input name="password" type="password" class="form-control" id="currentPassword">
+                </div>
+
+                <label style="font-size: 18px; font-weight: 300;" for="newPassword"
+                  class="col-md-4 col-lg-3 col-form-label">New Password
+                </label>
+                <div class="col-md-8 col-lg-9 mb-3">
+                  <input name="password" type="password" class="form-control" id="newPassword">
+                </div>
+
+                <label style="font-size: 18px; font-weight: 300;" for="ReNewPassword"
+                  class="col-md-4 col-lg-3 col-form-label">Re-enter New Password</label>
+                <div class="col-md-8 col-lg-9 mb-3">
+                  <input name="password" type="password" class="form-control" id="ReNewPassword">
+                </div>
+
+                <div class="text-center">
+                  <button type="submit" class="btn btn-primary"> Save Change</button>
+                </div>
+              </div>
+            </section>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,116 @@
+<!-- =================home header==================  -->
+<div class="container-fluid page">
+  <div class="d-flex page__box p-3 mt-2">Alerts</div>
+  <div class="page__content shadow p-3 position-relative">
+    <div class="data">
+      <!-- =================home header end==================  -->
+
+
+      <div class="row">
+        <div class="col-sm-6">
+          <!-- =================Default==================  -->
+          <div class="mb-3" style="padding: 15px;border-radius: 3px;background-color: #ffffff;">
+            <div class="mb-3">
+              <h5 style="font-size: 18px;font-weight: 500;color: #012970;">Default</h5>
+            </div>
+            <div *ngFor="let alert of alertData; let i = index" [id]="'delete' + i">
+              <div class="alert" [style.background-color]="alert.bgColor" [style.border]="alert.border">
+                <span [style.color]="alert.data"><mat-icon [style.color]="alert.data"> {{alert.sIcon}}</mat-icon>
+                  {{ alert.paragraph}}</span>
+                <mat-icon (click)="cancel('delete' + i)">close</mat-icon>
+              </div>
+            </div>
+          </div>
+          <!-- =================Default end==================  -->
+
+          <!-- ====================Default Accordion=============== -->
+          <div class="mb-3" style="padding: 15px;border-radius: 3px;background-color: #ffffff;">
+            <div class="mb-3">
+              <h5 style="font-size: 20px;font-weight: 500;color: #012970;">Default Accordion</h5>
+            </div>
+            <div class="accordion">
+              <div style="padding: 15px;" class="accordion-item" *ngFor="let item of items" [ngClass]="{'open': item.open}">
+                <div style="display:flex;justify-content: space-between;" class="accordion-header" (click)="toggleAccordion(item)">
+                  <h4 style="font-size: medium;">{{ item.title }}</h4>
+                  <mat-icon>{{ item.open ? 'keyboard_arrow_up' : 'keyboard_arrow_down' }}</mat-icon>
+                </div>
+                <div class="accordion-content" [hidden]="!item.open">
+                  <p style="font-size: medium;">{{ item.content }}</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- ====================Default Accordion end=============== -->
+
+          <!-- ======================tab====================== -->
+
+          <div class="mb-3" style="padding: 15px;border-radius: 3px;background-color: #ffffff;">
+            <div class="mb-3">
+              <h5 style="font-size: 20px;font-weight: 500;color: #012970;">Default Tab</h5>
+            </div>
+            <div style="border-bottom: 1px solid gray;">
+              <button class="homeBtn" (click)="showContent('Home')" [class.active]="activeTab === 'Home'">Home</button>
+              <button class="profileBtn" (click)="showContent('Profile')"
+                [class.secondactive]="activeTab === 'Profile'">Profile</button>
+              <button class="contacteBtn" (click)="showContent('Contact')"
+                [class.thirdctive]="activeTab === 'Contact'">Contact</button>
+            </div>
+            <!-- ===============home tab================= -->
+            <div *ngIf="activeTab === 'Home'">
+              <p style="font-size: 18px; font-weight: 400; padding: 10px;">Sunt est soluta temporibus accusantium neque
+                nam maiores cumque temporibus. Tempora libero non est unde veniam est qui dolor. Ut sunt iure rerum quae
+                quisquam autem eveniet perspiciatis odit. Fuga sequi sed ea saepe at unde.</p>
+            </div>
+            <!-- ===============home tab end================= -->
+
+            <!-- ===============Profile tab================= -->
+            <div *ngIf="activeTab === 'Profile'">
+              <p style="font-size: 18px; font-weight: 400; padding: 10px;">Nesciunt totam et. Consequuntur magnam
+                aliquid eos nulla dolor iure eos quia. Accusantium distinctio omnis et atque fugiat. Itaque doloremque
+                aliquid sint quasi quia distinctio similique. Voluptate nihil recusandae mollitia dolores. Ut laboriosam
+                voluptatum dicta.</p>
+            </div>
+            <!-- ===============Profile tab end================= -->
+
+            <!-- ===============Contact tab================= -->
+            <div *ngIf="activeTab === 'Contact'">
+              <p style="font-size: 18px; font-weight: 400; padding: 10px;">Saepe animi et soluta ad odit soluta sunt.
+                Nihil quos omnis animi debitis cumque. Accusantium quibusdam perspiciatis qui qui omnis magnam. Officiis
+                accusamus impedit molestias nostrum veniam. Qui amet ipsum iure. Dignissimos fuga tempore dolor.</p>
+            </div>
+            <!-- ===============Contact tab end================= -->
+          </div>
+
+          <!-- ======================tab end====================== -->
+        </div>
+
+
+        <div class="col-sm-6">
+          <!-- =====================With Heading & Separator alert ====================== -->
+          <div class="mb-3" style="padding: 15px;border-radius: 3px;background-color: #ffffff;">
+            <div class="mb-3">
+              <h5 style="font-size: 18px;font-weight: 500;color: #012970;">With Heading & Separator</h5>
+            </div>
+            <div *ngFor="let alert2 of alert2Data; let i = index" [id]="'delete2' + i">
+              <div class="alert2 mb-3" [style.background-color]="alert2.bgColor" [style.border]="alert2.border">
+                <div class="alert2Head">
+                  <h4 [style.color]="alert2.textColor">{{alert2.heading}} </h4>
+                  <mat-icon (click)="cancel2('delete2' + i)">close</mat-icon>
+                </div>
+                <div class="alert2Info">
+                  <p [style.color]="alert2.textColor">{{alert2.paragraph}} </p>
+                  <hr [style.color]="alert2.textColor">
+                  <p [style.color]="alert2.textColor">{{alert2.paragraph2}} </p>
+                </div>
+              </div>
+            </div>
+            <button class="btn btn-primary">Add</button>
+          </div>
+          <!-- =====================With Heading & Separator alert end ====================== -->
+        </div>
+
+
+      </div>
+    </div>
+  </div>
+</div>

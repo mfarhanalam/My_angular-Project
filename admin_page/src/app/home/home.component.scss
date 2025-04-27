@@ -1,0 +1,131 @@
+// =================home header==================
+.page {
+  color: #022a70;
+  padding: 0 1rem;
+  background: #dde5f3;
+
+  &__box {
+    min-height: 90px;
+    margin: -1rem;
+    font-size: 26px;
+  }
+
+  &__content {
+    min-height: calc(100vh - 178px);
+    border-radius: 10px;
+    margin: -1rem;
+    // margin-top: -2rem;
+    background: #ecf1f9;
+    color: black;
+    font-size: 2rem;
+
+    &-data {
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+}
+
+// =================home header end==================
+
+
+
+// ===================Default================= 
+.alert {
+  border-radius: 5px;
+  font-size: 18px;
+  font-weight: 350;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+
+  & span {
+    align-items: center;
+    display: flex;
+
+    & mat-icon {
+      color: #3d3d3d;
+      font-weight: 350;
+      font-size: 21px;
+    }
+  }
+
+  & mat-icon {
+    color: #3d3d3d;
+    font-weight: 350;
+  }
+}
+
+
+@media (max-width: 767px) {
+  .alert {
+    align-items: center;
+    display: flex;
+    font-size: 13px;
+    padding: 10px;
+
+    & span {
+      align-items: center;
+      display: flex;
+
+      & mat-icon {
+        font-size: 15px;
+      }
+    }
+
+    & mat-icon {
+      font-size: 15px;
+    }
+  }
+
+}
+
+// ===================Default end================= 
+
+// <!-- =====================With Heading & Separator alert ====================== -->
+.alert2 {
+  border-radius: 5px;
+  padding: 15px 15px 0;
+
+
+  & .alert2Head {
+    display: flex;
+    justify-content: space-between;
+
+    & h4 {
+      font-size: 20px;
+    }
+  }
+
+  & .alert2Info {
+    
+    & p{
+      font-size: 17px;
+      font-weight: 380;
+    }
+  }
+}
+// <!-- =====================With Heading & Separator alert end====================== -->
+
+// ================tab================
+.homeBtn , .profileBtn , .contacteBtn {
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px 5px 0 0;
+  font-size: 16px;
+  color: #2840fc;
+  background-color: #ffff !important;
+  // margin-bottom: 5px;
+}
+
+
+.active , .secondactive , .thirdctive {
+  border-right: 1px solid gray;
+  border-left: 1px solid gray;
+  border-top: 1px solid gray;
+  border-bottom: 1px solid #fff;
+  color: #000;
+}
+// ================tab end================
+
