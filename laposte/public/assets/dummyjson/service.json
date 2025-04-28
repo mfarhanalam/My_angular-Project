@@ -1,0 +1,26 @@
+[
+    {
+        "id": "TAX001",
+        "serviceImage": "img/flaticons/taxes.svg",
+        "serviceName": "Pay Taxes",
+        "frenchServiceName": "Payer des impôts",
+        "updatedDate": "2024-11-28T12:34:56.789Z",
+        "createdDate": "2024-11-01T08:00:00.000Z"
+    },
+    {
+        "id": "TAX002",
+        "serviceImage": "img/flaticons/fines.svg",
+        "serviceName": "Pay Fines",
+        "frenchServiceName": "Payer des amendes",
+        "updatedDate": "2024-11-28T12:34:56.789Z",
+        "createdDate": "2024-11-01T08:00:00.000Z"
+    },
+    {
+        "id": "TAX003",
+        "serviceImage": "img/flaticons/fees.svg",
+        "serviceName": "Pay Taxes",
+        "frenchServiceName": "Retirer Argent",
+        "updatedDate": "2024-11-28T12:34:56.789Z",
+        "createdDate": "2024-11-01T08:00:00.000Z"
+    }
+]

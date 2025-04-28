@@ -1,0 +1,17 @@
+{
+  "runLocalService": false,
+  "useLanguage": false,
+  "localWebServicesUrl": "http://localhost:8080/slws/portal/",
+  "webServicesUrl": "https://sl.bizmobia.com/slws/portal/",
+  "shareUrl": "https://pt.bizmobia.com/",
+  "clientName": "Money Tresar",
+  "hostName": "pt.bizmobia.com",
+  "websiteUrl": "https://pt.bizmobia.com/",
+  "website": "pt.bizmobia.com",
+  "contactemail": "support@bizmobia.com",
+  "customercare": "",
+  "isConsole": true,
+  "currency": "LKR",
+  "defaultLanguage": "fr",
+  "countryCode": "241"
+}

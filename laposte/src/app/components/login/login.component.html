@@ -1,0 +1,135 @@
+<!-- kyc-flow.component.html -->
+<main class="p-3">
+    <div class="w-100 ">
+      <img src="mediafiles/images/logo/companylogo.png" alt="Personal Details" class="logo">
+    </div>
+  
+    <!-- Step 1 - Sign Up -->
+    <section class="get-started step p-3" *ngIf="currentStep === 1">
+      <div class="w-100 d-flex justify-content-center mt-4 mobile-mockup">
+        <img src="img/images/mobilemockup.png" alt="Get started">
+        <div class="intro-1 mockup-data"><img src="img/images/dollar.png" alt=""></div>
+        <div class="intro-3 mockup-data"><img src="img/images/shield.png" alt=""></div>
+        <div class="intro-4 mockup-data"><img src="img/images/coupon.png" alt=""></div>
+        
+      </div>
+      <div class="intro-details mt-5"><br />
+        <div class="text-center ">
+          <h2>Welcome to BizPay</h2>
+          <p>Sign up to get started with your eKYC process.</p>
+          <button class="btn w-100 mt-3" (click)="nextStep()">Sign up</button>
+        </div>
+      </div>
+    </section>
+  
+    <!-- Step 2 - Personal Details -->
+    <div *ngIf="currentStep === 2" class="step personal-details">
+  
+      <div class="w-100 d-flex justify-content-center ">
+        <img src="img/images/signup.jpg" alt="Get started" width="100%">
+      </div>
+      <h2 style="font-weight: 700;">Sign Up</h2>
+      <p style="color: #8b8b8b;">Please enter your full name and phone number.</p>
+  
+      <div class="input-container icon-input">
+        <i class="bi bi-person-circle input-indicator"></i>
+        <input id="fullName" type="text" placeholder="Enter full name">
+      </div>
+  
+      <div class="input-container icon-input">
+        <i class="bi bi-phone input-indicator"></i>
+        <input id="phoneNumber" type="tel" placeholder="Enter phone number">
+      </div>
+  
+      <div class="button-group">
+        <button class="btn w-100" (click)="nextStep()">Next</button>
+        <button class="light-btn w-100" (click)="prevStep()">Back</button>
+        
+      </div>
+    </div>
+  
+    <!-- Step 3 - OTP Verification -->
+    <div *ngIf="currentStep === 3" class="step">
+      <h2 class="mt-5" style="font-weight: 700;">Verify Your Number</h2>
+      <p style="color: #8b8b8b;">We've sent an OTP to your phone number.</p>
+  
+  
+      <div class="otp-container mt-3">
+        <input autofocus type="tel" maxlength="1" name="otp0" ngModel #otp0 (input)="moveToNext($event, otp0, otp1)"
+          (keydown)="moveBack($event, otp0, otp1)">
+        <input type="tel" maxlength="1" name="otp1" ngModel #otp1 (input)="moveToNext($event, otp1, otp2)"
+          (keydown)="moveBack($event, otp1, otp0)">
+        <input type="tel" maxlength="1" name="otp2" ngModel #otp2 (input)="moveToNext($event, otp2, otp3)"
+          (keydown)="moveBack($event, otp2, otp1)">
+        <input type="tel" maxlength="1" name="otp3" ngModel #otp3 (input)="moveToNext($event, otp3, otp4)"
+          (keydown)="moveBack($event, otp3, otp2)">
+        <input type="tel" maxlength="1" name="otp4" ngModel #otp4 (input)="moveToNext($event, otp4, otp5)"
+          (keydown)="moveBack($event, otp4, otp3)">
+        <input type="tel" maxlength="1" name="otp5" ngModel #otp5 (input)="moveToNext($event, otp5)"
+          (keydown)="moveBack($event, otp5, otp4)">
+      </div>
+  
+      <!-- <div class="input-group">
+        <label for="otp">Enter OTP</label>
+        <input id="otp" type="number" placeholder="Enter OTP">
+      </div> -->
+  
+      <div class="button-group">
+        <button class="light-btn" (click)="prevStep()">Back</button>
+        <button class="btn" (click)="nextStep()">Verify</button>
+      </div>
+    </div>
+  
+    <!-- Step 4 - Terms & PIN -->
+    <div *ngIf="currentStep === 4" class="step">
+  
+      <h2 class="mt-5" style="font-weight: 700;">Set up screen lock</h2>
+      <p style="color: #8b8b8b;">For security, set PIN</p>
+      <div>
+        <div class="input-container">
+          <input id="pin" type="password" placeholder="Create 4-digit PIN">
+  
+        </div>
+        <p style="font-size: 15px;text-align: center;margin-top: 10px;">PIN must be at least 4 digit , but a 6-digit PIN
+          is recommended for added security</p>
+      </div>
+  
+  
+  
+      <div class="bottom-data">
+        <div style="display: flex;align-items: center;gap: 10px;">
+          <i class=" bi bi-shield-lock"></i>
+          <p style="margin: 0;">The password is protected by app encryption</p>
+        </div>
+        <div class="button-group">
+          <button class="light-btn" (click)="prevStep()">Back</button>
+          <button class="btn" (click)="nextStep()">Submit</button>
+        </div>
+      </div>
+  
+    </div>
+  
+    <!-- Step 4 - Terms & PIN -->
+    <div *ngIf="currentStep === 5" class="step">
+  
+      <h2 class="mt-5" style="font-weight: 700;">Set up Biometric</h2>
+      <p style="color: #8b8b8b;">For security, set PIN</p>
+      <div class="text-center">
+        <img class="mt-5" (click)="navigateTo('facecapture')" src="img/images/face-recognition.png" alt=""><br />
+        <img class="mt-5" (click)="navigateTo('fingerprintscan')" src="img/images/biometric.png" alt="">
+      </div>
+      <div class="bottom-data">
+        <div style="display: flex;align-items: center;gap: 10px;">
+          <i class=" bi bi-shield-lock"></i>
+          <p style="margin: 0;">The bioetric is protected by app encryption</p><br />
+        </div>
+        <div class="mt-2 text-center">
+          <button class="btn w-100" (click)="alertMessage()">Enable Biometric Login</button><br />
+          <button class="light-btn "
+            style="background-color: transparent !important;border: 1px solid transparent !important;"
+            (click)="navigateTo('home')">Not now</button>
+        </div>
+      </div>
+  
+    </div>
+  </main>

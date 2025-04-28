@@ -1,0 +1,14 @@
+<footer class="bottom-nav" *ngIf="isShowFooter">
+  <div
+    *ngFor="let item of navItems"
+    [routerLink]="item.route"
+    routerLinkActive="active"
+    [routerLinkActiveOptions]="{ exact: true }"
+    class="nav-item"
+    [attr.aria-label]="item.label">
+    <div class="nav-icon-container">
+      <i class="{{ item.icon }}"></i>
+    </div>
+    <p class="nav-text">{{ item.label | translate }}</p>
+  </div>
+</footer>

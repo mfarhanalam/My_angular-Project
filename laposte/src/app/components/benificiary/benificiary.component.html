@@ -1,0 +1,90 @@
+<!-- benificiary.component.html -->
+<section class="benificiary">
+    <!-- Main Beneficiaries Interface -->
+    <div class="main-interface" *ngIf="showBeneficiaries">
+
+      <div class="beneficiary-list">
+        <h3><i class="bi bi-person-vcard-fill"></i> {{'beneficiaries' | translate}}</h3>
+        <div class="input-container mt-3">
+          <i class="bi bi-search search-icon"></i>
+          <input type="search" placeholder="{{'search' | translate}}..." />
+        </div>
+        <div class="add-Recipient">
+          <p (click)="showNewContactForm()"> {{'addRecipient' | translate}}&nbsp; <i class="bi bi-person-add"></i></p>
+        </div>
+
+        <div class="favorites">
+          <h4>{{'favourites' | translate}}</h4>
+          <div class="contact-item" *ngFor="let fav of favorites">
+            <i style="color: #005DA4;" class="bi bi-person-circle"></i>&nbsp;
+            {{ fav }}
+            <i style="margin-left: auto; color: gold;" class="bi bi-star-fill"></i>
+          </div>
+        </div>
+
+        <div class="contacts">
+          <h4>{{'contacts' | translate}}</h4>
+          <div class="contact-item" *ngFor="let contact of contacts">
+            <i style="color: #005DA4;" class="bi bi-person-circle"></i>&nbsp;
+            {{ contact }}
+          </div>
+        </div>
+      </div>
+
+      <!-- Invite Section -->
+      <div class="invite-section">
+        <h4>{{'ifNoFlaggedMatchesFromLexusNexusBeneficiaryIsAdded' | translate}}</h4>
+        <div class="invite-buttons button-group">
+          <button class="send-invite btn">{{'Send Invite' | translate}}</button>
+          <button class="not-now light-btn">{{'Not Now' | translate}}</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- New Contact Form -->
+    <div class="new-contact-form" *ngIf="showNewContact">
+      <h3><i class="bi bi-person-vcard-fill"></i> {{'New Contact' | translate}}</h3>
+
+      <form (ngSubmit)="submitContact()">
+        <div class="input-contain">
+          <label>{{'Country' | translate}}:</label>
+          <input type="text" id="Country" placeholder="Enter your country" required>
+        </div>
+
+        <div class="input-contain">
+          <label>{{'firstName' | translate}}:</label>
+          <input id="firstName" placeholder="Enter first name" type="text" required>
+        </div>
+
+        <div class="input-contain">
+          <label>{{'lastName' | translate}}:</label>
+          <input type="text" id="lastName" placeholder="Enter last name" required>
+        </div>
+
+        <div class="input-contain">
+          <label>{{'idNumber' | translate}}:</label>
+          <input type="text" id="idNumber" placeholder="Enter ID number" required>
+        </div>
+
+        <div class="button-group">
+          <button class="light-btn" type="button" (click)="cancelNewContact()">{{'cancel' | translate}}</button>
+          <button class="btn" type="submit">{{'addContact' | translate}}</button>
+        </div>
+      </form>
+    </div>
+
+    <!-- Contact Added Confirmation -->
+    <div class="confirmation" *ngIf="showConfirmation">
+      <h3>{{'contactAdded' | translate}}!</h3>
+      <div class="contact-details">
+        <p>{{'id' | translate}}: {{ newContact.id }}</p>
+        <p>{{'name' | translate}}: {{ newContact.firstName }} {{ newContact.surname }}</p>
+        <p>{{'phone' | translate}}: {{ newContact.phone }}</p>
+      </div>
+
+      <div class="confirmation-buttons button-group">
+        <button class="not-now light-btn" (click)="returnToMain()">{{'Not Now' | translate}}</button>
+        <button class="send-invite btn">{{'Send Invite' | translate}}</button>
+      </div>
+    </div>
+  </section>

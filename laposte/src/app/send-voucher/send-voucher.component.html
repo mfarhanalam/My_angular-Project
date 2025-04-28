@@ -1,0 +1,303 @@
+<main>
+  <header [ngClass]="{ 'gray-bg': paymentstep === 'selectvouchervalue' }">
+    <i class="bi bi-arrow-left" (click)="navigateTo('home')"></i>
+  </header>
+  <div id="allTab" style="padding-top: 70px;">
+    <!-- Select Recipient  -->
+    <section *ngIf="paymentstep==='selectrecipient'" #selectrecipient id="selectRecipient"
+      class="selectrecipient-section text-center">
+      <div class="container">
+        <div class="input-container">
+          <input type="search" placeholder="Search Recipient">
+          <button class="btn  mt-3 mb-3" (click)="navigateTo('add-account')"><i
+            class="bi bi-plus-circle-fill "></i> &nbsp;Add Benificiary</button><br />
+        </div>
+        <div>
+          <!-- <button class="btn  mt-4 mb-4  addrecipientbtn" (click)="navigateTo('add-account')"><i
+              class="bi bi-plus-circle-fill "></i> &nbsp;Send to Bank</button><br /> -->
+          <div class=" " style="background-color: #ffffff;border-radius: 15px; ">
+            <h4 class="text-start " style="padding-left: 15px;">Select Recipient </h4>
+            <div *ngFor="let data of recentRecipient;let i=index" class="recent-recipient"
+              (click)="handleRecipientSelect()">
+              <div class="d-flex align-items-center gap-3">
+                <div class="profile-icon" [ngStyle]="{'background-color': colors[i % colors.length]}">
+                  {{ data?.name.charAt(0) | uppercase }}
+                </div>
+                <div class="text-start">
+                  <h6>{{data?.name}}</h6>
+                  <p style="font-size: 12px;margin: 0;padding-top: 4px;">{{data?.phoneNumber}}</p>
+                </div>
+              </div>
+              <h6>{{data?.payDate}}</h6>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Select currency  -->
+    <section *ngIf="paymentstep==='selectCurrency'" #selectcurrency id="selectCurrency" class="select-currency ">
+      <div class="container">
+
+        <div>
+          <div *ngIf="exchangeRates && exchangeRates.conversion_rates; else loading">
+            <div class="input-container">
+              <input type="search" placeholder="Search currency">
+            </div>
+            <h2 class="mt-4">Exchange Rates (Base: {{ exchangeRates.base_code }})</h2>
+            <ul class="exchange-rate-container">
+              <li *ngFor="let rate of exchangeRates.conversion_rates | keyvalue" (click)="selectCountry(rate.key)"
+                [ngClass]="{'active':selectedCountry===rate.key}">
+                <i *ngIf="selectedCountry===rate.key" class="bi bi-shield-fill-check"
+                  style="font-size: 25px;transition: 2s ease-in-out;color: green;"></i>
+                <div class="flag-container">
+                  <img [src]="'/country/' + currencyCodeToCountryCode(rate.key) + '.svg'"
+                    (error)="setFallbackImage($event)">
+                  <h6>{{ rate.key }}: {{ rate.value }}</h6>
+                </div>
+
+                <footer class="fixed-footer" *ngIf="selectedCountry===rate.key">
+                  <button class="btn w-100" (click)="handleselectCurrency()">Continue</button>
+                </footer>
+              </li>
+            </ul>
+          </div>
+
+          <ng-template #loading>
+            <p>Loading exchange rates...</p>
+          </ng-template>
+
+          <div *ngIf="errorMessage">
+            <p style="color: red;">{{ errorMessage }}</p>
+          </div>
+        </div>
+
+
+      </div>
+    </section>
+
+    <!-- Type of payment  -->
+    <section *ngIf="paymentstep==='typeOfPayment'" #typeofpayment id="typeOfPayment" class="type-of-payment ">
+      <div class="container">
+        <div class="icon-container">
+          <!-- <img src="video/curve.gif" alt="" style="height: auto;width: 100%;"> -->
+          <img src="video/curvemoney.gif" alt="" style="height: auto;width: 100%;">
+        </div>
+        <div class="d-block">
+          <h1>Please Select</h1>
+          <p-dropdown [options]="paymentTypes" [(ngModel)]="selectedPayment" placeholder="Select retailer">
+          </p-dropdown>
+          <button class="btn w-100 mt-3" (click)="handlePaymentType()">Next : Select Currency</button>
+
+        </div>
+
+      </div>
+    </section>
+
+
+
+    <!-- Reason for Sending Money -->
+    <section *ngIf="paymentstep==='reasonForSending'" #reasonForSending id="reasonForSending"
+      class="reason-for-sending">
+      <div class="container">
+        <div class="icon-container">
+          <img src="video/curve.gif" alt="" style="height: auto;width: 100%;">
+        </div>
+        <div class="p-1">
+          <h1 class="text-center">Reason for Sending Money</h1>
+          <div class="reason-container">
+            <textarea placeholder="Enter the reason for sending money (e.g., Gift, Payment, etc.)" rows="4"></textarea>
+          </div>
+          <button class="btn w-100 mt-3" (click)="handleReasonSubmit()">Continue</button>
+        </div>
+      </div>
+    </section>
+
+
+
+    <!-- Select voucher value -->
+    <section *ngIf="paymentstep==='selectvouchervalue'" #selectvouchervalue id="selectvouchervalue"
+      class="select-voucher-value" style="background-color: #ffffff;">
+      <div class="container">
+        <div class="icon-container">
+          <img src="video/curve.gif" alt="" style="height: auto;width: 100%;">
+        </div>
+        <div class="p-1">
+          <h1 class="text-center">Select Voucher Value</h1>
+          <div class="voucher-card">
+            <div class="gradiant">
+              <div>
+                <p>Shopping vouchers</p>
+                <h5 style="margin-top: 5px !important;">Pick and pay</h5>
+              </div>
+            </div>
+
+            <!-- You Pay Input -->
+            <div class="voucher-value">
+              <h6>Voucher value</h6>
+              <input type="text" [(ngModel)]="youPayAmount" placeholder="ZAR 0.00"
+                (input)="calculateRecipientReceives()">
+              <p class="currency-label">{{ youPayCurrency }}</p>
+            </div>
+
+            <!-- Recipient Receives Input -->
+            <!-- <div class="voucher-value mt-3">
+              <h6>Recipient Receives</h6>
+              <input type="text" [(ngModel)]="recipientReceivesAmount" placeholder="USD 0.00">
+              <p class="currency-label">{{ recipientReceivesCurrency }}</p>
+            </div> -->
+
+            <!-- Exchange Fee -->
+            <div class="exchange-fee mt-3">
+              <h6>Exchange Fee</h6>
+              <p>USD 0.00</p>
+              <!-- <p>{{ exchangeFee }} {{ youPayCurrency }}</p> -->
+            </div>
+
+            <!-- Total Amount -->
+            <h1 class="mt-5 text-center" style="font-weight: 700;">Total - USD 0.00
+              <!-- {{ totalAmount }} {{ youPayCurrency }} -->
+            </h1><br />
+            <button class="btn w-100" (click)="handleVoucher()">Continue</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Summary of transaction -->
+    <section *ngIf="paymentstep==='transactionsummary'" #transactionsummary id="transactionSummary"
+      class="transaction-summary">
+      <div class="container" style="background-color: #ffffff;">
+        <div class="p-2">
+          <div>
+            <h2 class="text-center" style="font-weight: 700;">Summary</h2>
+            <p class="alert-message"><i class="bi bi-info-circle-fill"></i>
+              &nbsp;Please check and confirm the below details</p>
+          </div><br />
+
+          <div class="recipient-container">
+            <h3 class="heading-text">Send to</h3>
+            <ul class="recipient">
+              <li>
+                <span>Name</span>
+                <h6>Alex Carry</h6>
+              </li>
+              <li>
+                <span>Mobile Number</span>
+                <h6>+263 123 456 789</h6>
+              </li>
+              <li>
+                <span>ID</span>
+                <h6>XXXXXXX</h6>
+              </li>
+            </ul>
+          </div>
+
+          <div class="details mt-3">
+            <h3 class="heading-text">Reason for Sending</h3>
+            <div class="voucher-box">
+              <p>
+                <!-- {{ reasonForSending }} -->
+                Gift
+              </p>
+            </div>
+          </div>
+
+          <div class="details mt-3">
+            <h3 class="heading-text">Recipient will receive</h3>
+            <div class="voucher-box">
+              <p>-- Shoping Voucher</p>
+              <p>-- USD 0.00</p>
+              <p>-- ZAR 0.00</p>
+            </div>
+          </div>
+
+          <footer class="con-pay">
+            <div class="total">
+              <p>Total Due</p>
+              <h3>ZAR 0.00</h3>
+            </div>
+            <button class="btn" (click)="openOffcanvas('selectPaymentMethod')">Confirm and Pay</button>
+          </footer>
+        </div>
+      </div>
+    </section>
+
+    <!-- Summary of transaction -->
+    <section *ngIf="paymentstep==='success'" #success id="success" class="success ">
+      <div class="container" style="background-color: #ffffff;">
+        <h1 style="text-align: center;color: green;font-weight: 700;">Success</h1>
+        <div class="mt-4">
+          <div style="padding: 15px;text-align: center;
+                  background-color: rgba(35, 68, 119,0.1);border-radius: 15px;">
+            <h5>Shopping Voucher</h5>
+            <h5>Pick and pay</h5>
+            <h1>ZWL 125.00</h1>
+          </div>
+
+          <div class="mt-4">
+            <h4>Voucher code</h4>
+            <div style="display: flex;justify-content: space-between;align-items: center;
+                      background-color: rgba(35, 68, 119,0.1);padding: 15px;border-radius: 15px;">
+              <p style="margin: 0;">1234 5678 9012 3456</p>
+              <i class="bi bi-copy"></i>
+            </div>
+          </div><br />
+
+          <p>Present this voucher code at the till point when making payment.</p><br />
+
+          <p style="text-align: center;color: #5c5c5c;">Transaction details and status can be found under Payment
+            History.</p>
+
+          <button class="btn w-100" (click)="navigateTo('home')">Send Voucher and close</button>
+        </div>
+      </div>
+    </section>
+
+
+
+    <!-- Summary of transaction -->
+    <section *ngIf="isShowLoader" #loader id="loaderContainer" class="loader-container ">
+      <div class="text-center">
+        <div class="loader"></div>
+        <p>Payment Processing...</p>
+      </div>
+    </section>
+
+
+  </div>
+
+</main>
+
+
+<div class="offcanvas offcanvas-bottom" tabindex="-1" id="selectPaymentMethod"
+  aria-labelledby="selectPaymentMethodLabel" style="height: auto;">
+  <div class="offcanvas-header">
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body p-3">
+    <h4>How would you like to pay?</h4>
+    <div>
+      <div class="select-payment">
+        <input id="debitCard" type="radio" name="payment" [(ngModel)]="selectedPayment" value="debitCard">
+        <label for="debitCard">Debit Card</label>
+      </div>
+      <div class="select-payment">
+        <input id="Credit Card" type="radio" name="payment" [(ngModel)]="selectedPayment" value="Credit Card">
+        <label for="Credit Card">OTT Voucher</label>
+      </div>
+      <!-- <div class="select-payment">
+        <input id="eft" type="radio" name="payment" [(ngModel)]="selectedPayment" value="eft">
+        <label for="eft">EFT</label>
+      </div> -->
+    </div>
+
+  </div>
+
+  <div class="offcanvas-footer p-2">
+    <button class="btn w-100" (click)="handlePaymentMethodSelect()">Pay</button>
+    <button class="light-btn w-100">Cancel</button>
+
+  </div>
+</div>

@@ -1,0 +1,306 @@
+/* benificiary.component.scss */
+.benificiary {
+  min-height: 100vh;
+  width: 100%;
+  padding: 1rem;
+  background-color: #ffffff;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin-bottom: 50px;
+
+  .button-group {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+
+  .add-Recipient {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-weight: 600;
+    cursor: pointer;
+    padding: 1rem 0;
+    transition: transform 0.2s ease;
+
+    &:hover {
+      transform: translateX(5px);
+    }
+
+    p {
+      font-size: 1.1rem;
+      color: #234477;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+
+      i {
+        font-size: 1.3rem;
+        transition: transform 0.3s ease;
+      }
+
+      &:hover i {
+        transform: scale(1.1);
+      }
+    }
+  }
+
+  .main-interface {
+    max-width: 800px;
+    margin: 0 auto;
+
+    h2 {
+      text-align: center;
+      color: #234477;
+      margin-bottom: 1rem;
+      font-weight: 700;
+      letter-spacing: -0.5px;
+      font-size: 2rem;
+    }
+
+    .beneficiary-list {
+      margin-bottom: 1rem;
+      background: #f8f9fa;
+      border-radius: 1rem;
+      // padding: 2rem;
+      box-shadow: 0 8px 30px rgba(0,0,0,0.05);
+
+      h3 {
+        color: #234477;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+        margin-bottom: 1rem;
+        font-size: 1.5rem;
+        font-weight: 600;
+
+        i {
+          font-size: 1.8rem;
+        }
+      }
+
+      .favorites,
+      .contacts {
+        margin-top: 1rem;
+
+        h4 {
+          color: #234477;
+          margin-bottom: 1rem;
+          font-size: 1.1rem;
+          font-weight: 600;
+          padding-bottom: 0.5rem;
+          border-bottom: 2px solid #e0e0e0;
+        }
+
+        .contact-item {
+          display: flex;
+          align-items: center;
+          padding: 0.5rem;
+          margin: 0.5rem 0;
+          border-radius: 0.75rem;
+          background: white;
+          box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+          transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+
+          &:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+          }
+
+          i {
+            font-size: 1.5rem;
+            margin-right: 0.75rem;
+          }
+        }
+      }
+    }
+
+    .invite-section {
+      border-top: 1px solid #eee;
+      padding-top: 2rem;
+      margin-top: 2rem;
+
+      h4 {
+        color: #666;
+        font-size: 0.95rem;
+        margin-bottom: 1rem;
+        text-align: center;
+        line-height: 1.5;
+      }
+    }
+  }
+
+  .new-contact-form {
+    max-width: 500px;
+    margin: 1rem auto;
+    padding: 1rem;
+    background: white;
+    border-radius: 1.5rem;
+    box-shadow: 0 12px 40px rgba(0,0,0,0.08);
+    transform: translateY(0);
+    animation: slideUp 0.4s ease;
+
+    h3 {
+      color: #234477;
+      margin-bottom: 2rem;
+      font-size: 1.6rem;
+      font-weight: 700;
+      text-align: center;
+      letter-spacing: -0.5px;
+    }
+
+    .input-contain {
+      margin-bottom: 1rem;
+
+      label {
+        display: block;
+        margin-bottom: 0.5rem;
+        color: #234477;
+        font-size: 0.95rem;
+        font-weight: 600;
+      }
+
+      input {
+        width: 100%;
+        height: 3rem;
+        border-radius: 0.75rem;
+        border: 1px solid #e0e0e0;
+        padding: 0 1.25rem;
+        font-size: 1rem;
+        transition: all 0.2s ease;
+
+        &:focus {
+          border-color: #234477;
+          box-shadow: 0 0 0 3px rgba(35,68,119,0.1);
+        }
+
+        &::placeholder {
+          color: #aaa;
+        }
+      }
+    }
+
+    .button-group {
+      margin-top: 2rem;
+    }
+  }
+
+  .input-container {
+    margin: 1rem 0;
+    position: relative;
+
+    input {
+      width: 100%;
+      height: 3rem;
+      border: 1px solid #e0e0e0;
+      border-radius: 0.75rem;
+      padding: 0 1.25rem 0 3rem;
+      font-size: 1rem;
+      transition: all 0.2s ease;
+
+      &:focus {
+        border-color: #234477;
+        box-shadow: 0 0 0 3px rgba(35,68,119,0.1);
+      }
+    }
+
+    .search-icon {
+      position: absolute;
+      left: 1rem;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 1.2rem;
+      color: #666;
+    }
+  }
+
+  .confirmation {
+    max-width: 500px;
+    margin: 1rem auto;
+    padding: 1rem;
+    background: white;
+    border-radius: 1.5rem;
+    box-shadow: 0 12px 40px rgba(0,0,0,0.08);
+    text-align: center;
+    animation: slideUp 0.4s ease;
+
+    h3 {
+      color: #234477;
+      margin-bottom: 1rem;
+      font-size: 1.6rem;
+      position: relative;
+      padding-bottom: 1rem;
+
+      &::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 50px;
+        height: 3px;
+        background: #234477;
+        border-radius: 2px;
+      }
+    }
+
+    .contact-details {
+      margin: 2rem 0;
+      padding: 1.5rem;
+      background: #f8f9fa;
+      border-radius: 1rem;
+      border: 1px solid #e0e0e0;
+      color: #234477;
+      font-weight: 500;
+
+      p {
+        margin: 0.5rem 0;
+        font-size: 1.05rem;
+      }
+    }
+  }
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.btn {
+  background-color: #234477 !important;
+  color: #ffffff !important;
+  border-radius: 0.75rem !important;
+  padding: 0.875rem 2rem !important;
+  font-weight: 600 !important;
+  letter-spacing: 0.5px;
+  transition: all 0.2s ease !important;
+
+  &:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(35,68,119,0.2);
+  }
+}
+
+.light-btn {
+  background-color: #f6f6f6 !important;
+  color: #234477 !important;
+  border-radius: 0.75rem !important;
+  padding: 0.875rem 2rem !important;
+  border: 1px solid #e0e0e0 !important;
+  font-weight: 600 !important;
+  transition: all 0.2s ease !important;
+
+  &:hover {
+    background-color: #e9ecef !important;
+    transform: translateY(-1px);
+  }
+}

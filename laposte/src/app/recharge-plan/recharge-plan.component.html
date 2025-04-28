@@ -1,0 +1,167 @@
+<div class="recharge-plan-container">
+  <!-- Header -->
+  <div class="header">
+    <i class="bi bi-arrow-left back-button" (click)="navigateToHome()"></i>
+    <h2>{{ 'selectRechargePlan' | translate }}</h2>
+  </div>
+
+  <div >
+    <!-- User Info -->
+    <div class="user-info">
+      <!-- Display initials if no imgSrc is provided -->
+      <div class="user-avatar" [style.backgroundColor]="getBackgroundColor(user.name)">
+        <img *ngIf="user.imgSrc" [src]="user.imgSrc" alt="User" />
+        <div *ngIf="!user.imgSrc" class="initials">
+          {{ getInitials(user.name) }}
+        </div>
+      </div>
+      <div class="user-details">
+        <p class="user-number">{{ user.name }} · {{ user.number }}</p>
+        <p class="user-plan">{{ user.plan }} · {{ user.location }}</p>
+      </div>
+      <a class="change-link" (click)="navigateToHome()">{{'Change' |translate}}</a>
+    </div>
+
+    <!-- Suggested Plans -->
+    <div class="suggested-plans">
+      <h3>{{'suggestedPlans' | translate}}</h3>
+      <div class="plan-card" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom"
+        aria-controls="offcanvasBottom">
+        <div class="plan-info">
+          <p class="price">CFA19</p>
+          <p class="plan-details">{{'dataPack' | translate}}<br />1 GB · {{'basePlan' | translate}}</p>
+        </div>
+        <button class="details-button">&rarr;</button>
+      </div>
+
+      <div class="plan-card" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom"
+        aria-controls="offcanvasBottom">
+        <div class="plan-info">
+          <p class="price">CFA349</p>
+          <p class="plan-details">{{'validityPlan' | translate}}<br />{{'unlimited' | translate}} 5G + 2GB/{{'day' |
+            translate}} · 28 {{'days' | translate}}</p>
+        </div>
+        <button class="details-button">&rarr;</button>
+      </div>
+    </div>
+
+    <!-- Search Bar -->
+    <div class="search-bar">
+      <input type="text" [(ngModel)]="searchTerm" placeholder="{{'searchPlan' | translate}} , eg 349, 5G, etc." />
+    </div>
+
+    <!-- Plan List -->
+    <div class="plan-list">
+      <!-- Show filtered plans -->
+      <div *ngFor="let plan of filteredPlans" class="plan-item" data-bs-toggle="offcanvas"
+        data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom">
+        <div class="plan-summary">
+          <p class="price">{{ plan.price }}</p>
+          <p class="details">{{ plan.details }}</p>
+        </div>
+        <a href="#" class="details-link">{{ 'details' | translate }}</a>
+      </div>
+
+      <!-- Show "Not Found" if no plans match -->
+      <div style="height: 66vh;" *ngIf="filteredPlans.length === 0" class="not-found">
+        <p>{{'noplansFound' | translate}}</p>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Offcanvas -->
+  <div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom" aria-labelledby="offcanvasBottomLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="offcanvasBottomLabel">{{'confirmPayment' | translate}}</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body small">
+      <div class="payment-container">
+        <div class="payment-header">
+          <h2>{{'totalPayable' | translate}}</h2>
+          <span class="total-amount">CFA352</span>
+        </div>
+        <div class="payment-details">
+          <p>
+            <span>{{'rechargeAmount' | translate}}</span>
+            <span>CFA349</span>
+          </p>
+          <p>
+            <span>{{'platformFee' | translate}}</span>
+            <span>+ CFA3</span>
+          </p>
+          <div class="divider"></div>
+        </div>
+        <div class="best-offer">
+          <div class="offer-content">
+            <span class="offer-icon">🎉</span>
+            <span>{{'bestOfferApplied' | translate}}</span>
+          </div>
+          <button class="offer-button">1</button>
+        </div>
+        <div class="payment-methods">
+          <h4 class="section-title">{{'selectPaymentMethod' | translate}}</h4>
+          <div class="method">
+            <label for="pnb">
+              <img src="/img/airtel.png" alt="PNB" />
+              <div class="method-details">
+                <span class="bank-name">Airtel Money</span>
+                <span class="account-number">5351</span>
+              </div>
+            </label>
+            <input type="radio" id="pnb" name="payment" checked />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Fixed Pay Button -->
+    <div class="fixed-pay-button">
+      <button class="pay-button" data-bs-toggle="modal" data-bs-target="#confirmModal">{{'pay' | translate}} CFA352</button>
+    </div>
+  </div>
+</div>
+
+
+
+
+<!-- Confirmation Modal -->
+<div class="modal fade" id="confirmModal" tabindex="-1" aria-labelledby="confirmModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header bg-warning text-white">
+        <h5 class="modal-title" id="confirmModalLabel">Payment Confirmation</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body text-center">
+        <h4>Are you sure for payment?</h4>
+      </div>
+      <div class="modal-footer justify-content-center">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+        <button type="button" class="btn btn-success" data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#successModal" aria-label="Close">
+          Confirm
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Success Modal -->
+<div class="modal fade" id="successModal" tabindex="-1" aria-labelledby="successModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header bg-success text-white">
+        <h5 class="modal-title" id="successModalLabel">Payment Status</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body text-center">
+        <h4 class="text-success">Payment Successfully Completed!</h4>
+      </div>
+      <div class="modal-footer justify-content-center">
+        <button type="button" class="btn btn-primary" data-bs-dismiss="modal" aria-label="Close">OK</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+

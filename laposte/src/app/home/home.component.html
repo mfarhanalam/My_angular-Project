@@ -1,0 +1,101 @@
+<div class="home-page">
+  <!-- Fixed Navigation Bar -->
+  <nav class="heading">
+    <div class="d-flex align-items-center justify-content-between" style="width: 100%;">
+      <div class="d-flex align-items-center" style="gap: 10px;">
+        <img src="/img/logo/logo.jpg" alt="Logo" class="logo">
+      </div>
+      <div class="h-icon d-flex align-items-center" style="gap: 15px;">
+        <i (click)="openLanguageCanvas()" class="bi bi-translate"></i>
+        <i (click)="handleMenuClick()" class="bi bi-bell-fill"></i>
+        <i (click)="navigateTo('login')" class="bi bi-person-circle"></i>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <main>
+    <!-- Search Bar -->
+    <div class="input-container mt-3">
+      <i class="bi bi-search search-icon"></i>
+      <input type="search" placeholder="{{'search' | translate}}..." />
+    </div>
+
+    <!-- Carousel -->
+    <div class="carousel-container">
+      <ngx-slick-carousel class="carousel" #slickModal="slick-carousel" [config]="slideConfig">
+        <div ngxSlickItem *ngFor="let slide of slides; let i = index" class="slide"
+          [ngClass]="{'active-slide': i === slickModal?.currentSlide}" style="margin-right: 10px;">
+          <img src="{{ slide.img }}" alt="" class="carousel-image">
+        </div>
+      </ngx-slick-carousel>
+    </div>
+    <!-- Postal Services Section -->
+<section class="moneySection list-box">
+  <h2>{{'postalServices' | translate }}</h2>
+  <div class="grid">
+    <div class="item" [routerLink]="['/postoffice']">
+      <i class="bi bi-building"></i>
+      <p>{{'postoffice' | translate}}</p>
+    </div>
+    <div class="item" [routerLink]="['/parcels']">
+      <i class="bi bi-box-seam"></i>
+      <p>{{'parcels' | translate}}</p>
+    </div>
+    <div class="item" [routerLink]="['/mailservices']">
+      <i class="bi bi-envelope-paper"></i>
+      <p>{{'mail' | translate}}</p>
+    </div>
+    <div class="item" [routerLink]="['/expressmail']">
+      <i class="bi bi-truck"></i>
+      <p>{{'expressmail' | translate}}</p>
+    </div>
+    <div class="item" [routerLink]="['/stamps']">
+      <i class="bi bi-stamp"><img src="img/images/stamp (3).png" alt="Stamp"></i>
+      <p>{{'stamps' | translate}}</p>
+    </div>
+  </div>
+</section>
+
+<!-- Financial Services Section -->
+<section class="list-box mt-4">
+  <h2>{{'financialServices' | translate}}</h2>
+  <div class="grid">
+    <div class="item" [routerLink]="['/postalbankaccount']">
+      <i class="bi bi-bank"></i>
+      <p>{{'postalbankaccount' | translate}}</p>
+    </div>
+    <div class="item" [routerLink]="['/expressaccount']">
+      <i class="bi bi-person-check"></i>
+      <p>{{'expressaccount'| translate}}</p>
+    </div>
+    <div class="item" [routerLink]="['/prepaidcard']">
+      <i class="bi bi-credit-card-2-front"></i>
+      <p>{{'prepaidcard' | translate}}</p>
+    </div>
+    <div class="item" [routerLink]="['/moneytransfer']">
+      <i class="bi bi-arrow-left-right"></i>
+      <p>{{'moneytransfer' | translate}}</p>
+    </div>
+    <div class="item" [routerLink]="['/mobilepayment']">
+      <i class="bi bi-broadcast"></i>
+      <p>{{'mobilepaymentsandtopups' | translate}}</p>
+    </div>
+  </div>
+</section>
+  </main>
+
+  <!-- Language Selection Offcanvas -->
+  <div class="offcanvas offcanvas-bottom" tabindex="-1" id="languageCanvas" aria-labelledby="languageCanvasLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="languageCanvasLabel">Select Language</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <div class="language-btn">
+        <button (click)="convertLanguage('en')" [ngClass]="{'selected-language' : language =='en'}">English</button>
+        <button (click)="convertLanguage('fr')" [ngClass]="{'selected-language' : language =='fr'}">French</button>
+      </div>
+    </div>
+  </div>
+</div>

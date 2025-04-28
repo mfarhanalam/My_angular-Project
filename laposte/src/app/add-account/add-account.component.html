@@ -1,0 +1,94 @@
+<!-- benificiary.component.html -->
+<section class="benificiary">
+  <!-- Main Beneficiaries Interface -->
+  <div class="main-interface" *ngIf="showAddAccount">
+
+    <!-- <div class="beneficiary-list">
+      <h3><i class="bi bi-person-vcard-fill"></i> Add Account</h3>
+      <div class="input-container mt-3">
+        <i class="bi bi-search search-icon"></i>
+        <input type="search" placeholder="{{'search' | translate}}..." />
+      </div>
+      <div class="add-Recipient">
+        <p (click)="showNewContactForm()"> Add Account&nbsp; <i class="bi bi-person-add"></i></p>
+      </div>
+
+      <div class="favorites">
+        <h4>Favourites</h4>
+        <div class="contact-item" *ngFor="let fav of favorites">
+          <i style="color: #234477;" class="bi bi-person-circle"></i>&nbsp;
+          {{ fav }}
+          <i style="margin-left: auto; color: gold;" class="bi bi-star-fill"></i>
+        </div>
+      </div>
+
+      <div class="contacts">
+        <h4>All Account</h4>
+        <div class="contact-item" *ngFor="let contact of contacts">
+          <i style="color: #234477;" class="bi bi-person-circle"></i>&nbsp;
+          {{ contact }}
+        </div>
+      </div>
+    </div> -->
+
+
+  </div>
+
+  <!-- New Contact Form -->
+  <div class="new-contact-form" *ngIf="showNewContact">
+    <h3><i class="bi bi-person-vcard-fill"></i> New Bank Account</h3>
+
+    <form (ngSubmit)="submitBankAccount()">
+      <div class="input-contain">
+        <label>Name:</label>
+        <input type="text" id="name" placeholder="Enter your name" required>
+      </div>
+
+      <div class="input-contain">
+        <label>Bank Name:</label>
+        <input type="text" id="bankName" placeholder="Enter your bank name" required>
+      </div>
+
+      <div class="input-contain">
+        <label>Account Number:</label>
+        <input type="number" id="accountNumber" placeholder="Enter account number" required>
+      </div>
+
+      <div class="input-contain">
+        <label>Confirm Account Number:</label>
+        <input type="number" id="accountNumber" placeholder="Enter account number" required>
+      </div>
+
+      <div class="input-contain">
+        <label>Branch:</label>
+        <input type="text" id="branch" placeholder="Enter branch name" required>
+      </div>
+
+      <div class="input-contain">
+        <label>IFSC/Swift Code:</label>
+        <input type="text" id="ifscCode" placeholder="Enter IFSC or Swift Code" required>
+      </div>
+
+      <div class="button-group">
+        <button class="light-btn" type="button" (click)="navigateTo('sendmoney')">Cancel</button>
+        <button class="btn" type="submit">Add Account</button>
+      </div>
+    </form>
+
+  </div>
+
+  <!-- Contact Added Confirmation -->
+  <div class="confirmation" *ngIf="showConfirmation">
+    <h3>Contact Added!</h3>
+    <div class="contact-details">
+      <p>Name: {{ newContact.firstName }} {{ newContact.surname }}</p>
+      <p>Account Number: {{ newContact.account }} </p>
+      <p>Bank: {{ newContact.acName }}</p>
+    </div>
+
+    <div class="confirmation-buttons button-group">
+      <button class="not-now light-btn" (click)="returnToMain('sendmoney')">Back</button>
+      <button class="send-invite btn" (click)="navigateTo('sendmoney')">Submit</button>
+    </div>
+  </div>
+</section>

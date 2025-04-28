@@ -1,0 +1,408 @@
+// Select Recipient css
+.selectrecipient-section {
+
+  h1 {
+      font-weight: 600;
+  }
+}
+
+.icon-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem 3rem;
+  position: relative;
+  z-index: 2;
+
+  i {
+      font-size: 4rem;
+  }
+}
+
+
+.add-btn {
+  padding: 10px 30px;
+  background-color: #f3f1f1;
+  border: 1px solid #e3e3e3;
+  border-radius: 15px;
+
+  i {
+      font-size: 20px;
+  }
+}
+
+.recent-recipient {
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+  gap: 15px;
+  padding: 12px 15px;
+  justify-content: space-between;
+  border-bottom: 1px solid #f7f4f4;
+
+  h6 {
+      margin: 0;
+
+  }
+}
+
+.profile-icon {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  font-weight: bold;
+  color: white;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+.recipient-info {
+  padding: 12px;
+  background-color: #f0f0f0;
+  border: 1px solid #f0f0f0;
+  border-radius: 15px;
+
+  h6 {
+      font-size: 2rem;
+  }
+}
+
+.exchange-rate-container {
+  padding: 0;
+  list-style: none;
+
+  li {
+      padding: 7px 12px;
+      border-radius: 15px;
+      margin-bottom: 5px;
+      display: flex;
+      align-items: center;
+
+      h6 {
+          margin: 0;
+      }
+
+      img {
+          height: 50px;
+          width: 50px;
+          border-radius: 50%;
+      }
+  }
+}
+
+header {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 15px;
+  background-color: #ffffff;
+  height: 70px;
+
+  h4 {
+      margin: 0;
+  }
+
+  p {
+      margin: 0;
+      font-size: 12px;
+  }
+}
+
+.active {
+  background-color: rgba(35, 68, 119, 0.1) !important;
+  border: 1px solid #234477 !important;
+
+  .flag-container {
+      padding-left: 15px !important;
+      transition: 0.2s ease-in-out;
+  }
+
+  i {
+      transition: 0.2s ease-in-out;
+  }
+}
+
+.flag-container {
+  transition: 0.2s ease-in-out;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.fixed-footer {
+  position: fixed !important;
+  width: 450px;
+  bottom: 0;
+  margin: auto;
+  padding: 8px;
+  left: 0;
+}
+
+
+@media(max-width:768px) {
+  .fixed-footer {
+      width: 100% !important;
+  }
+}
+
+
+.voucher-value {
+  background-color: #ffffff;
+  padding: 15px;
+  border-radius: 15px;
+  margin-bottom: 10px;
+
+  input {
+    border: 1px solid #c2bbbb;
+    height: 45px;
+    font-size: 25px;
+    text-align: center;
+    width: 100%;
+    font-weight: 700;
+    margin-top: 5px;
+  }
+
+  .currency-label {
+    margin: 0;
+    font-size: 14px;
+    color: #8c8c8c;
+    text-align: center;
+  }
+}
+
+.exchange-fee {
+  background-color: #f2f2f3;
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+
+  h6 {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 600;
+  }
+
+  p {
+    margin-top: 3px;
+    margin: 0;
+    font-size: 14px;
+    color: #8c8c8c;
+  }
+}
+
+.gray-bg {
+  background-color: #f1f1f1 !important;
+}
+
+.gradiant {
+  padding: 15px 10px;
+  width: 100%;
+  border-bottom: 1px solid #f1eeee;
+
+  h5,
+  p {
+      margin: 0;
+  }
+}
+
+.addrecipientbtn {
+  position: fixed;
+  right: 15px;
+  bottom: 15px;
+}
+
+
+.recipient-container {
+  .recipient {
+      padding: 0;
+      list-style: none;
+      border-bottom: 1px solid #eeeeee;
+      margin-top: 10px;
+      padding-bottom: 20px;
+
+      li {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding: 10px 0;
+          // border-bottom: 1px solid #eeeeee;
+
+          span {
+              margin: 0;
+              color: #8c8c8c;
+              font-size: 15px;
+          }
+
+          h6 {
+              margin: 0;
+              font-weight: 700;
+              font-size: 15px;
+          }
+      }
+  }
+}
+
+.voucher-box {
+  padding: 18px;
+  background-color: #f2f2f3;
+  border: 1px solid #f2f2f3;
+  color: #000000;
+  margin-top: 10px;
+  position: relative;
+
+  p {
+      margin: 0;
+      line-height: 1.4;
+  }
+}
+
+.voucher-box::after {
+  content: '';
+  height: 100%;
+  width: 5px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: #234477;
+}
+
+.con-pay {
+  position: fixed;
+  width: 450px;
+  bottom: 0;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  left: 0;
+  background-color: #ffffff;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+  h3 {
+      margin: 0;
+      font-size: 18px;
+      font-weight: 700;
+  }
+
+  p {
+      margin: 0;
+  }
+}
+
+@media(max-width:768px) {
+  .con-pay {
+      width: 100% !important;
+  }
+}
+
+main {
+  padding-bottom: 80px;
+}
+
+.select-payment {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 0;
+
+  h6 {
+      margin: 0;
+  }
+}
+
+.heading-text {
+  border-radius: 25px;
+  display: inline-block;
+  font-size: 17px;
+  font-weight: 700;
+  margin: 0;
+}
+
+#loaderContainer {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 100000;
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  justify-content: center;
+  align-items: center;
+  p{
+      color: #ffffff;
+      margin-top: 10px;
+  }
+}
+
+.loader {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  position: relative;
+  margin: auto;
+  animation: rotate 1s linear infinite
+}
+
+.loader::before {
+  content: "";
+  box-sizing: border-box;
+  position: absolute;
+  inset: 0px;
+  border-radius: 50%;
+  border: 3px solid #FFF;
+  animation: prixClipFix 2s linear infinite;
+}
+
+@keyframes rotate {
+  100% {
+      transform: rotate(360deg)
+  }
+}
+
+@keyframes prixClipFix {
+  0% {
+      clip-path: polygon(50% 50%, 0 0, 0 0, 0 0, 0 0, 0 0)
+  }
+
+  25% {
+      clip-path: polygon(50% 50%, 0 0, 100% 0, 100% 0, 100% 0, 100% 0)
+  }
+
+  50% {
+      clip-path: polygon(50% 50%, 0 0, 100% 0, 100% 100%, 100% 100%, 100% 100%)
+  }
+
+  75% {
+      clip-path: polygon(50% 50%, 0 0, 100% 0, 100% 100%, 0 100%, 0 100%)
+  }
+
+  100% {
+      clip-path: polygon(50% 50%, 0 0, 100% 0, 100% 100%, 0 100%, 0 0)
+  }
+}
+
+.alert-message{
+  text-align: center;
+  color: red;
+}
+
+
+
+.reason-for-sending {
+  textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 16px;
+    resize: none;
+
+    &:focus {
+      outline: none;
+      border-color: #234477;
+    }
+  }
+}

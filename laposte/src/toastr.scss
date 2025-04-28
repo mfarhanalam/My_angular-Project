@@ -1,0 +1,97 @@
+// toast message
+.p-toast {
+  top: 12px;
+  position: fixed;
+  height: 50px;
+
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.p-toast-message-content {
+  height: 50px;
+  font-size: 13px;
+}
+
+.p-toast-message-info {
+  border-radius: 50px !important;
+  background-color: #000000 !important;
+  // background-color: #3b82f6 !important;
+  box-shadow: none;
+  border: none !important;
+}
+
+.p-toast-message-delete {
+  border-radius: 50px !important;
+  background-color: #000000 !important;
+  // background-color: #dc3545 !important;
+  box-shadow: none;
+  border: none !important;
+}
+
+.p-toast-message-error {
+  border-radius: 50px !important;
+  background-color: #000000 !important;
+  // background-color: #dc3545 !important;
+  box-shadow: none;
+  border: none !important;
+}
+
+.p-toast-message-success {
+  border-radius: 50px !important;
+  background-color: #000000 !important;
+  // background-color: #007e50 !important;
+  box-shadow: none;
+  border: none !important;
+}
+
+.p-toast-message-warn {
+  border-radius: 50px !important;
+  background-color: #000000 !important;
+  // background-color: #ff0909 !important;
+  box-shadow: none;
+  border: none !important;
+}
+
+.p-toast .p-toast-message .p-toast-message-content .p-toast-message-text {
+  margin: 0 !important;
+}
+
+.p-toast-message-content {
+  display: flex;
+  align-items: center;
+}
+
+.p-toast-message-icon {
+  line-height: 1;
+  padding: 0;
+  color: #ffffff;
+  font-size: 15px;
+
+  svg {
+    height: 20px;
+  }
+}
+
+.p-toast-detail {
+  margin: 0;
+  color: #ffffff;
+}
+
+.p-toast-summary {
+  color: #ffffff;
+}
+
+.p-toast-icon-close {
+  color: #ffffff;
+}
+
+.p-toast-message-icon {
+  display: none;
+}
+
+@media(max-width:500px) {
+  .p-toast {
+    width: 80%;
+  }
+}

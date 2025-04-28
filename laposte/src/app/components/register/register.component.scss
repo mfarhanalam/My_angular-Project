@@ -1,0 +1,29 @@
+.login-banner {
+    height: 30vh;
+    position: relative;
+
+    img {
+        height: 100%;
+        width: 100%;
+    }
+}
+
+.login-banner::after {
+    content: '';
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(to top, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#registerUser {
+    transform: translateY(-60px);
+    z-index: 100;
+    padding: 15px;
+
+    .header-text {
+        font-weight: 700;
+    }
+}
